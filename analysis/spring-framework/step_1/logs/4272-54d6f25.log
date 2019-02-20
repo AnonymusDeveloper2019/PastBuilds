@@ -1,0 +1,230 @@
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:objenesisRepackJar
+:spring-core:compileJava
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJava
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovy
+:spring-beans-groovy:processResources UP-TO-DATE
+:spring-beans-groovy:classes
+:spring-beans:jar
+:spring-aop:compileJava
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-expression:compileJava
+:spring-expression:processResources
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileJava
+:spring-instrument:processResources UP-TO-DATE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileJava
+:spring-context:compileGroovy UP-TO-DATE
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileJava
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileJava
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileJava
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileJava
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileJava/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorHttpHandlerAdapter.java:22: error: cannot find symbol
+import reactor.ipc.netty.http.HttpChannel;
+                             ^
+  symbol:   class HttpChannel
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorHttpHandlerAdapter.java:33: error: cannot find symbol
+public class ReactorHttpHandlerAdapter implements Function<HttpChannel, Mono<Void>> {
+                                                           ^
+  symbol: class HttpChannel
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorHttpHandlerAdapter.java:45: error: cannot find symbol
+	public Mono<Void> apply(HttpChannel channel) {
+	                        ^
+  symbol:   class HttpChannel
+  location: class ReactorHttpHandlerAdapter
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpRequest.java:24: error: cannot find symbol
+import reactor.ipc.netty.http.HttpChannel;
+                             ^
+  symbol:   class HttpChannel
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpRequest.java:43: error: cannot find symbol
+	private final HttpChannel channel;
+	              ^
+  symbol:   class HttpChannel
+  location: class ReactorServerHttpRequest
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpRequest.java:47: error: cannot find symbol
+	public ReactorServerHttpRequest(HttpChannel request,
+	                                ^
+  symbol:   class HttpChannel
+  location: class ReactorServerHttpRequest
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpRequest.java:56: error: cannot find symbol
+	public HttpChannel getReactorChannel() {
+	       ^
+  symbol:   class HttpChannel
+  location: class ReactorServerHttpRequest
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpResponse.java:28: error: cannot find symbol
+import reactor.ipc.netty.http.HttpChannel;
+                             ^
+  symbol:   class HttpChannel
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpResponse.java:48: error: cannot find symbol
+	private final HttpChannel channel;
+	              ^
+  symbol:   class HttpChannel
+  location: class ReactorServerHttpResponse
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpResponse.java:51: error: cannot find symbol
+	public ReactorServerHttpResponse(HttpChannel response,
+	                                 ^
+  symbol:   class HttpChannel
+  location: class ReactorServerHttpResponse
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ReactorServerHttpResponse.java:59: error: cannot find symbol
+	public HttpChannel getReactorChannel() {
+	       ^
+  symbol:   class HttpChannel
+  location: class ReactorServerHttpResponse
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpResponse.java:22: error: cannot find symbol
+import reactor.ipc.netty.http.HttpInbound;
+                             ^
+  symbol:   class HttpInbound
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpResponse.java:44: error: cannot find symbol
+	private final HttpInbound response;
+	              ^
+  symbol:   class HttpInbound
+  location: class ReactorClientHttpResponse
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpResponse.java:47: error: cannot find symbol
+	public ReactorClientHttpResponse(HttpInbound response) {
+	                                 ^
+  symbol:   class HttpInbound
+  location: class ReactorClientHttpResponse
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:25: error: package reactor.ipc.netty.config does not exist
+import reactor.ipc.netty.config.ClientOptions;
+                               ^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:26: error: cannot find symbol
+import reactor.ipc.netty.http.HttpException;
+                             ^
+  symbol:   class HttpException
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:27: error: cannot find symbol
+import reactor.ipc.netty.http.HttpInbound;
+                             ^
+  symbol:   class HttpInbound
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:38: error: cannot find symbol
+	private final ClientOptions clientOptions;
+	              ^
+  symbol:   class ClientOptions
+  location: class ReactorClientHttpConnector
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:51: error: cannot find symbol
+	public ReactorClientHttpConnector(ClientOptions clientOptions) {
+	                                  ^
+  symbol:   class ClientOptions
+  location: class ReactorClientHttpConnector
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpRequest.java:27: error: cannot find symbol
+import reactor.ipc.netty.http.HttpClientRequest;
+                             ^
+  symbol:   class HttpClientRequest
+  location: package reactor.ipc.netty.http
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpRequest.java:47: error: cannot find symbol
+	private final HttpClientRequest httpRequest;
+	              ^
+  symbol:   class HttpClientRequest
+  location: class ReactorClientHttpRequest
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpRequest.java:53: error: cannot find symbol
+			HttpClientRequest httpRequest) {
+			^
+  symbol:   class HttpClientRequest
+  location: class ReactorClientHttpRequest
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractRequestBodyPublisher.java:109: error: cannot find symbol
+				Operators.getAndSub(this.demand, 1L);
+				         ^
+  symbol:   method getAndSub(AtomicLong,long)
+  location: class Operators
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpResponse.java:77: error: invalid method reference
+		this.response.cookies().values().stream().flatMap(Collection::stream)
+		                                                  ^
+  non-static method stream() cannot be referenced from a static context
+  where E is a type-variable:
+    E extends Object declared in interface Collection
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:45: error: cannot find symbol
+		this(ClientOptions.create().sslSupport());
+		     ^
+  symbol:   variable ClientOptions
+  location: class ReactorClientHttpConnector
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:65: error: cannot find symbol
+				.otherwise(HttpException.class, exc -> Mono.just(exc.getChannel()))
+				           ^
+  symbol:   class HttpException
+  location: class ReactorClientHttpConnector
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:64: error: cannot find symbol
+				.cast(HttpInbound.class)
+				      ^
+  symbol:   class HttpInbound
+  location: class ReactorClientHttpConnector
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:59: error: cannot find symbol
+		return reactor.ipc.netty.http.HttpClient.create(this.clientOptions)
+		                             ^
+  symbol:   class HttpClient
+  location: package reactor.ipc.netty.http
+28 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-web:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 18.491 secs

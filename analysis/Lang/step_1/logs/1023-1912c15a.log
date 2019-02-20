@@ -1,0 +1,56 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.commons:commons-lang3:jar:3.0-SNAPSHOT
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:17, /home/michel/.m2/repository/org/apache/commons/commons-parent/17/commons-parent-17.pom, line 317, column 15
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Commons Lang 3.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.3:run[m [1m(javadoc.resources)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+     [copy] Copying 2 files to /home/michel/Investigacion/bugs/Lang/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.0:process[m [1m(default)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[[1;34mINFO[m] Setting property: velocimacro.messages.on => 'false'.
+[[1;34mINFO[m] Setting property: resource.loader => 'classpath'.
+[[1;34mINFO[m] Setting property: resource.manager.logwhenfound => 'false'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.4.1:resources[m [1m(default-resources)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.1:compile[m [1m(default-compile)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Compiling 90 source files to /home/michel/Investigacion/bugs/Lang/target/classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java:[272,52] error: incompatible types
+
+[[1;34mINFO[m] 1error
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 2.792 s
+[[1;34mINFO[m] Finished at: 2019-01-10T18:43:26+01:00
+[[1;34mINFO[m] Final Memory: 15M/303M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:2.1:compile[m [1m(default-compile)[m on project [36mcommons-lang3[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java:[272,52] error: incompatible types[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

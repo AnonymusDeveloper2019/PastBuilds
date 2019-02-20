@@ -1,0 +1,152 @@
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:objenesisRepackJar
+:spring-core:compileJava
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJava
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovy
+:spring-beans-groovy:processResources UP-TO-DATE
+:spring-beans-groovy:classes
+:spring-beans:jar
+:spring-aop:compileJava
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-expression:compileJava
+:spring-expression:processResources
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileJava
+:spring-instrument:processResources UP-TO-DATE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileJava
+:spring-context:compileGroovy UP-TO-DATE
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileJava
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileJava
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileJava
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileJava
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileJava/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/ServerSentEventHttpMessageWriter.java:136: error: method canEncode in interface Encoder<T> cannot be applied to given types;
+				.filter(e -> e.canEncode(elementType, MimeTypeUtils.APPLICATION_JSON))
+				              ^
+  required: ResolvableType,MimeType,Map<String,Object>
+  found: ResolvableType,MimeType
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in interface Encoder
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/ServerSentEventHttpMessageWriter.java:139: error: method encode in interface Encoder<T#2> cannot be applied to given types;
+				.encode(Mono.just((T) data), bufferFactory, elementType, MimeTypeUtils.APPLICATION_JSON)
+				^
+  required: Publisher<? extends T#1>,DataBufferFactory,ResolvableType,MimeType,Map<String,Object>
+  found: Mono<T#1>,DataBufferFactory,ResolvableType,MimeType
+  reason: actual and formal argument lists differ in length
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>applyEncoder(Object,DataBufferFactory)
+    T#2 extends Object declared in interface Encoder
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/DecoderHttpMessageReader.java:59: error: method canDecode in interface Decoder<T> cannot be applied to given types;
+		return this.decoder != null && this.decoder.canDecode(type, mediaType);
+		                                           ^
+  required: ResolvableType,MimeType,Map<String,Object>
+  found: ResolvableType,MediaType
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in interface Decoder
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/DecoderHttpMessageReader.java:74: error: method decode in interface Decoder<T> cannot be applied to given types;
+		return this.decoder.decode(inputMessage.getBody(), type, contentType);
+		                   ^
+  required: Publisher<DataBuffer>,ResolvableType,MimeType,Map<String,Object>
+  found: Flux<DataBuffer>,ResolvableType,MediaType
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in interface Decoder
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/DecoderHttpMessageReader.java:83: error: method decodeToMono in interface Decoder<T> cannot be applied to given types;
+		return this.decoder.decodeToMono(inputMessage.getBody(), type, contentType);
+		                   ^
+  required: Publisher<DataBuffer>,ResolvableType,MimeType,Map<String,Object>
+  found: Flux<DataBuffer>,ResolvableType,MediaType
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in interface Decoder
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/EncoderHttpMessageWriter.java:63: error: method canEncode in interface Encoder<T> cannot be applied to given types;
+		return this.encoder != null && this.encoder.canEncode(type, mediaType);
+		                                           ^
+  required: ResolvableType,MimeType,Map<String,Object>
+  found: ResolvableType,MediaType
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in interface Encoder
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/codec/EncoderHttpMessageWriter.java:102: error: method encode in interface Encoder<T#2> cannot be applied to given types;
+		Flux<DataBuffer> body = this.encoder.encode(inputStream, bufferFactory, type, contentType);
+		                                    ^
+  required: Publisher<? extends T#1>,DataBufferFactory,ResolvableType,MimeType,Map<String,Object>
+  found: Publisher<CAP#1>,DataBufferFactory,ResolvableType,MediaType
+  reason: actual and formal argument lists differ in length
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in class EncoderHttpMessageWriter
+    T#2 extends Object declared in interface Encoder
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends T#1 from capture of ? extends T#1
+7 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-web:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 17.498 secs

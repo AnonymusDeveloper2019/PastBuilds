@@ -1,0 +1,110 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.commons:commons-lang3:jar:3.0.1
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:21, /home/michel/.m2/repository/org/apache/commons/commons-parent/21/commons-parent-21.pom, line 325, column 15
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Commons Lang 3.0.1[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.5:run[m [1m(javadoc.resources)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/michel/Investigacion/bugs/Lang/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.1:process[m [1m(default)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[[1;34mINFO[m] Setting property: velocimacro.messages.on => 'false'.
+[[1;34mINFO[m] Setting property: resource.loader => 'classpath'.
+[[1;34mINFO[m] Setting property: resource.manager.logwhenfound => 'false'.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.4.1:resources[m [1m(default-resources)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Using 'ISO-8859-1' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.1:compile[m [1m(default-compile)[m @ [36mcommons-lang3[0;1m ---[m
+[[1;34mINFO[m] Compiling 102 source files to /home/michel/Investigacion/bugs/Lang/target/classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[22,49] error: cannot find symbol
+
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[25,49] error: cannot find symbol
+
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[26,49] error: cannot find symbol
+
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[27,49] error: cannot find symbol
+
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[202,84] error: cannot find symbol
+
+[[1;31mERROR[m]  class ComparatorUtils
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[132,19] error: cannot find symbol
+
+[[1;31mERROR[m]  class ComparatorUtils
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[148,15] error: cannot find symbol
+
+[[1;31mERROR[m]  class ComparatorUtils
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[167,19] error: cannot find symbol
+
+[[1;31mERROR[m]  class ComparatorUtils
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[186,19] error: cannot find symbol
+
+[[1;31mERROR[m]  class ComparatorUtils
+/home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[206,19] error: cannot find symbol
+
+[[1;34mINFO[m] 10 errors 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 3.356 s
+[[1;34mINFO[m] Finished at: 2019-01-10T17:49:17+01:00
+[[1;34mINFO[m] Final Memory: 15M/239M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:2.1:compile[m [1m(default-compile)[m on project [36mcommons-lang3[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[22,49] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[25,49] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[26,49] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[27,49] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  package org.apache.commons.collections.comparators
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[202,84] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  class ComparatorUtils
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[132,19] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  class ComparatorUtils
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[148,15] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  class ComparatorUtils
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[167,19] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  class ComparatorUtils
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[186,19] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m]  class ComparatorUtils
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/main/java/org/apache/commons/lang3/compare/ComparatorUtils.java:[206,19] error: cannot find symbol
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

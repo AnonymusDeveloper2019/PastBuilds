@@ -1,0 +1,49 @@
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+init:
+     [echo] -------- commons-lang3 3.0.1 --------
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target
+
+compile:
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/classes
+    [javac] Compiling 104 source files to /home/ubuntu/bugs/projects/Lang/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] /home/ubuntu/bugs/projects/Lang/src/main/java/org/apache/commons/lang3/compare/NullComparator.java:54: error: cannot find symbol
+    [javac]         this(ComparatorUtils.NATURAL_COMPARATOR, true);
+    [javac]              ^
+    [javac]   symbol:   variable ComparatorUtils
+    [javac]   location: class NullComparator<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class NullComparator
+    [javac] /home/ubuntu/bugs/projects/Lang/src/main/java/org/apache/commons/lang3/compare/NullComparator.java:88: error: cannot find symbol
+    [javac]         this(ComparatorUtils.NATURAL_COMPARATOR, nullsAreHigh);
+    [javac]              ^
+    [javac]   symbol:   variable ComparatorUtils
+    [javac]   location: class NullComparator<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class NullComparator
+    [javac] /home/ubuntu/bugs/projects/Lang/src/main/java/org/apache/commons/lang3/compare/ReverseComparator.java:63: error: cannot find symbol
+    [javac]         this.comparator = comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator;
+    [javac]                                                ^
+    [javac]   symbol:   variable ComparatorUtils
+    [javac]   location: class ReverseComparator<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class ReverseComparator
+    [javac] Note: /home/ubuntu/bugs/projects/Lang/src/main/java/org/apache/commons/lang3/SerializationUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 3 errors
+    [javac] 4 warnings
+
+BUILD FAILED
+/home/ubuntu/bugs/projects/Lang/build.xml:62: Compile failed; see the compiler error output for details.
+
+Total time: 6 seconds

@@ -1,0 +1,79 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:2.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:11, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/11/commons-parent-11.pom, line 255, column 15
+[WARNING] The expression ${pom.version} is deprecated. Please use ${project.version} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.1:run (javadoc.resources) @ commons-math ---
+[INFO] Executing tasks
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ commons-math ---
+[INFO] Compiling 362 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.345 s
+[INFO] Finished at: 2019-01-15T01:11:31+00:00
+[INFO] Final Memory: 14M/260M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.0.2:compile (default-compile) on project commons-math: Compilation failure: Compilation failure:
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/nonstiff/AdamsIntegrator.java:[228,8] error: constructor MultistepIntegrator in class MultistepIntegrator cannot be applied to given types;
+[ERROR] 
+[ERROR] could not parse error message:   required: String,int
+[ERROR] found: String,int,NordsieckStepInterpolator
+[ERROR] reason: actual and formal argument lists differ in length
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/nonstiff/AdamsIntegrator.java:269: error: cannot find symbol
+[ERROR] (NordsieckStepInterpolator) prototype.copy();
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   variable prototype
+[ERROR] location: class AdamsIntegrator
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/nonstiff/AdamsIntegrator.java:292: error: no suitable method found for reinitialize(double,double[],RealMatrix)
+[ERROR] interpolator.reinitialize(stepSize, scaled, nordsieck);
+[ERROR] ^
+[ERROR] 
+[ERROR] method AbstractStepInterpolator.reinitialize(double[],boolean) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] method NordsieckStepInterpolator.reinitialize(double[],boolean) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] method NordsieckStepInterpolator.reinitialize(double,double,double[],RealMatrix) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/nonstiff/AdamsIntegrator.java:[320,28] error: no suitable method found for reinitialize(double,double[],RealMatrix)
+[ERROR] 
+[ERROR] method AbstractStepInterpolator.reinitialize(double[],boolean) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] method NordsieckStepInterpolator.reinitialize(double[],boolean) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] method NordsieckStepInterpolator.reinitialize(double,double,double[],RealMatrix) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/nonstiff/AdamsIntegrator.java:[360,32] error: no suitable method found for reinitialize(double,double[],RealMatrix)
+[ERROR] 
+[ERROR] method AbstractStepInterpolator.reinitialize(double[],boolean) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] method NordsieckStepInterpolator.reinitialize(double[],boolean) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] method NordsieckStepInterpolator.reinitialize(double,double,double[],RealMatrix) is not applicable
+[ERROR] (actual and formal argument lists differ in length)
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/nonstiff/AdamsIntegrator.java:[379,32] error: no suitable method found for reinitialize(double,double[],RealMatrix)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

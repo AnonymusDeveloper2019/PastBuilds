@@ -1,0 +1,185 @@
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:objenesisRepackJar
+:spring-core:compileJava
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJava
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovy
+:spring-beans-groovy:processResources UP-TO-DATE
+:spring-beans-groovy:classes
+:spring-beans:jar
+:spring-aop:compileJava
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-expression:compileJava
+:spring-expression:processResources
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileJava
+:spring-instrument:processResources UP-TO-DATE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileJava
+:spring-context:compileGroovy UP-TO-DATE
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileJava
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileJava
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileJava
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileJava
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileJava/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:24: error: cannot find symbol
+import reactor.core.publisher.OperatorAdapter;
+                             ^
+  symbol:   class OperatorAdapter
+  location: package reactor.core.publisher
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:57: error: cannot find symbol
+	private class WriteWithBarrier extends OperatorAdapter<T, Void> implements Publisher<T> {
+	                                       ^
+  symbol:   class OperatorAdapter
+  location: class ChannelSendOperator<T>
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:54: error: incompatible types: ChannelSendOperator<T>.WriteWithBarrier cannot be converted to Subscriber<? super CAP#1>
+		source.subscribe(new WriteWithBarrier(s));
+		                 ^
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends T from capture of ? extends T
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:87: error: method does not override or implement a method from a supertype
+		@Override
+		^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:89: error: incompatible types: Subscription cannot be converted to Consumer<? super Subscription>
+			super.doOnSubscribe(subscription);
+			                    ^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:91: error: cannot find symbol
+			     .request(1); // bypass doRequest
+			     ^
+  symbol:   method request(int)
+  location: interface Publisher<CAP#1>
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends T from capture of ? extends T
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:94: error: method does not override or implement a method from a supertype
+		@Override
+		^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:107: error: cannot find symbol
+					writeFunction.apply(this).subscribe(new DownstreamBridge(downstream()));
+					                                                         ^
+  symbol:   method downstream()
+  location: class ChannelSendOperator<T>.WriteWithBarrier
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:110: error: cannot find symbol
+					subscription.cancel();
+					^
+  symbol:   variable subscription
+  location: class ChannelSendOperator<T>.WriteWithBarrier
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:111: error: cannot find symbol
+					downstream().onError(new IllegalStateException("Unexpected item."));
+					^
+  symbol:   method downstream()
+  location: class ChannelSendOperator<T>.WriteWithBarrier
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:116: error: method does not override or implement a method from a supertype
+		@Override
+		^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:128: error: cannot find symbol
+					downstream().onError(ex);
+					^
+  symbol:   method downstream()
+  location: class ChannelSendOperator<T>.WriteWithBarrier
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:136: error: method does not override or implement a method from a supertype
+		@Override
+		^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:149: error: cannot find symbol
+					writeFunction.apply(this).subscribe(new DownstreamBridge(downstream()));
+					                                                         ^
+  symbol:   method downstream()
+  location: class ChannelSendOperator<T>.WriteWithBarrier
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:168: error: incompatible types: ChannelSendOperator<T>.WriteWithBarrier cannot be converted to Subscription
+					this.writeSubscriber.onSubscribe(this);
+					                                 ^
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:192: error: method does not override or implement a method from a supertype
+		@Override
+		^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:195: error: cannot find symbol
+				super.doRequest(n);
+				     ^
+  symbol: method doRequest(long)
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:208: error: cannot find symbol
+					super.doRequest(n);
+					     ^
+  symbol: method doRequest(long)
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-web:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 17.853 secs

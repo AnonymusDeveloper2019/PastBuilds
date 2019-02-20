@@ -1,0 +1,15 @@
+sed: can't read buildSrc/build.gradle: No such file or directory
+Note: the Gradle build daemon is an experimental feature.
+As such, you may experience unexpected build failures. You may need to occasionally stop the daemon.
+
+FAILURE: Could not determine which tasks to execute.
+
+* What went wrong:
+Task 'mockitoJavadoc' not found in root project 'mockito'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks.
+
+BUILD FAILED
+
+Total time: 0.596 secs

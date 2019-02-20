@@ -1,0 +1,252 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+:assemble
+:build
+:spring-core:asmRepackJar
+:spring-core:cglibRepackJar
+:spring-core:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans:jar
+:spring-aop:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-aspects:processResources
+:spring-expression:compileJava
+:spring-expression:processResources UP-TO-DATE
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileJava
+:spring-instrument:processResources UP-TO-DATE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileJava/home/ubuntu/bugs/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlRowSetResultSetExtractor.java:24: warning: CachedRowSetImpl is internal proprietary API and may be removed in a future release
+import com.sun.rowset.CachedRowSetImpl;
+                     ^
+/home/ubuntu/bugs/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlRowSetResultSetExtractor.java:104: warning: CachedRowSetImpl is internal proprietary API and may be removed in a future release
+			return new CachedRowSetImpl();
+			           ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 warnings
+
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileJavaNote: /home/ubuntu/bugs/spring-framework/spring-context-support/src/main/java/org/springframework/ui/velocity/CommonsLoggingLogSystem.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-web:processResources
+:spring-web:classes
+:spring-web:jar
+:spring-orm:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-orm:processResources UP-TO-DATE
+:spring-orm:classes
+:spring-orm:jar
+:spring-aspects:compileJava
+[ant:iajc] <Unknown> [warning] Found @DeclareAnnotation while current release does not support it (see 'org.aspectj.weaver.bcel.AtAjAttributes')
+[ant:iajc] 	
+[ant:iajc] org.aspectj.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 18
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.Constant.readConstant(Constant.java:133)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ConstantPool.<init>(ConstantPool.java:45)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:186)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+[ant:iajc] 	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:326)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:236)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.getSuperclass(BcelObjectType.java:231)
+[ant:iajc] 	at org.aspectj.weaver.ReferenceType.getSuperclass(ReferenceType.java:920)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:176)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+[ant:iajc] 	at org.aspectj.weaver.patterns.AnyWithAnnotationTypePattern.matchesExactly(AnyWithAnnotationTypePattern.java:55)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:132)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.match(DeclareParents.java:63)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.findMatchingNewParents(DeclareParents.java:358)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doDeclareParents(AjLookupEnvironment.java:880)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:730)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:652)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:427)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1027)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:271)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:184)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.main(Main.java:84)
+[ant:iajc] /home/ubuntu/bugs/spring-framework/spring-aspects/src/main/java/org/springframework/transaction/aspectj/AnnotationTransactionAspect.aj [error] Internal compiler error
+[ant:iajc] org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+[ant:iajc] 	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:326)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:236)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.getSuperclass(BcelObjectType.java:231)
+[ant:iajc] 	at org.aspectj.weaver.ReferenceType.getSuperclass(ReferenceType.java:920)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:176)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+[ant:iajc] 	at org.aspectj.weaver.patterns.AnyWithAnnotationTypePattern.matchesExactly(AnyWithAnnotationTypePattern.java:55)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:132)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.match(DeclareParents.java:63)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.findMatchingNewParents(DeclareParents.java:358)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doDeclareParents(AjLookupEnvironment.java:880)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:730)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:652)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:427)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1027)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:271)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:184)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.main(Main.java:84)
+[ant:iajc] 
+[ant:iajc] (no source information available)
+[ant:iajc] ABORT
+[ant:iajc] 	
+[ant:iajc] Exception thrown from AspectJ 1.6.12
+[ant:iajc] 
+[ant:iajc] This might be logged as a bug already -- find current bugs at
+[ant:iajc]   http://bugs.eclipse.org/bugs/buglist.cgi?product=AspectJ&component=Compiler
+[ant:iajc] 
+[ant:iajc] Bugs for exceptions thrown have titles File:line from the top stack, 
+[ant:iajc] e.g., "SomeFile.java:243"
+[ant:iajc] 
+[ant:iajc] If you don't find the exception below in a bug, please add a new bug
+[ant:iajc] at http://bugs.eclipse.org/bugs/enter_bug.cgi?product=AspectJ
+[ant:iajc] To make the bug a priority, please include a test program
+[ant:iajc] that can reproduce this exception.
+[ant:iajc] File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] 
+[ant:iajc] when processing declare parents String
+[ant:iajc] when weaving intertype declarations String
+[ant:iajc] when weaving intertype declarations String
+[ant:iajc] when completing type bindings 
+[ant:iajc] when batch building BuildConfig[null] #Files=21 AopXmls=#0
+[ant:iajc] File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+[ant:iajc] 	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:326)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:236)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.getSuperclass(BcelObjectType.java:231)
+[ant:iajc] 	at org.aspectj.weaver.ReferenceType.getSuperclass(ReferenceType.java:920)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:176)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:96)
+[ant:iajc] 	at org.aspectj.weaver.patterns.AnyWithAnnotationTypePattern.matchesExactly(AnyWithAnnotationTypePattern.java:55)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:132)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.match(DeclareParents.java:63)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.findMatchingNewParents(DeclareParents.java:358)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doDeclareParents(AjLookupEnvironment.java:880)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:730)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:652)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:427)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1027)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:271)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:184)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.main(Main.java:84)
+[ant:iajc] 
+[ant:iajc] Jan 13, 2019 6:37:44 PM org.aspectj.weaver.tools.Jdk14Trace info
+[ant:iajc] INFO: Dumping to /home/ubuntu/bugs/spring-framework/spring-aspects/./ajcore.20190113.183744.421.txt
+[ant:iajc] 
+[ant:iajc] 1 fail|abort, 1 error, 1 warning
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/home/ubuntu/bugs/spring-framework/spring-aspects/aspects.gradle' line: 23
+
+* What went wrong:
+Execution failed for task ':spring-aspects:compileJava'.
+> compile errors: 255
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 37.144 secs

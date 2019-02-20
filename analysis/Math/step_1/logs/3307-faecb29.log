@@ -1,0 +1,612 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:2.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:11, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/11/commons-parent-11.pom, line 255, column 15
+[WARNING] The expression ${pom.version} is deprecated. Please use ${project.version} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.1:run (javadoc.resources) @ commons-math ---
+[INFO] Executing tasks
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ commons-math ---
+[INFO] Compiling 308 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.266 s
+[INFO] Finished at: 2019-01-15T01:42:44+00:00
+[INFO] Final Memory: 14M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.0.2:compile (default-compile) on project commons-math: Compilation failure: Compilation failure:
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:[22,43] error: cannot find symbol
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:24: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ScalarPointValuePair;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:25: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ScalarConvergenceChecker;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarConvergenceChecker
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:27: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ObjectiveException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:28: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ScalarObjectiveFunction;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarObjectiveFunction
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:30: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ScalarOptimizer;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarOptimizer
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:31: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ScalarPointValuePair;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:85: error: cannot find symbol
+[ERROR] public abstract class DirectSearchOptimizer implements ScalarOptimizer {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol: class ScalarOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:62: error: cannot find symbol
+[ERROR] protected void iterateSimplex(final Comparator<ScalarPointValuePair> comparator)
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:63: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:108: error: cannot find symbol
+[ERROR] private ScalarPointValuePair evaluateNewSimplex(final ScalarPointValuePair[] original,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:110: error: cannot find symbol
+[ERROR] final Comparator<ScalarPointValuePair> comparator)
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:108: error: cannot find symbol
+[ERROR] private ScalarPointValuePair evaluateNewSimplex(final ScalarPointValuePair[] original,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:111: error: cannot find symbol
+[ERROR] throws ObjectiveException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:91: error: cannot find symbol
+[ERROR] protected ScalarPointValuePair[] simplex;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:94: error: cannot find symbol
+[ERROR] private ScalarObjectiveFunction f;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarObjectiveFunction
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:97: error: cannot find symbol
+[ERROR] private ScalarConvergenceChecker checker;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarConvergenceChecker
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:235: error: cannot find symbol
+[ERROR] public void setConvergenceChecker(ScalarConvergenceChecker checker) {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarConvergenceChecker
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:240: error: cannot find symbol
+[ERROR] public ScalarConvergenceChecker getConvergenceChecker() {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarConvergenceChecker
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:245: error: cannot find symbol
+[ERROR] public ScalarPointValuePair optimize(final ScalarObjectiveFunction f, final GoalType goalType,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarObjectiveFunction
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:245: error: cannot find symbol
+[ERROR] public ScalarPointValuePair optimize(final ScalarObjectiveFunction f, final GoalType goalType,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:247: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:313: error: cannot find symbol
+[ERROR] protected abstract void iterateSimplex(final Comparator<ScalarPointValuePair> comparator)
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:314: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:325: error: cannot find symbol
+[ERROR] throws ObjectiveException, IllegalArgumentException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:365: error: cannot find symbol
+[ERROR] protected void evaluateSimplex(final Comparator<ScalarPointValuePair> comparator)
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:366: error: cannot find symbol
+[ERROR] throws ObjectiveException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:386: error: cannot find symbol
+[ERROR] protected void replaceWorstPoint(ScalarPointValuePair pointValuePair,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:387: error: cannot find symbol
+[ERROR] final Comparator<ScalarPointValuePair> comparator) {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/GaussNewtonOptimizer.java:26: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ObjectiveException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:25: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ObjectiveException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:29: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.VectorialDifferentiableObjectiveFunction;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialDifferentiableObjectiveFunction
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:30: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.VectorialDifferentiableOptimizer;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialDifferentiableOptimizer
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:41: error: cannot find symbol
+[ERROR] public abstract class AbstractLeastSquaresOptimizer implements VectorialDifferentiableOptimizer {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol: class VectorialDifferentiableOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/GaussNewtonOptimizer.java:66: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class GaussNewtonOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:80: error: cannot find symbol
+[ERROR] private VectorialDifferentiableObjectiveFunction f;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialDifferentiableObjectiveFunction
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:162: error: cannot find symbol
+[ERROR] protected void updateJacobian() throws ObjectiveException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:184: error: cannot find symbol
+[ERROR] throws ObjectiveException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:243: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:282: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:298: error: cannot find symbol
+[ERROR] public VectorialPointValuePair optimize(final VectorialDifferentiableObjectiveFunction f,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialDifferentiableObjectiveFunction
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:301: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:339: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:54: error: cannot find symbol
+[ERROR] public class LeastSquaresConverter implements ScalarObjectiveFunction {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol: class ScalarObjectiveFunction
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:60: error: cannot find symbol
+[ERROR] private final VectorialObjectiveFunction function;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialObjectiveFunction
+[ERROR] location: class LeastSquaresConverter
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:75: error: cannot find symbol
+[ERROR] public LeastSquaresConverter(final VectorialObjectiveFunction function,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialObjectiveFunction
+[ERROR] location: class LeastSquaresConverter
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:111: error: cannot find symbol
+[ERROR] public LeastSquaresConverter(final VectorialObjectiveFunction function,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialObjectiveFunction
+[ERROR] location: class LeastSquaresConverter
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:144: error: cannot find symbol
+[ERROR] public LeastSquaresConverter(final VectorialObjectiveFunction function,
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class VectorialObjectiveFunction
+[ERROR] location: class LeastSquaresConverter
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:159: error: cannot find symbol
+[ERROR] public double objective(final double[] variables) throws ObjectiveException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class LeastSquaresConverter
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:22: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ObjectiveException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:24: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ScalarPointValuePair;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:76: error: cannot find symbol
+[ERROR] protected void iterateSimplex(final Comparator<ScalarPointValuePair> comparator)
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:77: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java:21: error: cannot find symbol
+[ERROR] import org.apache.commons.math.optimization.ObjectiveException;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: package org.apache.commons.math.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java:213: error: cannot find symbol
+[ERROR] throws ObjectiveException, OptimizationException, IllegalArgumentException {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class LevenbergMarquardtOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:31: error: cannot find symbol
+[ERROR] public class BrentMinimizer extends UnivariateRealMinimizerImpl {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol: class UnivariateRealMinimizerImpl
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:258: error: cannot find symbol
+[ERROR] final Comparator<ScalarPointValuePair> comparator = new Comparator<ScalarPointValuePair>() {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:258: error: cannot find symbol
+[ERROR] final Comparator<ScalarPointValuePair> comparator = new Comparator<ScalarPointValuePair>() {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:259: error: cannot find symbol
+[ERROR] public int compare(final ScalarPointValuePair o1, final ScalarPointValuePair o2) {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol: class ScalarPointValuePair
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:259: error: cannot find symbol
+[ERROR] public int compare(final ScalarPointValuePair o1, final ScalarPointValuePair o2) {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol: class ScalarPointValuePair
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:273: error: cannot find symbol
+[ERROR] ScalarPointValuePair[] previous = new ScalarPointValuePair[simplex.length];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:273: error: cannot find symbol
+[ERROR] ScalarPointValuePair[] previous = new ScalarPointValuePair[simplex.length];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:346: error: cannot find symbol
+[ERROR] simplex = new ScalarPointValuePair[n + 1];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:347: error: cannot find symbol
+[ERROR] simplex[0] = new ScalarPointValuePair(startPoint, Double.NaN);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:356: error: cannot find symbol
+[ERROR] simplex[i + 1] = new ScalarPointValuePair(vertexI, Double.NaN);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:370: error: cannot find symbol
+[ERROR] final ScalarPointValuePair vertex = simplex[i];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:373: error: cannot find symbol
+[ERROR] simplex[i] = new ScalarPointValuePair(point, evaluate(point), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/DirectSearchOptimizer.java:391: error: cannot find symbol
+[ERROR] ScalarPointValuePair tmp = simplex[i];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class DirectSearchOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:70: error: cannot find symbol
+[ERROR] final ScalarPointValuePair[] original = simplex;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:71: error: cannot find symbol
+[ERROR] final ScalarPointValuePair best = original[0];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:74: error: cannot find symbol
+[ERROR] final ScalarPointValuePair reflected = evaluateNewSimplex(original, 1.0, comparator);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:78: error: cannot find symbol
+[ERROR] final ScalarPointValuePair[] reflectedSimplex = simplex;
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:79: error: cannot find symbol
+[ERROR] final ScalarPointValuePair expanded = evaluateNewSimplex(original, khi, comparator);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:90: error: cannot find symbol
+[ERROR] final ScalarPointValuePair contracted = evaluateNewSimplex(original, gamma, comparator);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:117: error: cannot find symbol
+[ERROR] simplex = new ScalarPointValuePair[n + 1];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/MultiDirectional.java:125: error: cannot find symbol
+[ERROR] simplex[i] = new ScalarPointValuePair(xTransformed, Double.NaN, false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class MultiDirectional
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:166: error: cannot find symbol
+[ERROR] throw new ObjectiveException("dimension mismatch {0} != {1}",
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:189: error: cannot find symbol
+[ERROR] throw new ObjectiveException("dimension mismatch {0} != {1}",
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/LeastSquaresConverter.java:164: error: cannot find symbol
+[ERROR] throw new ObjectiveException("dimension mismatch {0} != {1}",
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ObjectiveException
+[ERROR] location: class LeastSquaresConverter
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:85: error: cannot find symbol
+[ERROR] final ScalarPointValuePair best       = simplex[0];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:86: error: cannot find symbol
+[ERROR] final ScalarPointValuePair secondBest = simplex[n-1];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:87: error: cannot find symbol
+[ERROR] final ScalarPointValuePair worst      = simplex[n];
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:109: error: cannot find symbol
+[ERROR] final ScalarPointValuePair reflected = new ScalarPointValuePair(xR, evaluate(xR), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:109: error: cannot find symbol
+[ERROR] final ScalarPointValuePair reflected = new ScalarPointValuePair(xR, evaluate(xR), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:124: error: cannot find symbol
+[ERROR] final ScalarPointValuePair expanded = new ScalarPointValuePair(xE, evaluate(xE), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:124: error: cannot find symbol
+[ERROR] final ScalarPointValuePair expanded = new ScalarPointValuePair(xE, evaluate(xE), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:143: error: cannot find symbol
+[ERROR] final ScalarPointValuePair outContracted = new ScalarPointValuePair(xC, evaluate(xC), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:143: error: cannot find symbol
+[ERROR] final ScalarPointValuePair outContracted = new ScalarPointValuePair(xC, evaluate(xC), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:158: error: cannot find symbol
+[ERROR] final ScalarPointValuePair inContracted = new ScalarPointValuePair(xC, evaluate(xC), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:158: error: cannot find symbol
+[ERROR] final ScalarPointValuePair inContracted = new ScalarPointValuePair(xC, evaluate(xC), false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/direct/NelderMead.java:175: error: cannot find symbol
+[ERROR] simplex[i] = new ScalarPointValuePair(x, Double.NaN, false);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   class ScalarPointValuePair
+[ERROR] location: class NelderMead
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:76: error: cannot find symbol
+[ERROR] clearResult();
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   method clearResult()
+[ERROR] location: class BrentMinimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:77: error: cannot find symbol
+[ERROR] return localMin(min, max, relativeAccuracy, absoluteAccuracy, f);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   variable relativeAccuracy
+[ERROR] location: class BrentMinimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:77: error: cannot find symbol
+[ERROR] return localMin(min, max, relativeAccuracy, absoluteAccuracy, f);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   variable absoluteAccuracy
+[ERROR] location: class BrentMinimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:115: error: cannot find symbol
+[ERROR] while (count < maximalIterationCount) {
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   variable maximalIterationCount
+[ERROR] location: class BrentMinimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:192: error: cannot find symbol
+[ERROR] setResult(x, fx, count);
+[ERROR] ^
+[ERROR] 
+[ERROR] could not parse error message:   symbol:   method setResult(double,double,int)
+[ERROR] location: class BrentMinimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/univariate/BrentMinimizer.java:199: error: cannot find symbol
+[ERROR] throw new MaxIterationsExceededException(maximalIterationCount);
+[ERROR] ^
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,307 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for commons-math:commons-math:jar:1.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.apache.commons:commons-parent:2, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/2/commons-parent-2.pom, line 115, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 206, column 17
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:2, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/2/commons-parent-2.pom, line 140, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Math 1.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.0/clirr-maven-plugin-2.0.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.0/clirr-maven-plugin-2.0.pom (2 KB at 3.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.0/clirr-maven-plugin-2.0.jar
+3/25 KB   5/25 KB   8/25 KB   11/25 KB   13/25 KB   16/25 KB   19/25 KB   21/25 KB   24/25 KB   25/25 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.0/clirr-maven-plugin-2.0.jar (25 KB at 303.6 KB/sec)
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/classes/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-math ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding ANSI_X3.4-1968, i.e. build is platform dependent!
+[INFO] Compiling 215 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-math ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ commons-math ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ commons-math ---
+[INFO] Building jar: /home/ubuntu/bugs/projects/Math/target/commons-math-1.2-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> clirr-maven-plugin:2.0:check (default) > compile @ commons-math >>>
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-math ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< clirr-maven-plugin:2.0:check (default) < compile @ commons-math <<<
+[INFO] 
+[INFO] --- clirr-maven-plugin:2.0:check (default) @ commons-math ---
+Downloading: https://repo.maven.apache.org/maven2/net/sf/clirr/clirr-core/0.6/clirr-core-0.6.pom
+3/4 KB     4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/net/sf/clirr/clirr-core/0.6/clirr-core-0.6.pom (4 KB at 66.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/bcel/bcel/5.1/bcel-5.1.pom
+310/310 B               Downloaded: https://repo.maven.apache.org/maven2/bcel/bcel/5.1/bcel-5.1.pom (310 B at 5.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/regexp/regexp/1.2/regexp-1.2.pom
+145/145 B               Downloaded: https://repo.maven.apache.org/maven2/regexp/regexp/1.2/regexp-1.2.pom (145 B at 2.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-8/doxia-site-renderer-1.0-alpha-8.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-8/doxia-site-renderer-1.0-alpha-8.pom (2 KB at 26.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-8/doxia-1.0-alpha-8.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-8/doxia-1.0-alpha-8.pom (3 KB at 53.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/1/maven-parent-1.pom
+3/7 KB   5/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/1/maven-parent-1.pom (7 KB at 118.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-8/doxia-core-1.0-alpha-8.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-8/doxia-core-1.0-alpha-8.pom (2 KB at 30.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.pom
+141/141 B               Downloaded: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.pom (141 B at 2.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-8/doxia-sink-api-1.0-alpha-8.pom
+424/424 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-8/doxia-sink-api-1.0-alpha-8.pom (424 B at 8.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.pom
+771/771 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.pom (771 B at 15.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.4/plexus-components-1.1.4.pom
+3/3 KB               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.4/plexus-components-1.1.4.pom (3 KB at 39.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-8/doxia-decoration-model-1.0-alpha-8.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-8/doxia-decoration-model-1.0-alpha-8.pom (2 KB at 26.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.pom (2 KB at 35.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom
+700/700 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom (700 B at 12.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-7/doxia-core-1.0-alpha-7.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-7/doxia-core-1.0-alpha-7.pom (2 KB at 23.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom
+902/902 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom (902 B at 16.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-7/doxia-site-renderer-1.0-alpha-7.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-7/doxia-site-renderer-1.0-alpha-7.pom (2 KB at 27.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.pom
+3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.pom (8 KB at 132.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-7/plexus-container-default-1.0-alpha-7.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-7/plexus-container-default-1.0-alpha-7.pom (2 KB at 23.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom
+471/471 B               Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom (471 B at 8.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom
+3/6 KB      5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom (6 KB at 108.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom
+740/740 B               Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom (740 B at 13.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.pom
+168/168 B               Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.pom (168 B at 3.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-7/doxia-decoration-model-1.0-alpha-7.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-7/doxia-decoration-model-1.0-alpha-7.pom (2 KB at 27.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/net/sf/clirr/clirr-core/0.6/clirr-core-0.6.jar
+Downloading: https://repo.maven.apache.org/maven2/bcel/bcel/5.1/bcel-5.1.jar
+Downloading: https://repo.maven.apache.org/maven2/regexp/regexp/1.2/regexp-1.2.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-8/doxia-site-renderer-1.0-alpha-8.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-8/doxia-core-1.0-alpha-8.jar
+3/68 KB   5/68 KB   8/68 KB   11/68 KB   13/68 KB   16/68 KB   19/68 KB   21/68 KB   24/68 KB   27/68 KB   29/68 KB   32/68 KB   36/68 KB   40/68 KB   44/68 KB   48/68 KB   52/68 KB   56/68 KB   60/68 KB   64/68 KB   68/68 KB   68/68 KB              Downloaded: https://repo.maven.apache.org/maven2/net/sf/clirr/clirr-core/0.6/clirr-core-0.6.jar (68 KB at 786.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-8/doxia-sink-api-1.0-alpha-8.jar
+3/30 KB    5/30 KB   5/30 KB   3/200 KB   8/30 KB   3/200 KB   8/30 KB   5/200 KB   8/30 KB   8/200 KB   8/30 KB   8/200 KB   3/504 KB   8/30 KB   8/200 KB   5/504 KB   8/30 KB   8/200 KB   8/504 KB   8/30 KB   3/7 KB   8/200 KB   8/504 KB   8/30 KB   5/7 KB   8/200 KB   8/504 KB   8/30 KB   7/7 KB   8/200 KB   8/504 KB   11/30 KB   7/7 KB   8/200 KB   8/504 KB   13/30 KB   7/7 KB   8/200 KB   8/504 KB   13/30 KB   7/7 KB   11/200 KB   8/504 KB   16/30 KB   7/7 KB   11/200 KB   8/504 KB   16/30 KB   7/7 KB   13/200 KB   8/504 KB   19/30 KB   7/7 KB   13/200 KB   8/504 KB   19/30 KB   7/7 KB   16/200 KB   8/504 KB   21/30 KB   7/7 KB   16/200 KB   8/504 KB   21/30 KB   7/7 KB   19/200 KB   8/504 KB   24/30 KB   7/7 KB   19/200 KB   8/504 KB   24/30 KB   7/7 KB   21/200 KB   8/504 KB   24/30 KB   7/7 KB   24/200 KB   8/504 KB   27/30 KB   7/7 KB   24/200 KB   8/504 KB   27/30 KB   7/7 KB   27/200 KB   8/504 KB   29/30 KB   7/7 KB   27/200 KB   8/504 KB   30/30 KB   7/7 KB   27/200 KB   8/504 KB   30/30 KB   7/7 KB   29/200 KB   8/504 KB   30/30 KB   7/7 KB   32/200 KB   8/504 KB   30/30 KB   7/7 KB   32/200 KB   11/504 KB   30/30 KB   7/7 KB   32/200 KB   13/504 KB   30/30 KB   7/7 KB   32/200 KB   16/504 KB   30/30 KB   7/7 KB   32/200 KB   19/504 KB   30/30 KB   7/7 KB   32/200 KB   21/504 KB   30/30 KB   7/7 KB   32/200 KB   24/504 KB   30/30 KB   7/7 KB   32/200 KB   27/504 KB   30/30 KB   7/7 KB   32/200 KB   29/504 KB   30/30 KB   7/7 KB   32/200 KB   32/504 KB                                               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-8/doxia-sink-api-1.0-alpha-8.jar (7 KB at 50.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-8/doxia-decoration-model-1.0-alpha-8.jar
+30/30 KB   36/200 KB   32/504 KB            30/30 KB   40/200 KB   32/504 KB   30/30 KB   44/200 KB   32/504 KB   30/30 KB   48/200 KB   32/504 KB   30/30 KB   52/200 KB   32/504 KB   30/30 KB   56/200 KB   32/504 KB   30/30 KB   60/200 KB   32/504 KB   30/30 KB   64/200 KB   32/504 KB   30/30 KB   68/200 KB   32/504 KB   30/30 KB   72/200 KB   32/504 KB   30/30 KB   76/200 KB   32/504 KB   30/30 KB   80/200 KB   32/504 KB   30/30 KB   80/200 KB   36/504 KB   30/30 KB   80/200 KB   40/504 KB   30/30 KB   80/200 KB   44/504 KB   30/30 KB   80/200 KB   48/504 KB                                      Downloaded: https://repo.maven.apache.org/maven2/regexp/regexp/1.2/regexp-1.2.jar (30 KB at 197.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.jar
+80/200 KB   52/504 KB              80/200 KB   56/504 KB   80/200 KB   60/504 KB   80/200 KB   64/504 KB   80/200 KB   68/504 KB   80/200 KB   72/504 KB   80/200 KB   76/504 KB   80/200 KB   80/504 KB   80/200 KB   3/40 KB   80/504 KB   80/200 KB   5/40 KB   80/504 KB   80/200 KB   8/40 KB   80/504 KB   80/200 KB   11/40 KB   80/504 KB   80/200 KB   13/40 KB   80/504 KB   80/200 KB   16/40 KB   80/504 KB   80/200 KB   19/40 KB   80/504 KB   80/200 KB   21/40 KB   80/504 KB   80/200 KB   24/40 KB   80/504 KB   80/200 KB   27/40 KB   80/504 KB   80/200 KB   29/40 KB   80/504 KB   80/200 KB   32/40 KB   80/504 KB   80/200 KB   35/40 KB   80/504 KB   80/200 KB   37/40 KB   80/504 KB   80/200 KB   40/40 KB   80/504 KB   84/200 KB   40/40 KB   80/504 KB   88/200 KB   40/40 KB   80/504 KB   88/200 KB   40/40 KB   84/504 KB   92/200 KB   40/40 KB   84/504 KB   92/200 KB   40/40 KB   88/504 KB   96/200 KB   40/40 KB   88/504 KB   96/200 KB   40/40 KB   92/504 KB   96/200 KB   40/40 KB   96/504 KB   100/200 KB   40/40 KB   96/504 KB   104/200 KB   40/40 KB   96/504 KB   104/200 KB   40/40 KB   100/504 KB   108/200 KB   40/40 KB   100/504 KB   108/200 KB   40/40 KB   104/504 KB   112/200 KB   40/40 KB   104/504 KB   112/200 KB   40/40 KB   108/504 KB   112/200 KB   40/40 KB   112/504 KB   116/200 KB   40/40 KB   112/504 KB   120/200 KB   40/40 KB   112/504 KB   120/200 KB   40/40 KB   116/504 KB   124/200 KB   40/40 KB   116/504 KB   124/200 KB   40/40 KB   120/504 KB   128/200 KB   40/40 KB   120/504 KB   128/200 KB   40/40 KB   124/504 KB   128/200 KB   40/40 KB   128/504 KB   132/200 KB   40/40 KB   128/504 KB   136/200 KB   40/40 KB   128/504 KB   136/200 KB   40/40 KB   132/504 KB   140/200 KB   40/40 KB   136/504 KB   140/200 KB   40/40 KB   140/504 KB   140/200 KB   40/40 KB   144/504 KB   140/200 KB   40/40 KB   148/504 KB   140/200 KB   3/14 KB   40/40 KB   152/504 KB   140/200 KB   3/14 KB   40/40 KB   156/504 KB   140/200 KB   3/14 KB   40/40 KB   160/504 KB   140/200 KB   3/14 KB   40/40 KB   164/504 KB   140/200 KB   40/40 KB   132/504 KB   140/200 KB   3/14 KB   40/40 KB   148/504 KB   140/200 KB   3/14 KB   40/40 KB   168/504 KB   144/200 KB   3/14 KB   40/40 KB   168/504 KB   144/200 KB   3/14 KB   40/40 KB   172/504 KB   144/200 KB   3/14 KB   40/40 KB   176/504 KB   144/200 KB   5/14 KB   40/40 KB   176/504 KB   144/200 KB   8/14 KB   40/40 KB   176/504 KB   148/200 KB   8/14 KB   40/40 KB   176/504 KB   148/200 KB   11/14 KB   40/40 KB   176/504 KB   152/200 KB   11/14 KB   40/40 KB   176/504 KB   156/200 KB   11/14 KB   40/40 KB   176/504 KB   156/200 KB   13/14 KB   40/40 KB   176/504 KB   160/200 KB   13/14 KB   40/40 KB   176/504 KB   160/200 KB   14/14 KB   40/40 KB   176/504 KB   164/200 KB   14/14 KB   40/40 KB   176/504 KB   168/200 KB   14/14 KB   40/40 KB   176/504 KB   172/200 KB   14/14 KB   40/40 KB   176/504 KB   176/200 KB   14/14 KB   40/40 KB   176/504 KB   180/200 KB   14/14 KB   40/40 KB   176/504 KB   184/200 KB   14/14 KB   40/40 KB   176/504 KB   188/200 KB   14/14 KB   40/40 KB   176/504 KB   192/200 KB   14/14 KB   40/40 KB   176/504 KB   196/200 KB   14/14 KB   40/40 KB   176/504 KB   200/200 KB   14/14 KB   40/40 KB   176/504 KB   200/200 KB   14/14 KB   40/40 KB   180/504 KB   200/200 KB   14/14 KB   40/40 KB   184/504 KB   200/200 KB   14/14 KB   40/40 KB   188/504 KB   200/200 KB   14/14 KB   40/40 KB   192/504 KB                                                   Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-8/doxia-decoration-model-1.0-alpha-8.jar (40 KB at 211.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.jar
+200/200 KB   14/14 KB   196/504 KB              200/200 KB   14/14 KB   200/504 KB   200/200 KB   14/14 KB   204/504 KB   200/200 KB   14/14 KB   208/504 KB   200/200 KB   3/34 KB   14/14 KB   208/504 KB   200/200 KB   5/34 KB   14/14 KB   208/504 KB   200/200 KB   8/34 KB   14/14 KB   208/504 KB   200/200 KB   8/34 KB   14/14 KB   212/504 KB   200/200 KB   8/34 KB   14/14 KB   216/504 KB   200/200 KB   8/34 KB   14/14 KB   220/504 KB   200/200 KB   8/34 KB   14/14 KB   224/504 KB   200/200 KB   8/34 KB   14/14 KB   228/504 KB   200/200 KB   8/34 KB   14/14 KB   232/504 KB   200/200 KB   8/34 KB   14/14 KB   236/504 KB   200/200 KB   8/34 KB   14/14 KB   240/504 KB   200/200 KB   8/34 KB   14/14 KB   244/504 KB   200/200 KB   8/34 KB   14/14 KB   248/504 KB   200/200 KB   8/34 KB   14/14 KB   252/504 KB   200/200 KB   8/34 KB   14/14 KB   256/504 KB   200/200 KB   8/34 KB   14/14 KB   260/504 KB   200/200 KB   8/34 KB   14/14 KB   264/504 KB   200/200 KB   8/34 KB   14/14 KB   268/504 KB   200/200 KB   8/34 KB   14/14 KB   272/504 KB   200/200 KB   8/34 KB   14/14 KB   276/504 KB   200/200 KB   8/34 KB   14/14 KB   280/504 KB   200/200 KB   8/34 KB   14/14 KB   284/504 KB   200/200 KB   8/34 KB   14/14 KB   288/504 KB                                                  Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.jar (14 KB at 68.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.jar
+200/200 KB   8/34 KB   292/504 KB              200/200 KB   8/34 KB   296/504 KB   200/200 KB   8/34 KB   300/504 KB   200/200 KB   8/34 KB   304/504 KB   200/200 KB   8/34 KB   308/504 KB   200/200 KB   8/34 KB   312/504 KB   200/200 KB   8/34 KB   316/504 KB   200/200 KB   8/34 KB   320/504 KB   200/200 KB   8/34 KB   324/504 KB   200/200 KB   8/34 KB   328/504 KB   200/200 KB   8/34 KB   332/504 KB   200/200 KB   8/34 KB   336/504 KB   200/200 KB   8/34 KB   340/504 KB   200/200 KB   8/34 KB   344/504 KB   200/200 KB   8/34 KB   348/504 KB   200/200 KB   8/34 KB   352/504 KB   200/200 KB   8/34 KB   356/504 KB   200/200 KB   8/34 KB   360/504 KB   200/200 KB   8/34 KB   364/504 KB   200/200 KB   8/34 KB   368/504 KB   200/200 KB   8/34 KB   372/504 KB   200/200 KB   8/34 KB   376/504 KB   200/200 KB   8/34 KB   380/504 KB   200/200 KB   8/34 KB   384/504 KB   200/200 KB   11/34 KB   384/504 KB   200/200 KB   11/34 KB   388/504 KB   200/200 KB   13/34 KB   388/504 KB   200/200 KB   13/34 KB   392/504 KB   200/200 KB   13/34 KB   396/504 KB   200/200 KB   13/34 KB   400/504 KB   200/200 KB   16/34 KB   400/504 KB   200/200 KB   19/34 KB   400/504 KB   200/200 KB   21/34 KB   400/504 KB                                        21/34 KB   404/504 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-8/doxia-core-1.0-alpha-8.jar (200 KB at 945.1 KB/sec)
+24/34 KB   404/504 KB   Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.jar
+24/34 KB   408/504 KB   24/34 KB   412/504 KB   27/34 KB   412/504 KB   27/34 KB   416/504 KB   29/34 KB   416/504 KB   32/34 KB   416/504 KB   32/34 KB   420/504 KB   32/34 KB   424/504 KB   32/34 KB   428/504 KB   32/34 KB   432/504 KB   32/34 KB   436/504 KB   32/34 KB   440/504 KB   3/64 KB   32/34 KB   440/504 KB   3/64 KB   32/34 KB   444/504 KB   3/64 KB   32/34 KB   448/504 KB   5/64 KB   32/34 KB   448/504 KB   8/64 KB   32/34 KB   448/504 KB   8/64 KB   32/34 KB   452/504 KB   11/64 KB   32/34 KB   452/504 KB   11/64 KB   32/34 KB   456/504 KB   11/64 KB   32/34 KB   460/504 KB   13/64 KB   32/34 KB   460/504 KB   13/64 KB   32/34 KB   464/504 KB   16/64 KB   32/34 KB   464/504 KB   19/64 KB   32/34 KB   464/504 KB   21/64 KB   32/34 KB   464/504 KB   21/64 KB   32/34 KB   468/504 KB   21/64 KB   32/34 KB   472/504 KB   21/64 KB   32/34 KB   476/504 KB   24/64 KB   32/34 KB   476/504 KB   24/64 KB   32/34 KB   480/504 KB   27/64 KB   32/34 KB   480/504 KB   29/64 KB   32/34 KB   480/504 KB   32/64 KB   32/34 KB   480/504 KB   32/64 KB   32/34 KB   484/504 KB   32/64 KB   32/34 KB   488/504 KB   32/64 KB   32/34 KB   492/504 KB   32/64 KB   32/34 KB   496/504 KB   36/64 KB   32/34 KB   496/504 KB   40/64 KB   32/34 KB   496/504 KB   40/64 KB   32/34 KB   500/504 KB   44/64 KB   32/34 KB   500/504 KB   44/64 KB   32/34 KB   504/504 KB   48/64 KB   32/34 KB   504/504 KB   48/64 KB   32/34 KB   504/504 KB   48/64 KB   3/5 KB   32/34 KB   504/504 KB   48/64 KB   5/5 KB   32/34 KB   504/504 KB   48/64 KB   5/5 KB   32/34 KB   504/504 KB   48/64 KB   5/5 KB   34/34 KB   504/504 KB   52/64 KB   5/5 KB   34/34 KB   504/504 KB   56/64 KB   5/5 KB   34/34 KB   504/504 KB   60/64 KB   5/5 KB   34/34 KB   504/504 KB   64/64 KB   5/5 KB   34/34 KB   504/504 KB   64/64 KB   5/5 KB   34/34 KB   504/504 KB   64/64 KB   5/5 KB   4/12 KB   34/34 KB   504/504 KB   64/64 KB   5/5 KB   8/12 KB   34/34 KB   504/504 KB   64/64 KB   5/5 KB   12/12 KB   34/34 KB   504/504 KB   64/64 KB   5/5 KB   12/12 KB   34/34 KB   504/504 KB                                                          Downloaded: https://repo.maven.apache.org/maven2/bcel/bcel/5.1/bcel-5.1.jar (504 KB at 1991.4 KB/sec)
+                                                       Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.jar (5 KB at 19.8 KB/sec)
+                                                       Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-8/doxia-site-renderer-1.0-alpha-8.jar (34 KB at 128.7 KB/sec)
+                                                       Downloaded: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.jar (64 KB at 243.9 KB/sec)
+                                                       Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.jar (12 KB at 44.6 KB/sec)
+[INFO] artifact commons-math:commons-math: checking for updates from apache.snapshots
+[INFO] artifact commons-math:commons-math: checking for updates from central
+[INFO] Comparing to version: 1.2-RC2
+[ERROR] org.apache.commons.math.complex.Complex: Removed field INF
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex acos()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex asin()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex atan()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex cos()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex cosh()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'protected org.apache.commons.math.complex.Complex createComplex(double, double)' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex exp()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex log()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex pow(org.apache.commons.math.complex.Complex)' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex sin()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex sinh()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex sqrt()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex sqrt1z()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex tan()' has been removed
+[ERROR] org.apache.commons.math.complex.Complex: Method 'public org.apache.commons.math.complex.Complex tanh()' has been removed
+[ERROR] org.apache.commons.math.estimation.AbstractEstimator: Class org.apache.commons.math.estimation.AbstractEstimator removed
+[ERROR] org.apache.commons.math.estimation.EstimationException: Parameter 2 of 'public EstimationException(java.lang.String, java.lang.Object[])' has changed its type to java.lang.String[]
+[ERROR] org.apache.commons.math.estimation.Estimator: Method 'public double[][] getCovariances(org.apache.commons.math.estimation.EstimationProblem)' has been removed
+[ERROR] org.apache.commons.math.estimation.Estimator: Method 'public double[] guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem)' has been removed
+[ERROR] org.apache.commons.math.estimation.GaussNewtonEstimator: Removed org.apache.commons.math.estimation.AbstractEstimator from the list of superclasses
+[ERROR] org.apache.commons.math.estimation.LevenbergMarquardtEstimator: Removed org.apache.commons.math.estimation.AbstractEstimator from the list of superclasses
+[ERROR] org.apache.commons.math.estimation.SimpleEstimationProblem: Class org.apache.commons.math.estimation.SimpleEstimationProblem removed
+[ERROR] org.apache.commons.math.fraction.Fraction: Method 'public Fraction(double, int)' has been removed
+[ERROR] org.apache.commons.math.fraction.FractionConversionException: Method 'public FractionConversionException(double, long, long)' has been removed
+[ERROR] org.apache.commons.math.geometry.NotARotationMatrixException: Parameter 2 of 'public NotARotationMatrixException(java.lang.String, java.lang.Object[])' has changed its type to java.lang.String[]
+[ERROR] org.apache.commons.math.geometry.Vector3D: Method 'public org.apache.commons.math.geometry.Vector3D scalarMultiply(double)' has been removed
+[ERROR] org.apache.commons.math.ode.AbstractStepInterpolator: Method 'public org.apache.commons.math.ode.StepInterpolator copy()' has been removed
+[ERROR] org.apache.commons.math.ode.AbstractStepInterpolator: Method 'protected org.apache.commons.math.ode.StepInterpolator doCopy()' has been removed
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: Removed field stepSize
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: Removed field stepStart
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: In method 'public void addSwitchingFunction(org.apache.commons.math.ode.SwitchingFunction, double, double, int)' the number of arguments has changed
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: Method 'public double getCurrentSignedStepsize()' has been removed
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: Method 'public double getCurrentStepStart()' has been removed
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: Method 'protected void resetInternalState()' has been removed
+[ERROR] org.apache.commons.math.ode.AdaptiveStepsizeIntegrator: Method 'protected void sanityChecks(org.apache.commons.math.ode.FirstOrderDifferentialEquations, double, double[], double, double[])' has been removed
+[ERROR] org.apache.commons.math.ode.DormandPrince54Integrator: Removed org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator from the list of superclasses
+[ERROR] org.apache.commons.math.ode.DormandPrince853Integrator: Removed org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator from the list of superclasses
+[ERROR] org.apache.commons.math.ode.DummyStepHandler: Removed java.io.Serializable from the set of implemented interfaces
+[ERROR] org.apache.commons.math.ode.DummyStepInterpolator: Accessibility of method 'public DummyStepInterpolator(org.apache.commons.math.ode.DummyStepInterpolator)' has been decreased from public to protected
+[ERROR] org.apache.commons.math.ode.DummyStepInterpolator: Method 'protected org.apache.commons.math.ode.StepInterpolator doCopy()' has been removed
+[ERROR] org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator: Class org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator removed
+[ERROR] org.apache.commons.math.ode.FirstOrderIntegrator: In method 'public void addSwitchingFunction(org.apache.commons.math.ode.SwitchingFunction, double, double, int)' the number of arguments has changed
+[ERROR] org.apache.commons.math.ode.FirstOrderIntegrator: Method 'public double getCurrentSignedStepsize()' has been removed
+[ERROR] org.apache.commons.math.ode.FirstOrderIntegrator: Method 'public double getCurrentStepStart()' has been removed
+[ERROR] org.apache.commons.math.ode.GraggBulirschStoerIntegrator: In method 'public void addSwitchingFunction(org.apache.commons.math.ode.SwitchingFunction, double, double, int)' the number of arguments has changed
+[ERROR] org.apache.commons.math.ode.HighamHall54Integrator: Removed org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator from the list of superclasses
+[ERROR] org.apache.commons.math.ode.IntegratorException: Parameter 2 of 'public IntegratorException(java.lang.String, java.lang.Object[])' has changed its type to java.lang.String[]
+[ERROR] org.apache.commons.math.ode.IntegratorException: Method 'public IntegratorException(java.lang.Throwable)' has been removed
+[ERROR] org.apache.commons.math.ode.RungeKuttaIntegrator: In method 'protected RungeKuttaIntegrator(double[], double[][], double[], org.apache.commons.math.ode.RungeKuttaStepInterpolator, double)' the number of arguments has changed
+[ERROR] org.apache.commons.math.ode.RungeKuttaIntegrator: In method 'public void addSwitchingFunction(org.apache.commons.math.ode.SwitchingFunction, double, double, int)' the number of arguments has changed
+[ERROR] org.apache.commons.math.ode.RungeKuttaIntegrator: Method 'public double getCurrentSignedStepsize()' has been removed
+[ERROR] org.apache.commons.math.ode.RungeKuttaIntegrator: Method 'public double getCurrentStepStart()' has been removed
+[ERROR] org.apache.commons.math.ode.StepInterpolator: Method 'public org.apache.commons.math.ode.StepInterpolator copy()' has been removed
+[ERROR] org.apache.commons.math.ode.SwitchingFunctionsHandler: In method 'public void add(org.apache.commons.math.ode.SwitchingFunction, double, double, int)' the number of arguments has changed
+[ERROR] org.apache.commons.math.optimization.DirectSearchOptimizer: Method 'public org.apache.commons.math.optimization.PointCostPair minimize(org.apache.commons.math.optimization.CostFunction, int, org.apache.commons.math.optimization.ConvergenceChecker, double[], double[])' has been removed
+[ERROR] org.apache.commons.math.optimization.DirectSearchOptimizer: Method 'public org.apache.commons.math.optimization.PointCostPair minimize(org.apache.commons.math.optimization.CostFunction, int, org.apache.commons.math.optimization.ConvergenceChecker, double[], double[], int, long)' has been removed
+[ERROR] org.apache.commons.math.optimization.DirectSearchOptimizer: Method 'public org.apache.commons.math.optimization.PointCostPair minimize(org.apache.commons.math.optimization.CostFunction, int, org.apache.commons.math.optimization.ConvergenceChecker, double[][])' has been removed
+[ERROR] org.apache.commons.math.optimization.DirectSearchOptimizer: Method 'public org.apache.commons.math.optimization.PointCostPair minimize(org.apache.commons.math.optimization.CostFunction, int, org.apache.commons.math.optimization.ConvergenceChecker, double[][], int, long)' has been removed
+[ERROR] org.apache.commons.math.optimization.DirectSearchOptimizer: Method 'public org.apache.commons.math.optimization.PointCostPair minimize(org.apache.commons.math.optimization.CostFunction, int, org.apache.commons.math.optimization.ConvergenceChecker, org.apache.commons.math.random.RandomVectorGenerator)' has been removed
+[ERROR] org.apache.commons.math.optimization.DirectSearchOptimizer: Method 'public org.apache.commons.math.optimization.PointCostPair minimize(org.apache.commons.math.optimization.CostFunction, int, org.apache.commons.math.optimization.ConvergenceChecker, org.apache.commons.math.random.RandomVectorGenerator, int)' has been removed
+[ERROR] org.apache.commons.math.optimization.PointCostPair: Method 'public double getCost()' has been removed
+[ERROR] org.apache.commons.math.optimization.PointCostPair: Method 'public double[] getPoint()' has been removed
+[ERROR] org.apache.commons.math.random.AbstractRandomGenerator: Removed java.io.Serializable from the set of implemented interfaces
+[ERROR] org.apache.commons.math.random.RandomGenerator: Removed java.io.Serializable from the set of implemented interfaces
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Added abstract modifier to class
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Removed field eDA
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Removed field windowSize
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public DescriptiveStatistics(int)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getGeometricMeanImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getKurtosisImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getMaxImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getMeanImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getMinImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getPercentileImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getSkewnessImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getSumImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getSumsqImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public org.apache.commons.math.stat.descriptive.UnivariateStatistic getVarianceImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setGeometricMeanImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setKurtosisImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setMaxImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setMeanImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setMinImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setPercentileImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setSkewnessImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setSumImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setSumsqImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.DescriptiveStatistics: Method 'public void setVarianceImpl(org.apache.commons.math.stat.descriptive.UnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.MultivariateSummaryStatistics: Class org.apache.commons.math.stat.descriptive.MultivariateSummaryStatistics removed
+[ERROR] org.apache.commons.math.stat.descriptive.StatisticalMultivariateSummary: Class org.apache.commons.math.stat.descriptive.StatisticalMultivariateSummary removed
+[ERROR] org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic: Removed java.io.Serializable from the set of implemented interfaces
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Added abstract modifier to class
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field geoMean
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field max
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field mean
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field min
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field n
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field secondMoment
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field sum
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field sumLog
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field sumsq
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Removed field variance
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getGeoMeanImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getMaxImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getMeanImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getMinImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getSumImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getSumLogImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public double getSumOfLogs()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getSumsqImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getVarianceImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setGeoMeanImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setMaxImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setMeanImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setMinImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setSumImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setSumLogImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setSumsqImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SummaryStatistics: Method 'public void setVarianceImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatistics: Class org.apache.commons.math.stat.descriptive.SynchronizedDescriptiveStatistics removed
+[ERROR] org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatistics: Class org.apache.commons.math.stat.descriptive.SynchronizedMultivariateSummaryStatistics removed
+[ERROR] org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatistics: Class org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatistics removed
+[ERROR] org.apache.commons.math.stat.descriptive.UnivariateStatistic: Removed java.io.Serializable from the set of implemented interfaces
+[ERROR] org.apache.commons.math.stat.descriptive.moment.GeometricMean: Method 'public GeometricMean(org.apache.commons.math.stat.descriptive.summary.SumOfLogs)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.moment.GeometricMean: Method 'public org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic getSumLogImpl()' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.moment.GeometricMean: Method 'public void setSumLogImpl(org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)' has been removed
+[ERROR] org.apache.commons.math.stat.descriptive.moment.VectorialCovariance: In method 'public VectorialCovariance(int, boolean)' the number of arguments has changed
+[ERROR] org.apache.commons.math.stat.descriptive.moment.VectorialCovariance: Method 'public void clear()' has been removed
+[ERROR] org.apache.commons.math.stat.inference.ChiSquareTest: Method 'public double chiSquareDataSetsComparison(long[], long[])' has been added to an interface
+[ERROR] org.apache.commons.math.stat.inference.ChiSquareTest: Method 'public double chiSquareTestDataSetsComparison(long[], long[])' has been added to an interface
+[ERROR] org.apache.commons.math.stat.inference.ChiSquareTest: Method 'public boolean chiSquareTestDataSetsComparison(long[], long[], double)' has been added to an interface
+[ERROR] org.apache.commons.math.stat.inference.ChiSquareTestImpl: Removed org.apache.commons.math.stat.inference.UnknownDistributionChiSquareTest from the set of implemented interfaces
+[ERROR] org.apache.commons.math.stat.inference.OneWayAnova: Class org.apache.commons.math.stat.inference.OneWayAnova removed
+[ERROR] org.apache.commons.math.stat.inference.OneWayAnovaImpl: Class org.apache.commons.math.stat.inference.OneWayAnovaImpl removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public org.apache.commons.math.stat.inference.OneWayAnova getOneWayAnova()' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public org.apache.commons.math.stat.inference.UnknownDistributionChiSquareTest getUnknownDistributionChiSquareTest()' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public double oneWayAnovaFValue(java.util.Collection)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public double oneWayAnovaPValue(java.util.Collection)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public boolean oneWayAnovaTest(java.util.Collection, double)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public void setChiSquareTest(org.apache.commons.math.stat.inference.TTest)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public void setChiSquareTest(org.apache.commons.math.stat.inference.ChiSquareTest)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public void setOneWayAnova(org.apache.commons.math.stat.inference.OneWayAnova)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.TestUtils: Method 'public void setUnknownDistributionChiSquareTest(org.apache.commons.math.stat.inference.UnknownDistributionChiSquareTest)' has been removed
+[ERROR] org.apache.commons.math.stat.inference.UnknownDistributionChiSquareTest: Class org.apache.commons.math.stat.inference.UnknownDistributionChiSquareTest removed
+[ERROR] org.apache.commons.math.util.MathUtils: Method 'public long addAndCheck(long, long)' has been removed
+[ERROR] org.apache.commons.math.util.MathUtils: Method 'public boolean equals(double[], double[])' has been removed
+[ERROR] org.apache.commons.math.util.MathUtils: Method 'public int hash(double[])' has been removed
+[ERROR] org.apache.commons.math.util.MathUtils: Method 'public long mulAndCheck(long, long)' has been removed
+[ERROR] org.apache.commons.math.util.MathUtils: Method 'public double normalizeAngle(double, double)' has been removed
+[ERROR] org.apache.commons.math.util.MathUtils: Method 'public long subAndCheck(long, long)' has been removed
+[ERROR] org.apache.commons.math.util.NumberTransformer: Removed java.io.Serializable from the set of implemented interfaces
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.172 s
+[INFO] Finished at: 2019-01-15T02:55:50+00:00
+[INFO] Final Memory: 24M/390M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:clirr-maven-plugin:2.0:check (default) on project commons-math: There were 152 errors. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

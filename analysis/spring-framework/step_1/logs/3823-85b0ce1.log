@@ -1,0 +1,105 @@
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:objenesisRepackJar
+:spring-core:compileJava
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJava
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovy
+:spring-beans-groovy:processResources UP-TO-DATE
+:spring-beans-groovy:classes
+:spring-beans:jar
+:spring-aop:compileJava
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-expression:compileJava
+:spring-expression:processResources
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileJava
+:spring-instrument:processResources UP-TO-DATE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileJava
+:spring-context:compileGroovy UP-TO-DATE
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileJava
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileJava
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileJava
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileJava
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileJava
+:spring-web:compileGroovy UP-TO-DATE
+:spring-web:processResources
+:spring-web:classes
+:spring-web:jar
+:spring-orm:compileJava
+:spring-orm:processResources UP-TO-DATE
+:spring-orm:classes
+:spring-orm:jar
+:spring-aspects:compileJava
+[ant:iajc] OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000ef500000, 67108864, 0) failed; error='Cannot allocate memory' (errno=12)
+:spring-aspects:compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/home/ubuntu/bugs/spring-framework/spring-aspects/aspects.gradle' line: 40
+
+* What went wrong:
+Execution failed for task ':spring-aspects:compileJava'.
+> compile errors: 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 29.734 secs

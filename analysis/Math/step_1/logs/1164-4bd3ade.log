@@ -1,0 +1,63 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (javadoc.resources) @ commons-math3 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.1:process (default) @ commons-math3 ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (default) @ commons-math3 ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/bugs/projects/Math && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/bugs/projects/Math
+[INFO] Storing buildNumber: ?????? at timestamp: 1547491645166
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/bugs/projects/Math && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/bugs/projects/Math
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ commons-math3 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ commons-math3 ---
+[INFO] Compiling 614 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/linear/FieldLUDecomposition.java:[349,17] error: data has private access in ArrayFieldVector
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/linear/FieldLUDecomposition.java:[350,54] error: data has private access in ArrayFieldVector
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/linear/FieldLUDecomposition.java:[363,27] error: data has private access in ArrayFieldVector
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.658 s
+[INFO] Finished at: 2019-01-14T18:47:31+00:00
+[INFO] Final Memory: 24M/477M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile) on project commons-math3: Compilation failure: Compilation failure:
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/linear/FieldLUDecomposition.java:[349,17] error: data has private access in ArrayFieldVector
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/linear/FieldLUDecomposition.java:[350,54] error: data has private access in ArrayFieldVector
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/linear/FieldLUDecomposition.java:[363,27] error: data has private access in ArrayFieldVector
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

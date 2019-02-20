@@ -1,0 +1,67 @@
+sed: can't read buildSrc/build.gradle: No such file or directory
+Downloading http://services.gradle.org/distributions/gradle-1.5-bin.zip
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /home/michel/.gradle/wrapper/dists/gradle-1.5-bin.zip to /home/michel/.gradle/wrapper/dists
+Set executable permissions for: /home/michel/.gradle/wrapper/dists/gradle-1.5/bin/gradle
+Download http://repo1.maven.org/maven2/net/saliman/gradle-cobertura-plugin/2.0.0/gradle-cobertura-plugin-2.0.0.pom
+Download http://kt3k.github.io/repository/maven/release/org/kt3k/gradle/plugin/coveralls-gradle-plugin/0.1.4/coveralls-gradle-plugin-0.1.4.pom
+Download http://repo1.maven.org/maven2/net/sourceforge/cobertura/cobertura/2.0.3/cobertura-2.0.3.pom
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.0.6/groovy-all-2.0.6.pom
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.pom
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3/httpcomponents-client-4.3.pom
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/modules/http-builder/http-builder/0.5.0-RC2/http-builder-0.5.0-RC2.pom
+Download http://repo1.maven.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.pom
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.pom
+Download http://repo1.maven.org/maven2/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy/1.6.9/groovy-1.6.9.pom
+Download http://repo1.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.9/nekohtml-1.9.9.pom
+Download http://repo1.maven.org/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.pom
+Download http://repo1.maven.org/maven2/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.pom
+Download http://repo1.maven.org/maven2/xom/xom/1.0b3/xom-1.0b3.pom
+Download http://repo1.maven.org/maven2/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.pom
+Download http://repo1.maven.org/maven2/asm/asm/2.2.3/asm-2.2.3.pom
+Download http://repo1.maven.org/maven2/asm/asm-parent/2.2.3/asm-parent-2.2.3.pom
+Download http://repo1.maven.org/maven2/asm/asm-util/2.2.3/asm-util-2.2.3.pom
+Download http://repo1.maven.org/maven2/asm/asm-analysis/2.2.3/asm-analysis-2.2.3.pom
+Download http://repo1.maven.org/maven2/asm/asm-tree/2.2.3/asm-tree-2.2.3.pom
+Download http://repo1.maven.org/maven2/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.pom
+Download http://repo1.maven.org/maven2/org/ccil/cowan/tagsoup/tagsoup/0.9.7/tagsoup-0.9.7.pom
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.pom
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3/httpcomponents-core-4.3.pom
+Download http://repo1.maven.org/maven2/net/saliman/gradle-cobertura-plugin/2.0.0/gradle-cobertura-plugin-2.0.0.jar
+Download http://kt3k.github.io/repository/maven/release/org/kt3k/gradle/plugin/coveralls-gradle-plugin/0.1.4/coveralls-gradle-plugin-0.1.4.jar
+Download http://repo1.maven.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.jar
+Download http://repo1.maven.org/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar
+Download http://repo1.maven.org/maven2/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar
+Download http://repo1.maven.org/maven2/org/ccil/cowan/tagsoup/tagsoup/0.9.7/tagsoup-0.9.7.jar
+Download http://repo1.maven.org/maven2/xom/xom/1.0b3/xom-1.0b3.jar
+Download http://repo1.maven.org/maven2/net/sourceforge/cobertura/cobertura/2.0.3/cobertura-2.0.3.jar
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.0.6/groovy-all-2.0.6.jar
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.jar
+Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.jar
+Download http://repo1.maven.org/maven2/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar
+Download http://repo1.maven.org/maven2/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
+Download http://repo1.maven.org/maven2/asm/asm/2.2.3/asm-2.2.3.jar
+Download http://repo1.maven.org/maven2/asm/asm-tree/2.2.3/asm-tree-2.2.3.jar
+Download http://repo1.maven.org/maven2/asm/asm-util/2.2.3/asm-util-2.2.3.jar
+Download http://repo1.maven.org/maven2/asm/asm-analysis/2.2.3/asm-analysis-2.2.3.jar
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/groovy/1.6.9/groovy-1.6.9.jar
+Download http://repo1.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.9/nekohtml-1.9.9.jar
+Download http://repo1.maven.org/maven2/org/codehaus/groovy/modules/http-builder/http-builder/0.5.0-RC2/http-builder-0.5.0-RC2.jar
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/michel/Investigacion/bugs/projects/Mockito/build.gradle' line: 78
+
+* What went wrong:
+A problem occurred evaluating root project 'mockito'.
+> Could not find method create() for arguments [{name=instrument, type=class net.saliman.gradle.plugin.cobertura.InstrumentTask}, net.saliman.gradle.plugin.cobertura.CoberturaPlugin$_apply_closure3@80574d6] on task set.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 1 mins 2.87 secs

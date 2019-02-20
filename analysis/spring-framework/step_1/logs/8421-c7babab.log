@@ -1,0 +1,49 @@
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:compileJava
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:objenesisRepackJar
+:spring-core:jar
+:spring-beans:compileJava
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovywarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:spring-beans-groovy:processResources UP-TO-DATE
+:spring-beans-groovy:classes
+:spring-beans:jar
+:spring-aop:compileJava/home/ubuntu/bugs/spring-framework/spring-aop/src/main/java/org/springframework/aop/aspectj/RuntimeTestWalker.java:84: error: invalid method declaration; return type required
+	public RuntimeTestWalker(ShadowMatch shadowMatch) {
+	       ^
+1 error
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-aop:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 30.421 secs

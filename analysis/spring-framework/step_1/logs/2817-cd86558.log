@@ -1,0 +1,244 @@
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:buildSrc:compileJava NO-SOURCE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava NO-SOURCE
+:buildSrc:compileTestGroovy NO-SOURCE
+:buildSrc:processTestResources NO-SOURCE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test NO-SOURCE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:objenesisRepackJar
+:spring-core:compileKotlin
+:spring-core:compileJava
+:spring-core:copyMainKotlinClasses
+:spring-core:processResources NO-SOURCE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileKotlin
+Using kotlin incremental compilation
+:spring-beans:compileJava
+:spring-beans:copyMainKotlinClasses
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileKotlin
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovy
+:spring-beans-groovy:copyMainKotlinClasses
+:spring-beans-groovy:processResources NO-SOURCE
+:spring-beans-groovy:classes
+:spring-beans:jar
+:spring-aop:compileKotlin
+:spring-aop:compileJava
+:spring-aop:copyMainKotlinClasses
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-expression:compileKotlin
+:spring-expression:compileJava
+:spring-expression:copyMainKotlinClasses
+:spring-expression:processResources
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileKotlin
+:spring-instrument:compileJava
+:spring-instrument:copyMainKotlinClasses
+:spring-instrument:processResources NO-SOURCE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileKotlin
+Using kotlin incremental compilation
+:spring-context:compileJava
+:spring-context:compileGroovy NO-SOURCE
+:spring-context:copyMainKotlinClasses
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileKotlin
+:spring-tx:compileJava
+:spring-tx:copyMainKotlinClasses
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileKotlin
+Using kotlin incremental compilation
+:spring-jdbc:compileJava
+:spring-jdbc:copyMainKotlinClasses
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileKotlin
+:spring-context-support:compileJava
+:spring-context-support:copyMainKotlinClasses
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileKotlin
+:spring-oxm:compileJava
+:spring-oxm:copyMainKotlinClasses
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileKotlin
+Using kotlin incremental compilation
+:spring-web:compileJava/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:25: error: MonoSource is not public in reactor.core.publisher; cannot be accessed from outside package
+import reactor.core.publisher.MonoSource;
+                             ^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:42: error: cannot find symbol
+public class ChannelSendOperator<T> extends MonoSource<T, Void> {
+                                            ^
+  symbol: class MonoSource
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractServerHttpResponse.java:147: error: incompatible types: cannot infer type arguments for ChannelSendOperator<>
+		return new ChannelSendOperator<>(body,
+		                              ^
+    reason: no instance(s) of type variable(s) T exist so that ChannelSendOperator<T> conforms to Mono<Void>
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractServerHttpResponse.java:153: error: incompatible types: cannot infer type arguments for ChannelSendOperator<>
+		return new ChannelSendOperator<>(body,
+		                              ^
+    reason: no instance(s) of type variable(s) T exist so that ChannelSendOperator<T> conforms to Mono<Void>
+  where T is a type-variable:
+    T extends Object declared in class ChannelSendOperator
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractListenerReadPublisher.java:222: error: cannot find symbol
+				if (Operators.checkRequest(n, publisher.subscriber)) {
+				             ^
+  symbol:   method checkRequest(long,Subscriber<CAP#1>)
+  location: class Operators
+  where T is a type-variable:
+    T extends Object declared in method <T>request(AbstractListenerReadPublisher<T>,long)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object super: T from capture of ? super T
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractListenerReadPublisher.java:223: error: cannot find symbol
+					Operators.addAndGet(DEMAND_FIELD_UPDATER, publisher, n);
+					         ^
+  symbol:   method addAndGet(AtomicLongFieldUpdater<AbstractListenerReadPublisher>,AbstractListenerReadPublisher<T>,long)
+  location: class Operators
+  where T is a type-variable:
+    T extends Object declared in method <T>request(AbstractListenerReadPublisher<T>,long)
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractListenerReadPublisher.java:240: error: cannot find symbol
+				if (Operators.checkRequest(n, publisher.subscriber)) {
+				             ^
+  symbol:   method checkRequest(long,Subscriber<CAP#1>)
+  location: class Operators
+  where T is a type-variable:
+    T extends Object declared in method <T>request(AbstractListenerReadPublisher<T>,long)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object super: T from capture of ? super T
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractListenerReadPublisher.java:241: error: cannot find symbol
+					Operators.addAndGet(DEMAND_FIELD_UPDATER, publisher, n);
+					         ^
+  symbol:   method addAndGet(AtomicLongFieldUpdater<AbstractListenerReadPublisher>,AbstractListenerReadPublisher<T>,long)
+  location: class Operators
+  where T is a type-variable:
+    T extends Object declared in method <T>request(AbstractListenerReadPublisher<T>,long)
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractListenerReadPublisher.java:268: error: cannot find symbol
+				if (Operators.checkRequest(n, publisher.subscriber)) {
+				             ^
+  symbol:   method checkRequest(long,Subscriber<CAP#1>)
+  location: class Operators
+  where T is a type-variable:
+    T extends Object declared in method <T>request(AbstractListenerReadPublisher<T>,long)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object super: T from capture of ? super T
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/AbstractListenerReadPublisher.java:269: error: cannot find symbol
+					Operators.addAndGet(DEMAND_FIELD_UPDATER, publisher, n);
+					         ^
+  symbol:   method addAndGet(AtomicLongFieldUpdater<AbstractListenerReadPublisher>,AbstractListenerReadPublisher<T>,long)
+  location: class Operators
+  where T is a type-variable:
+    T extends Object declared in method <T>request(AbstractListenerReadPublisher<T>,long)
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/WriteResultPublisher.java:147: error: cannot find symbol
+				Operators.checkRequest(n, publisher.subscriber);
+				         ^
+  symbol:   method checkRequest(long,Subscriber<CAP#1>)
+  location: class Operators
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object super: Void from capture of ? super Void
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:53: error: method does not override or implement a method from a supertype
+	@Override
+	^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:55: error: cannot find symbol
+		this.source.subscribe(new WriteWithBarrier(s));
+		    ^
+  symbol: variable source
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:234: error: incompatible types: Subscription cannot be converted to Throwable
+				doOnSubscriberError(Operators.onOperatorError(subscription, throwable));
+				                                              ^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:243: error: no suitable method found for onOperatorError(Throwable)
+				doOnSubscriberError(Operators.onOperatorError(throwable));
+				                             ^
+    method Operators.onOperatorError(Throwable,Context) is not applicable
+      (actual and formal argument lists differ in length)
+    method Operators.onOperatorError(Subscription,Throwable,Context) is not applicable
+      (actual and formal argument lists differ in length)
+    method Operators.onOperatorError(Subscription,Throwable,Object,Context) is not applicable
+      (actual and formal argument lists differ in length)
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:250: error: cannot find symbol
+				throw Exceptions.argumentIsNullException();
+				                ^
+  symbol:   method argumentIsNullException()
+  location: class Exceptions
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:258: error: cannot find symbol
+				throw Exceptions.argumentIsNullException();
+				                ^
+  symbol:   method argumentIsNullException()
+  location: class Exceptions
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:264: error: incompatible types: I cannot be converted to Context
+				doOnSubscriberError(Operators.onOperatorError(subscription, throwable, i));
+				                                                                       ^
+  where I is a type-variable:
+    I extends Object declared in class SubscriberAdapter
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:276: error: incompatible types: Subscription cannot be converted to Throwable
+					doOnSubscriberError(Operators.onOperatorError(s, throwable));
+					                                              ^
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:284: error: cannot find symbol
+				Operators.checkRequest(n);
+				         ^
+  symbol:   method checkRequest(long)
+  location: class Operators
+/home/ubuntu/bugs/spring-framework/spring-web/src/main/java/org/springframework/http/server/reactive/ChannelSendOperator.java:288: error: no suitable method found for onOperatorError(Throwable)
+				doOnSubscriberError(Operators.onOperatorError(throwable));
+				                             ^
+    method Operators.onOperatorError(Throwable,Context) is not applicable
+      (actual and formal argument lists differ in length)
+    method Operators.onOperatorError(Subscription,Throwable,Context) is not applicable
+      (actual and formal argument lists differ in length)
+    method Operators.onOperatorError(Subscription,Throwable,Object,Context) is not applicable
+      (actual and formal argument lists differ in length)
+ FAILED
+:spring-web:copyMainKotlinClasses SKIPPED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-web:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 28.182 secs

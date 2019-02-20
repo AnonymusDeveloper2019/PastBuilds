@@ -1,0 +1,8 @@
+{
+    "project": "Closure",
+    "init_commit": "49e9565febba904484396e2aef7dbe86f55e9cc5", 
+    "last_commit": "NO",
+    "number_of_builds": 3000,
+    "step": 2,
+    "absolute_path_to_base_report": "/home/michel/Investigacion/bugs/analysis/Closure/step_1/report_step_1.csv"
+}

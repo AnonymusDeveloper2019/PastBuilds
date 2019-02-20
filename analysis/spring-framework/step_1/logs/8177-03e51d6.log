@@ -1,0 +1,91 @@
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:compileJava
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:objenesisRepackJar
+:spring-core:jar
+:spring-beans:compileJava/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:257: error: cannot find symbol
+			PropertyDescriptorUtils.copyNonMethodProperties(original, this);
+			^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimplePropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:264: error: cannot find symbol
+			this.propertyType = PropertyDescriptorUtils.findPropertyType(readMethod, writeMethod);
+			                    ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimplePropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:291: error: cannot find symbol
+					this.propertyType = PropertyDescriptorUtils.findPropertyType(this.readMethod, this.writeMethod);
+					                    ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimplePropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:313: error: cannot find symbol
+					PropertyDescriptorUtils.equals(this, (PropertyDescriptor) other)));
+					^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimplePropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:348: error: cannot find symbol
+			PropertyDescriptorUtils.copyNonMethodProperties(original, this);
+			^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimpleIndexedPropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:357: error: cannot find symbol
+			this.propertyType = PropertyDescriptorUtils.findPropertyType(readMethod, writeMethod);
+			                    ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimpleIndexedPropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:360: error: cannot find symbol
+			this.indexedPropertyType = PropertyDescriptorUtils.findIndexedPropertyType(
+			                           ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimpleIndexedPropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:388: error: cannot find symbol
+					this.propertyType = PropertyDescriptorUtils.findPropertyType(this.readMethod, this.writeMethod);
+					                    ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimpleIndexedPropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:421: error: cannot find symbol
+					this.indexedPropertyType = PropertyDescriptorUtils.findIndexedPropertyType(
+					                           ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimpleIndexedPropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/ExtendedBeanInfo.java:456: error: cannot find symbol
+					PropertyDescriptorUtils.equals(this, otherPd));
+					^
+  symbol:   variable PropertyDescriptorUtils
+  location: class SimpleIndexedPropertyDescriptor
+/home/ubuntu/bugs/spring-framework/spring-beans/src/main/java/org/springframework/beans/GenericTypeAwarePropertyDescriptor.java:165: error: cannot find symbol
+		return (getBeanClass().equals(otherPd.getBeanClass()) && PropertyDescriptorUtils.equals(this, otherPd));
+		                                                         ^
+  symbol:   variable PropertyDescriptorUtils
+  location: class GenericTypeAwarePropertyDescriptor
+11 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-beans:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 26.235 secs

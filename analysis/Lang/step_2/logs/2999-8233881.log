@@ -1,0 +1,254 @@
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+init:
+     [echo] -------- commons-lang 2.0-rc1 --------
+
+prepare:
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/classes
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/conf
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/tests
+
+static:
+     [copy] Copying 1 file to /home/ubuntu/bugs/projects/Lang/target/conf
+
+compile:
+    [javac] /home/ubuntu/bugs/projects/Lang/build.xml:45: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 66 source files to /home/ubuntu/bugs/projects/Lang/target/classes
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:98: error: unmappable character for encoding ASCII
+    [javac]         {"copy", "169"}, // ? - copyright sign
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:103: error: unmappable character for encoding ASCII
+    [javac]         {"reg", "174"}, // ? - registered trademark sign
+    [javac]                            ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:121: error: unmappable character for encoding ASCII
+    [javac]         {"Agrave", "192"}, // ? - uppercase A, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:122: error: unmappable character for encoding ASCII
+    [javac]         {"Aacute", "193"}, // ? - uppercase A, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:123: error: unmappable character for encoding ASCII
+    [javac]         {"Acirc", "194"}, // ? - uppercase A, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:124: error: unmappable character for encoding ASCII
+    [javac]         {"Atilde", "195"}, // ? - uppercase A, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:125: error: unmappable character for encoding ASCII
+    [javac]         {"Auml", "196"}, // ? - uppercase A, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:126: error: unmappable character for encoding ASCII
+    [javac]         {"Aring", "197"}, // ? - uppercase A, ring
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:127: error: unmappable character for encoding ASCII
+    [javac]         {"AElig", "198"}, // ? - uppercase AE
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:128: error: unmappable character for encoding ASCII
+    [javac]         {"Ccedil", "199"}, // ? - uppercase C, cedilla
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:129: error: unmappable character for encoding ASCII
+    [javac]         {"Egrave", "200"}, // ? - uppercase E, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:130: error: unmappable character for encoding ASCII
+    [javac]         {"Eacute", "201"}, // ? - uppercase E, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:131: error: unmappable character for encoding ASCII
+    [javac]         {"Ecirc", "202"}, // ? - uppercase E, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:132: error: unmappable character for encoding ASCII
+    [javac]         {"Euml", "203"}, // ? - uppercase E, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:133: error: unmappable character for encoding ASCII
+    [javac]         {"Igrave", "204"}, // ? - uppercase I, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:134: error: unmappable character for encoding ASCII
+    [javac]         {"Iacute", "205"}, // ? - uppercase I, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:135: error: unmappable character for encoding ASCII
+    [javac]         {"Icirc", "206"}, // ? - uppercase I, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:136: error: unmappable character for encoding ASCII
+    [javac]         {"Iuml", "207"}, // ? - uppercase I, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:137: error: unmappable character for encoding ASCII
+    [javac]         {"ETH", "208"}, // ? - uppercase Eth, Icelandic
+    [javac]                            ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:138: error: unmappable character for encoding ASCII
+    [javac]         {"Ntilde", "209"}, // ? - uppercase N, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:139: error: unmappable character for encoding ASCII
+    [javac]         {"Ograve", "210"}, // ? - uppercase O, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:140: error: unmappable character for encoding ASCII
+    [javac]         {"Oacute", "211"}, // ? - uppercase O, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:141: error: unmappable character for encoding ASCII
+    [javac]         {"Ocirc", "212"}, // ? - uppercase O, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:142: error: unmappable character for encoding ASCII
+    [javac]         {"Otilde", "213"}, // ? - uppercase O, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:143: error: unmappable character for encoding ASCII
+    [javac]         {"Ouml", "214"}, // ? - uppercase O, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:145: error: unmappable character for encoding ASCII
+    [javac]         {"Oslash", "216"}, // ? - uppercase O, slash
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:146: error: unmappable character for encoding ASCII
+    [javac]         {"Ugrave", "217"}, // ? - uppercase U, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:147: error: unmappable character for encoding ASCII
+    [javac]         {"Uacute", "218"}, // ? - uppercase U, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:148: error: unmappable character for encoding ASCII
+    [javac]         {"Ucirc", "219"}, // ? - uppercase U, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:149: error: unmappable character for encoding ASCII
+    [javac]         {"Uuml", "220"}, // ? - uppercase U, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:150: error: unmappable character for encoding ASCII
+    [javac]         {"Yacute", "221"}, // ? - uppercase Y, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:151: error: unmappable character for encoding ASCII
+    [javac]         {"THORN", "222"}, // ? - uppercase THORN, Icelandic
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:152: error: unmappable character for encoding ASCII
+    [javac]         {"szlig", "223"}, // ? - lowercase sharps, German
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:153: error: unmappable character for encoding ASCII
+    [javac]         {"agrave", "224"}, // ? - lowercase a, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:154: error: unmappable character for encoding ASCII
+    [javac]         {"aacute", "225"}, // ? - lowercase a, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:155: error: unmappable character for encoding ASCII
+    [javac]         {"acirc", "226"}, // ? - lowercase a, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:156: error: unmappable character for encoding ASCII
+    [javac]         {"atilde", "227"}, // ? - lowercase a, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:157: error: unmappable character for encoding ASCII
+    [javac]         {"auml", "228"}, // ? - lowercase a, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:158: error: unmappable character for encoding ASCII
+    [javac]         {"aring", "229"}, // ? - lowercase a, ring
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:159: error: unmappable character for encoding ASCII
+    [javac]         {"aelig", "230"}, // ? - lowercase ae
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:160: error: unmappable character for encoding ASCII
+    [javac]         {"ccedil", "231"}, // ? - lowercase c, cedilla
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:161: error: unmappable character for encoding ASCII
+    [javac]         {"egrave", "232"}, // ? - lowercase e, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:162: error: unmappable character for encoding ASCII
+    [javac]         {"eacute", "233"}, // ? - lowercase e, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:163: error: unmappable character for encoding ASCII
+    [javac]         {"ecirc", "234"}, // ? - lowercase e, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:164: error: unmappable character for encoding ASCII
+    [javac]         {"euml", "235"}, // ? - lowercase e, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:165: error: unmappable character for encoding ASCII
+    [javac]         {"igrave", "236"}, // ? - lowercase i, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:166: error: unmappable character for encoding ASCII
+    [javac]         {"iacute", "237"}, // ? - lowercase i, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:167: error: unmappable character for encoding ASCII
+    [javac]         {"icirc", "238"}, // ? - lowercase i, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:168: error: unmappable character for encoding ASCII
+    [javac]         {"iuml", "239"}, // ? - lowercase i, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:169: error: unmappable character for encoding ASCII
+    [javac]         {"eth", "240"}, // ? - lowercase eth, Icelandic
+    [javac]                            ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:170: error: unmappable character for encoding ASCII
+    [javac]         {"ntilde", "241"}, // ? - lowercase n, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:171: error: unmappable character for encoding ASCII
+    [javac]         {"ograve", "242"}, // ? - lowercase o, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:172: error: unmappable character for encoding ASCII
+    [javac]         {"oacute", "243"}, // ? - lowercase o, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:173: error: unmappable character for encoding ASCII
+    [javac]         {"ocirc", "244"}, // ? - lowercase o, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:174: error: unmappable character for encoding ASCII
+    [javac]         {"otilde", "245"}, // ? - lowercase o, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:175: error: unmappable character for encoding ASCII
+    [javac]         {"ouml", "246"}, // ? - lowercase o, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:177: error: unmappable character for encoding ASCII
+    [javac]         {"oslash", "248"}, // ? - lowercase o, slash
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:178: error: unmappable character for encoding ASCII
+    [javac]         {"ugrave", "249"}, // ? - lowercase u, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:179: error: unmappable character for encoding ASCII
+    [javac]         {"uacute", "250"}, // ? - lowercase u, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:180: error: unmappable character for encoding ASCII
+    [javac]         {"ucirc", "251"}, // ? - lowercase u, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:181: error: unmappable character for encoding ASCII
+    [javac]         {"uuml", "252"}, // ? - lowercase u, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:182: error: unmappable character for encoding ASCII
+    [javac]         {"yacute", "253"}, // ? - lowercase y, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:183: error: unmappable character for encoding ASCII
+    [javac]         {"thorn", "254"}, // ? - lowercase thorn, Icelandic
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:184: error: unmappable character for encoding ASCII
+    [javac]         {"yuml", "255"}, // ? - lowercase y, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/enum/Enum.java:54: error: as of release 5, 'enum' is a keyword, and may not be used as an identifier
+    [javac] package org.apache.commons.lang.enum;
+    [javac]                                 ^
+    [javac]   (use -source 1.4 or lower to use 'enum' as an identifier)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/enum/EnumUtils.java:54: error: as of release 5, 'enum' is a keyword, and may not be used as an identifier
+    [javac] package org.apache.commons.lang.enum;
+    [javac]                                 ^
+    [javac]   (use -source 1.4 or lower to use 'enum' as an identifier)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/enum/ValuedEnum.java:54: error: as of release 5, 'enum' is a keyword, and may not be used as an identifier
+    [javac] package org.apache.commons.lang.enum;
+    [javac]                                 ^
+    [javac]   (use -source 1.4 or lower to use 'enum' as an identifier)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/enum/ValuedEnum.java:171: error: as of release 5, 'enum' is a keyword, and may not be used as an identifier
+    [javac]             ValuedEnum enum = (ValuedEnum) it.next();
+    [javac]                        ^
+    [javac]   (use -source 1.4 or lower to use 'enum' as an identifier)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/enum/ValuedEnum.java:172: error: as of release 5, 'enum' is a keyword, and may not be used as an identifier
+    [javac]             if (enum.getValue() == value) {
+    [javac]                 ^
+    [javac]   (use -source 1.4 or lower to use 'enum' as an identifier)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/enum/ValuedEnum.java:173: error: as of release 5, 'enum' is a keyword, and may not be used as an identifier
+    [javac]                 return enum;
+    [javac]                        ^
+    [javac]   (use -source 1.4 or lower to use 'enum' as an identifier)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/reflect/MethodUtils.java:74: error: unmappable character for encoding ASCII
+    [javac]  * @author Rey Fran?ois
+    [javac]                    ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/reflect/MethodUtils.java:75: error: unmappable character for encoding ASCII
+    [javac]  * @author Gregor Ra?man
+    [javac]                     ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/time/DurationFormatUtils.java:84: error: unmappable character for encoding ASCII
+    [javac]      * in ? 5.5.3.2 of ISO 8601, respectively. These components are ordered in their significance by their order 
+    [javac]           ^
+    [javac] 73 errors
+
+BUILD FAILED
+/home/ubuntu/bugs/projects/Lang/build.xml:45: Compile failed; see the compiler error output for details.
+
+Total time: 2 seconds

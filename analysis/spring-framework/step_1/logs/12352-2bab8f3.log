@@ -1,0 +1,11 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+Downloading http://repo.gradle.org/gradle/distributions-snapshots/gradle-1.0-milestone-8-20120112000036+0100-bin.zip
+
+Exception in thread "main" java.io.FileNotFoundException: http://repo.gradle.org/gradle/distributions-snapshots/gradle-1.0-milestone-8-20120112000036+0100-bin.zip
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1890)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:49)
+	at org.gradle.wrapper.Download.download(Download.java:37)
+	at org.gradle.wrapper.Install.createDist(Install.java:58)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:117)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:53)

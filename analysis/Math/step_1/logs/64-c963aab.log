@@ -1,0 +1,79 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 3.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math3 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-math3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-math3 ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/bugs/projects/Math && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/bugs/projects/Math
+[INFO] Storing buildNumber: ?????? at timestamp: 1547475442554
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/bugs/projects/Math && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/bugs/projects/Math
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ commons-math3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 795 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[WARNING] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/distribution/AbstractIntegerDistribution.java: Some input files use or override a deprecated API.
+[WARNING] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/distribution/AbstractIntegerDistribution.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.4.0:manifest (bundle-manifest) @ commons-math3 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math3 ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ commons-math3 ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.6.3.201306030806:prepare-agent (prepare-agent) @ commons-math3 ---
+[INFO] argLine set to -javaagent:/home/ubuntu/.m2/repository/org/jacoco/org.jacoco.agent/0.6.3.201306030806/org.jacoco.agent-0.6.3.201306030806-runtime.jar=destfile=/home/ubuntu/bugs/projects/Math/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ commons-math3 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ commons-math3 ---
+[INFO] Building jar: /home/ubuntu/bugs/projects/Math/target/commons-math3-3.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math3 ---
+[INFO] Executing tasks
+
+main:
+      [jar] Building jar: /home/ubuntu/bugs/projects/Math/target/commons-math3-tools-3.3-SNAPSHOT.jar
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ commons-math3 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:attach-artifact (attach-artifacts) @ commons-math3 ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.6.3.201306030806:check (check) @ commons-math3 ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.817 s
+[INFO] Finished at: 2019-01-14T14:17:36+00:00
+[INFO] Final Memory: 37M/644M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.jacoco:jacoco-maven-plugin:0.6.3.201306030806:check (check) on project commons-math3: The parameters 'rules' for goal org.jacoco:jacoco-maven-plugin:0.6.3.201306030806:check are missing or invalid -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginParameterException

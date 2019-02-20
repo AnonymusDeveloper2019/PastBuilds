@@ -1,0 +1,114 @@
+Buildfile: /home/michel/Investigacion/bugs/projects/Closure/build.xml
+
+rhino:
+
+properties:
+
+init:
+    [mkdir] Created dir: /home/michel/Investigacion/bugs/projects/Closure/build/lib
+    [mkdir] Created dir: /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+    [mkdir] Created dir: /home/michel/Investigacion/bugs/projects/Closure/build/lib/rhino1_7R3pre
+
+compile:
+
+compile-most:
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/src/build.xml:68: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 191 source files to /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+     [copy] Copying 2 files to /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+
+compile-jdk15:
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/src/build.xml:87: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+compile:
+
+properties:
+
+compile:
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/toolsrc/build.xml:55: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 28 source files to /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/toolsrc/org/mozilla/javascript/tools/debugger/SwingGui.java:3143: warning: [deprecation] disable() in JComponent has been deprecated
+    [javac]     public void disable() {
+    [javac]                 ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/toolsrc/org/mozilla/javascript/tools/debugger/SwingGui.java:3155: warning: [deprecation] enable() in JComponent has been deprecated
+    [javac]     public void enable() {
+    [javac]                 ^
+    [javac] Note: /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/toolsrc/org/mozilla/javascript/tools/debugger/SwingGui.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 3 warnings
+     [copy] Copying 1 file to /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+
+xmlimplsrc-compile:
+     [echo] Calling /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/lib/rhino/src/mozilla/js/rhino/deprecatedsrc/build.xml:49: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 3 source files to /home/michel/Investigacion/bugs/projects/Closure/build/lib/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/michel/Investigacion/bugs/projects/Closure/build/lib/rhino1_7R3pre/js.jar
+
+rhino-jarjar:
+   [jarjar] Building jar: /home/michel/Investigacion/bugs/projects/Closure/build/lib/rhino.jar
+
+svnversion:
+
+compile:
+    [mkdir] Created dir: /home/michel/Investigacion/bugs/projects/Closure/build/classes
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/build.xml:224: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 5 source files to /home/michel/Investigacion/bugs/projects/Closure/build/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/debugging/sourcemap/proto/Mapping.java:11: error: LineMapping is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage
+    [javac]   public static final class LineMapping extends
+    [javac]                       ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/debugging/sourcemap/proto/Mapping.java:178: error: com.google.debugging.sourcemap.proto.Mapping.LineMapping.Builder is not abstract and does not override abstract method internalGetFieldAccessorTable() in com.google.protobuf.GeneratedMessage.Builder
+    [javac]     public static final class Builder extends
+    [javac]                         ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/debugging/sourcemap/proto/Mapping.java:398: error: OriginalMapping is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage
+    [javac]   public static final class OriginalMapping extends
+    [javac]                       ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/debugging/sourcemap/proto/Mapping.java:578: error: com.google.debugging.sourcemap.proto.Mapping.OriginalMapping.Builder is not abstract and does not override abstract method internalGetFieldAccessorTable() in com.google.protobuf.GeneratedMessage.Builder
+    [javac]     public static final class Builder extends
+    [javac]                         ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/FunctionInformationMap.java:5: error: FunctionInformationMap is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage
+    [javac] public  final class FunctionInformationMap extends
+    [javac]               ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/FunctionInformationMap.java:32: error: Entry is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage
+    [javac]   public static final class Entry extends
+    [javac]                       ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/FunctionInformationMap.java:261: error: com.google.javascript.jscomp.FunctionInformationMap.Entry.Builder is not abstract and does not override abstract method internalGetFieldAccessorTable() in com.google.protobuf.GeneratedMessage.Builder
+    [javac]     public static final class Builder extends
+    [javac]                         ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/FunctionInformationMap.java:569: error: Module is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage
+    [javac]   public static final class Module extends
+    [javac]                       ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/FunctionInformationMap.java:723: error: com.google.javascript.jscomp.FunctionInformationMap.Module.Builder is not abstract and does not override abstract method internalGetFieldAccessorTable() in com.google.protobuf.GeneratedMessage.Builder
+    [javac]     public static final class Builder extends
+    [javac]                         ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/FunctionInformationMap.java:1041: error: com.google.javascript.jscomp.FunctionInformationMap.Builder is not abstract and does not override abstract method internalGetFieldAccessorTable() in com.google.protobuf.GeneratedMessage.Builder
+    [javac]   public static final class Builder extends
+    [javac]                       ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/Instrumentation.java:5: error: Instrumentation is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage
+    [javac] public  final class Instrumentation extends
+    [javac]               ^
+    [javac] /home/michel/Investigacion/bugs/projects/Closure/gen/com/google/javascript/jscomp/Instrumentation.java:233: error: com.google.javascript.jscomp.Instrumentation.Builder is not abstract and does not override abstract method internalGetFieldAccessorTable() in com.google.protobuf.GeneratedMessage.Builder
+    [javac]   public static final class Builder extends
+    [javac]                       ^
+    [javac] 12 errors
+    [javac] 1 warning
+
+BUILD FAILED
+/home/michel/Investigacion/bugs/projects/Closure/build.xml:224: Compile failed; see the compiler error output for details.
+
+Total time: 5 seconds

@@ -1,0 +1,43 @@
+Parallel execution is an incubating feature.
+:buildSrc:clean UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/build/tmp/groovy-java-stubs/org/mockito/release/notes/internal/ImprovementSetSegregator.java:21: error: Improvement is not public in org.mockito.release.notes.improvements; cannot be accessed from outside package
+public  java.util.Map<java.lang.String, java.util.List<org.mockito.release.notes.improvements.Improvement>> tokenize(java.util.Collection<org.mockito.release.notes.improvements.Improvement> improvements) { return (java.util.Map<java.lang.String, java.util.List<org.mockito.release.notes.improvements.Improvement>>)null;}
+                                                                                                                                                                                ^
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/build/tmp/groovy-java-stubs/org/mockito/release/notes/internal/ImprovementSetSegregator.java:21: error: Improvement is not public in org.mockito.release.notes.improvements; cannot be accessed from outside package
+public  java.util.Map<java.lang.String, java.util.List<org.mockito.release.notes.improvements.Improvement>> tokenize(java.util.Collection<org.mockito.release.notes.improvements.Improvement> improvements) { return (java.util.Map<java.lang.String, java.util.List<org.mockito.release.notes.improvements.Improvement>>)null;}
+                                                                                             ^
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/build/tmp/groovy-java-stubs/org/mockito/release/notes/internal/ImprovementsPrinter.java:20: error: Improvement is not public in org.mockito.release.notes.improvements; cannot be accessed from outside package
+public  java.lang.String print(java.util.Collection<org.mockito.release.notes.improvements.Improvement> improvements) { return (java.lang.String)null;}
+                                                                                          ^
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/main/groovy/org/mockito/release/notes/improvements/GitHubImprovementsProvider.java:18: error: method fetchTickets in class GitHubTicketFetcher cannot be applied to given types;
+        return new GitHubTicketFetcher().fetchTickets(ticketIds);
+                                        ^
+  required: String,Set<String>
+  found: Set<String>
+  reason: actual and formal argument lists differ in length
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/build/tmp/groovy-java-stubs/org/mockito/release/notes/internal/ImprovementSetSegregator.java:21: error: Improvement is not public in org.mockito.release.notes.improvements; cannot be accessed from outside package
+public  java.util.Map<java.lang.String, java.util.List<org.mockito.release.notes.improvements.Improvement>> tokenize(java.util.Collection<org.mockito.release.notes.improvements.Improvement> improvements) { return (java.util.Map<java.lang.String, java.util.List<org.mockito.release.notes.improvements.Improvement>>)null;}
+                                                                                                                                                                                                                                                                                                           ^
+Note: /home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/main/groovy/org/mockito/release/comparison/ZipCompare.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+5 errors
+startup failed:
+Compilation failed; see the compiler error output for details.
+
+1 error
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileGroovy'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 2.226 secs

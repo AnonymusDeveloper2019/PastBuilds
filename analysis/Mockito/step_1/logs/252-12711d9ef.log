@@ -1,0 +1,34 @@
+Parallel execution is an incubating feature.
+:buildSrc:clean UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovyNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses
+:buildSrc:test
+
+org.mockito.release.notes.improvements.GitHubTicketFetcherTest > fetches improvements from GitHub FAILED
+    org.spockframework.runtime.SpockComparisonFailure at GitHubTicketFetcherTest.groovy:19
+
+33 tests completed, 1 failed
+:buildSrc:test FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///home/michel/Investigacion/bugs/projects/Mockito/buildSrc/build/reports/tests/index.html
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 6.078 secs

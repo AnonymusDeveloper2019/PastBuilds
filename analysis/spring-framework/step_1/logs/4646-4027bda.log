@@ -1,0 +1,29 @@
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ubuntu/bugs/spring-framework/build.gradle' line: 125
+
+* What went wrong:
+A problem occurred evaluating root project 'spring'.
+> Basedir /home/ubuntu/bugs/spring-framework/spring-instrument-tomcat does not exist
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 9.271 secs

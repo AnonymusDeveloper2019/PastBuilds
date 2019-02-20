@@ -1,0 +1,12 @@
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+BUILD FAILED
+Target "test.enum" does not exist in the project "Lang". It is used from target "test".
+
+Total time: 0 seconds
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+BUILD FAILED
+Target "test.enum" does not exist in the project "Lang". It is used from target "test".
+
+Total time: 0 seconds

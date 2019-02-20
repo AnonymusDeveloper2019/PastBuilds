@@ -1,0 +1,641 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:3.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:20, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/20/commons-parent-20.pom, line 316, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.5:run (javadoc.resources) @ commons-math ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.0:process (default) @ commons-math ---
+[INFO] Setting property: classpath.resource.loader.class => 'org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader'.
+[INFO] Setting property: velocimacro.messages.on => 'false'.
+[INFO] Setting property: resource.loader => 'classpath'.
+[INFO] Setting property: resource.manager.logwhenfound => 'false'.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ commons-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 1 resource to META-INF/localization
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ commons-math ---
+[INFO] Compiling 540 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[23,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.twod
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[27,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[36,36] error: no interface expected here
+
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[19,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.oned
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[20,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[21,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[35,29] error: cannot find symbol
+
+[ERROR]  class SubSpace
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[41,12] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[95,34] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[95,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[106,31] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[106,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[313,33] error: cannot find symbol
+
+[ERROR]  class RotationTransform
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[313,15] error: cannot find symbol
+
+[ERROR]  class RotationTransform
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[380,33] error: cannot find symbol
+
+[ERROR]  class TranslationTransform
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[380,15] error: cannot find symbol
+
+[ERROR]  class TranslationTransform
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[25,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.oned
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[28,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[31,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[81,22] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[81,40] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[89,22] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[128,28] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[128,46] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[149,28] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[186,34] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[186,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[197,31] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[197,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[208,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[256,34] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[285,36] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[285,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[295,34] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[311,39] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[353,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[377,11] error: cannot find symbol
+
+[ERROR]  class Line
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[481,33] error: cannot find symbol
+
+[ERROR]  class LineTransform
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[481,15] error: cannot find symbol
+
+[ERROR]  class LineTransform
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[19,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.oned
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[20,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.twod
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[24,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[27,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[39,12] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[157,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[223,34] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[223,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[235,31] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[235,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[247,37] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[306,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[322,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[393,34] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[419,34] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[440,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[481,11] error: cannot find symbol
+
+[ERROR]  class Plane
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/OutlineExtractor.java:[19,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.twod
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/OutlineExtractor.java:[59,11] error: cannot find symbol
+
+[ERROR]  class OutlineExtractor
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/OutlineExtractor.java:[103,41] error: cannot find symbol
+
+[ERROR]  class OutlineExtractor
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[24,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.oned
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[35,33] error: no interface expected here
+
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[38,12] error: cannot find symbol
+
+[ERROR]  class PolygonsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[195,11] error: cannot find symbol
+
+[ERROR]  class PolygonsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[27,18] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[30,18] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[43,25] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[43,46] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[61,25] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[71,11] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[78,11] error: cannot find symbol
+
+[ERROR]  class Segment
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/IntervalsSet.java:[30,34] error: no interface expected here
+
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/SegmentBuilder.java:[23,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.oned
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/SegmentBuilder.java:[26,59] error: cannot find symbol
+
+[ERROR]  interface Region
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[26,54] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.euclidean.oned
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[51,12] error: cannot find symbol
+
+[ERROR]  class NestedLoops
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[77,30] error: cannot find symbol
+
+[ERROR]  class NestedLoops
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[116,26] error: cannot find symbol
+
+[ERROR]  class NestedLoops
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[23,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[26,52] error: cannot find symbol
+
+[ERROR]  package org.apache.commons.math.geometry.partitioning
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[40,12] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[50,31] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[68,34] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[83,34] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[83,11] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[97,31] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[97,11] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[112,11] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[164,11] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[175,11] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[183,11] error: cannot find symbol
+
+[ERROR]  class OrientedPoint
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[202,45] error: no interface expected here
+
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[91,13] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[103,15] error: incompatible types: PolyhedronsSet cannot be converted to Region
+
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[110,8] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[112,12] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[115,12] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[116,26] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[119,20] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[120,30] error: cannot find symbol
+
+[ERROR]  class PolyhedronsSet
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[120,49] error: cannot find symbol
+
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.486 s
+[INFO] Finished at: 2019-01-14T21:57:06+00:00
+[INFO] Final Memory: 18M/270M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.1:compile (default-compile) on project commons-math: Compilation failure: Compilation failure:
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[23,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.twod
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[27,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[36,36] error: no interface expected here
+[ERROR] 
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[19,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.oned
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[20,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[21,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[35,29] error: cannot find symbol
+[ERROR] 
+[ERROR] class SubSpace
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[41,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[95,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[95,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[106,31] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Line.java:[106,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[313,33] error: cannot find symbol
+[ERROR] 
+[ERROR] class RotationTransform
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[313,15] error: cannot find symbol
+[ERROR] 
+[ERROR] class RotationTransform
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[380,33] error: cannot find symbol
+[ERROR] 
+[ERROR] class TranslationTransform
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[380,15] error: cannot find symbol
+[ERROR] 
+[ERROR] class TranslationTransform
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[25,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.oned
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[28,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[31,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[81,22] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[81,40] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[89,22] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[128,28] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[128,46] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[149,28] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[186,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[186,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[197,31] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[197,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[208,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[256,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[285,36] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[285,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[295,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[311,39] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[353,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[377,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Line
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[481,33] error: cannot find symbol
+[ERROR] 
+[ERROR] class LineTransform
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Line.java:[481,15] error: cannot find symbol
+[ERROR] 
+[ERROR] class LineTransform
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[19,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.oned
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[20,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.twod
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[24,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[27,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[39,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[157,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[223,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[223,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[235,31] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[235,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[247,37] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[306,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[322,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[393,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[419,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[440,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Plane.java:[481,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Plane
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/OutlineExtractor.java:[19,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.twod
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/OutlineExtractor.java:[59,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OutlineExtractor
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/OutlineExtractor.java:[103,41] error: cannot find symbol
+[ERROR] 
+[ERROR] class OutlineExtractor
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[24,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.oned
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[35,33] error: no interface expected here
+[ERROR] 
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[38,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolygonsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/PolygonsSet.java:[195,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolygonsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[27,18] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[30,18] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[43,25] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[43,46] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[61,25] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[71,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/Segment.java:[78,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class Segment
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/IntervalsSet.java:[30,34] error: no interface expected here
+[ERROR] 
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/SegmentBuilder.java:[23,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.oned
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/SegmentBuilder.java:[26,59] error: cannot find symbol
+[ERROR] 
+[ERROR] interface Region
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[26,54] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.euclidean.oned
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[51,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class NestedLoops
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[77,30] error: cannot find symbol
+[ERROR] 
+[ERROR] class NestedLoops
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/twod/NestedLoops.java:[116,26] error: cannot find symbol
+[ERROR] 
+[ERROR] class NestedLoops
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[23,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[26,52] error: cannot find symbol
+[ERROR] 
+[ERROR] package org.apache.commons.math.geometry.partitioning
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[40,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[50,31] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[68,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[83,34] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[83,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[97,31] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[97,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[112,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[164,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[175,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[183,11] error: cannot find symbol
+[ERROR] 
+[ERROR] class OrientedPoint
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/oned/OrientedPoint.java:[202,45] error: no interface expected here
+[ERROR] 
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[91,13] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[103,15] error: incompatible types: PolyhedronsSet cannot be converted to Region
+[ERROR] 
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[110,8] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[112,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[115,12] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[116,26] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[119,20] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[120,30] error: cannot find symbol
+[ERROR] 
+[ERROR] class PolyhedronsSet
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math/geometry/euclidean/threed/PolyhedronsSet.java:[120,49] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

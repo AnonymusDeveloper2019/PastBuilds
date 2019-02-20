@@ -1,0 +1,378 @@
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+init:
+     [echo] -------- commons-lang 3.0-SNAPSHOT --------
+
+prepare:
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/classes
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/conf
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/tests
+
+static:
+     [copy] Copying 1 file to /home/ubuntu/bugs/projects/Lang/target/conf
+
+compile:
+    [javac] /home/ubuntu/bugs/projects/Lang/build.xml:65: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 78 source files to /home/ubuntu/bugs/projects/Lang/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.3
+    [javac] warning: [options] source value 1.3 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.2 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/CharRange.java:188: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/CharSet.java:268: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:64: warning: unmappable character for encoding ASCII
+    [javac]         {"copy", "169"}, // ? - copyright sign
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:69: warning: unmappable character for encoding ASCII
+    [javac]         {"reg", "174"}, // ? - registered trademark sign
+    [javac]                            ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:87: warning: unmappable character for encoding ASCII
+    [javac]         {"Agrave", "192"}, // ? - uppercase A, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:88: warning: unmappable character for encoding ASCII
+    [javac]         {"Aacute", "193"}, // ? - uppercase A, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:89: warning: unmappable character for encoding ASCII
+    [javac]         {"Acirc", "194"}, // ? - uppercase A, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:90: warning: unmappable character for encoding ASCII
+    [javac]         {"Atilde", "195"}, // ? - uppercase A, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:91: warning: unmappable character for encoding ASCII
+    [javac]         {"Auml", "196"}, // ? - uppercase A, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:92: warning: unmappable character for encoding ASCII
+    [javac]         {"Aring", "197"}, // ? - uppercase A, ring
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:93: warning: unmappable character for encoding ASCII
+    [javac]         {"AElig", "198"}, // ? - uppercase AE
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:94: warning: unmappable character for encoding ASCII
+    [javac]         {"Ccedil", "199"}, // ? - uppercase C, cedilla
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:95: warning: unmappable character for encoding ASCII
+    [javac]         {"Egrave", "200"}, // ? - uppercase E, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:96: warning: unmappable character for encoding ASCII
+    [javac]         {"Eacute", "201"}, // ? - uppercase E, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:97: warning: unmappable character for encoding ASCII
+    [javac]         {"Ecirc", "202"}, // ? - uppercase E, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:98: warning: unmappable character for encoding ASCII
+    [javac]         {"Euml", "203"}, // ? - uppercase E, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:99: warning: unmappable character for encoding ASCII
+    [javac]         {"Igrave", "204"}, // ? - uppercase I, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:100: warning: unmappable character for encoding ASCII
+    [javac]         {"Iacute", "205"}, // ? - uppercase I, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:101: warning: unmappable character for encoding ASCII
+    [javac]         {"Icirc", "206"}, // ? - uppercase I, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:102: warning: unmappable character for encoding ASCII
+    [javac]         {"Iuml", "207"}, // ? - uppercase I, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:103: warning: unmappable character for encoding ASCII
+    [javac]         {"ETH", "208"}, // ? - uppercase Eth, Icelandic
+    [javac]                            ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:104: warning: unmappable character for encoding ASCII
+    [javac]         {"Ntilde", "209"}, // ? - uppercase N, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:105: warning: unmappable character for encoding ASCII
+    [javac]         {"Ograve", "210"}, // ? - uppercase O, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:106: warning: unmappable character for encoding ASCII
+    [javac]         {"Oacute", "211"}, // ? - uppercase O, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:107: warning: unmappable character for encoding ASCII
+    [javac]         {"Ocirc", "212"}, // ? - uppercase O, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:108: warning: unmappable character for encoding ASCII
+    [javac]         {"Otilde", "213"}, // ? - uppercase O, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:109: warning: unmappable character for encoding ASCII
+    [javac]         {"Ouml", "214"}, // ? - uppercase O, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:111: warning: unmappable character for encoding ASCII
+    [javac]         {"Oslash", "216"}, // ? - uppercase O, slash
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:112: warning: unmappable character for encoding ASCII
+    [javac]         {"Ugrave", "217"}, // ? - uppercase U, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:113: warning: unmappable character for encoding ASCII
+    [javac]         {"Uacute", "218"}, // ? - uppercase U, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:114: warning: unmappable character for encoding ASCII
+    [javac]         {"Ucirc", "219"}, // ? - uppercase U, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:115: warning: unmappable character for encoding ASCII
+    [javac]         {"Uuml", "220"}, // ? - uppercase U, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:116: warning: unmappable character for encoding ASCII
+    [javac]         {"Yacute", "221"}, // ? - uppercase Y, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:117: warning: unmappable character for encoding ASCII
+    [javac]         {"THORN", "222"}, // ? - uppercase THORN, Icelandic
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:118: warning: unmappable character for encoding ASCII
+    [javac]         {"szlig", "223"}, // ? - lowercase sharps, German
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:119: warning: unmappable character for encoding ASCII
+    [javac]         {"agrave", "224"}, // ? - lowercase a, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:120: warning: unmappable character for encoding ASCII
+    [javac]         {"aacute", "225"}, // ? - lowercase a, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:121: warning: unmappable character for encoding ASCII
+    [javac]         {"acirc", "226"}, // ? - lowercase a, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:122: warning: unmappable character for encoding ASCII
+    [javac]         {"atilde", "227"}, // ? - lowercase a, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:123: warning: unmappable character for encoding ASCII
+    [javac]         {"auml", "228"}, // ? - lowercase a, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:124: warning: unmappable character for encoding ASCII
+    [javac]         {"aring", "229"}, // ? - lowercase a, ring
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:125: warning: unmappable character for encoding ASCII
+    [javac]         {"aelig", "230"}, // ? - lowercase ae
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:126: warning: unmappable character for encoding ASCII
+    [javac]         {"ccedil", "231"}, // ? - lowercase c, cedilla
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:127: warning: unmappable character for encoding ASCII
+    [javac]         {"egrave", "232"}, // ? - lowercase e, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:128: warning: unmappable character for encoding ASCII
+    [javac]         {"eacute", "233"}, // ? - lowercase e, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:129: warning: unmappable character for encoding ASCII
+    [javac]         {"ecirc", "234"}, // ? - lowercase e, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:130: warning: unmappable character for encoding ASCII
+    [javac]         {"euml", "235"}, // ? - lowercase e, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:131: warning: unmappable character for encoding ASCII
+    [javac]         {"igrave", "236"}, // ? - lowercase i, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:132: warning: unmappable character for encoding ASCII
+    [javac]         {"iacute", "237"}, // ? - lowercase i, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:133: warning: unmappable character for encoding ASCII
+    [javac]         {"icirc", "238"}, // ? - lowercase i, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:134: warning: unmappable character for encoding ASCII
+    [javac]         {"iuml", "239"}, // ? - lowercase i, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:135: warning: unmappable character for encoding ASCII
+    [javac]         {"eth", "240"}, // ? - lowercase eth, Icelandic
+    [javac]                            ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:136: warning: unmappable character for encoding ASCII
+    [javac]         {"ntilde", "241"}, // ? - lowercase n, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:137: warning: unmappable character for encoding ASCII
+    [javac]         {"ograve", "242"}, // ? - lowercase o, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:138: warning: unmappable character for encoding ASCII
+    [javac]         {"oacute", "243"}, // ? - lowercase o, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:139: warning: unmappable character for encoding ASCII
+    [javac]         {"ocirc", "244"}, // ? - lowercase o, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:140: warning: unmappable character for encoding ASCII
+    [javac]         {"otilde", "245"}, // ? - lowercase o, tilde
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:141: warning: unmappable character for encoding ASCII
+    [javac]         {"ouml", "246"}, // ? - lowercase o, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:143: warning: unmappable character for encoding ASCII
+    [javac]         {"oslash", "248"}, // ? - lowercase o, slash
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:144: warning: unmappable character for encoding ASCII
+    [javac]         {"ugrave", "249"}, // ? - lowercase u, grave accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:145: warning: unmappable character for encoding ASCII
+    [javac]         {"uacute", "250"}, // ? - lowercase u, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:146: warning: unmappable character for encoding ASCII
+    [javac]         {"ucirc", "251"}, // ? - lowercase u, circumflex accent
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:147: warning: unmappable character for encoding ASCII
+    [javac]         {"uuml", "252"}, // ? - lowercase u, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:148: warning: unmappable character for encoding ASCII
+    [javac]         {"yacute", "253"}, // ? - lowercase y, acute accent
+    [javac]                               ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:149: warning: unmappable character for encoding ASCII
+    [javac]         {"thorn", "254"}, // ? - lowercase thorn, Icelandic
+    [javac]                              ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:150: warning: unmappable character for encoding ASCII
+    [javac]         {"yuml", "255"}, // ? - lowercase y, umlaut
+    [javac]                             ^
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/Entities.java:532: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/NotImplementedException.java:137: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/builder/HashCodeBuilder.java:106: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/builder/IDKey.java:52: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/builder/ReflectionToStringBuilder.java:754: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/builder/StandardToStringStyle.java:57: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/builder/ToStringBuilder.java:1048: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/builder/ToStringStyle.java:137: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/exception/NestableError.java:97: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/exception/NestableException.java:157: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/exception/NestableRuntimeException.java:101: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/DoubleRange.java:180: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/FloatRange.java:180: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/Fraction.java:419: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/IntRange.java:163: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/JVMRandom.java:62: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/LongRange.java:164: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/NumberRange.java:143: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/math/Range.java:381: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableBoolean.java:112: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableByte.java:110: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableDouble.java:112: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableFloat.java:184: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableInt.java:182: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableLong.java:182: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableObject.java:88: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/mutable/MutableShort.java:182: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/text/CompositeFormat.java:67: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:133: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/text/StrBuilder.java:2483: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/text/StrLookup.java:150: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/text/StrMatcher.java:298: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/text/StrTokenizer.java:1086: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/time/DurationFormatUtils.java:624: error: annotations are not supported in -source 1.3
+    [javac]         @Override
+    [javac]          ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/time/FastDateFormat.java:787: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /home/ubuntu/bugs/projects/Lang/src/java/org/apache/commons/lang/time/StopWatch.java:360: error: annotations are not supported in -source 1.3
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] 38 errors
+    [javac] 68 warnings
+
+BUILD FAILED
+/home/ubuntu/bugs/projects/Lang/build.xml:65: Compile failed; see the compiler error output for details.
+
+Total time: 2 seconds

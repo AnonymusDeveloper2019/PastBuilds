@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for commons-math:commons-math:jar:1.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.apache.commons:commons-parent:1, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/1/commons-parent-1.pom, line 83, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 190, column 17
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:1, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/1/commons-parent-1.pom, line 90, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Lang 1.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math ---
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/classes/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-math ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding ANSI_X3.4-1968, i.e. build is platform dependent!
+[INFO] Compiling 212 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/SwitchingFunctionsHandler.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/ode/SwitchingFunctionsHandler.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/DirectSearchOptimizer.java:[25,38] cannot find symbol
+  symbol:   class CorrelatedRandomVectorGenerator
+  location: package org.apache.commons.math.random
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/DirectSearchOptimizer.java:[258,21] cannot find symbol
+  symbol:   class CorrelatedRandomVectorGenerator
+  location: class org.apache.commons.math.optimization.DirectSearchOptimizer
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.847 s
+[INFO] Finished at: 2019-01-15T03:09:12+00:00
+[INFO] Final Memory: 17M/292M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.2:compile (default-compile) on project commons-math: Compilation failure: Compilation failure:
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/DirectSearchOptimizer.java:[25,38] cannot find symbol
+[ERROR] symbol:   class CorrelatedRandomVectorGenerator
+[ERROR] location: package org.apache.commons.math.random
+[ERROR] /home/ubuntu/bugs/projects/Math/src/java/org/apache/commons/math/optimization/DirectSearchOptimizer.java:[258,21] cannot find symbol
+[ERROR] symbol:   class CorrelatedRandomVectorGenerator
+[ERROR] location: class org.apache.commons.math.optimization.DirectSearchOptimizer
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

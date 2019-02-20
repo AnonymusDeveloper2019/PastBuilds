@@ -1,0 +1,23 @@
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+init:
+     [echo] -------- commons-lang 2.0 --------
+
+prepare:
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/classes
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/conf
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/tests
+
+static:
+     [copy] Copying 1 file to /home/ubuntu/bugs/projects/Lang/target/conf
+
+compile:
+    [javac] /home/ubuntu/bugs/projects/Lang/build.xml:64: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 74 source files to /home/ubuntu/bugs/projects/Lang/target/classes

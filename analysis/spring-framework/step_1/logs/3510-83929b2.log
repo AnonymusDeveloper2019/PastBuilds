@@ -1,0 +1,92 @@
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:43)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test UP-TO-DATE
+:buildSrc:check UP-TO-DATE
+:buildSrc:build
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-gradle-plugin/1.0.5-2/kotlin-gradle-plugin-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-project/1.0.5-2/kotlin-project-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-stdlib/1.0.5-2/kotlin-stdlib-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-android-extensions/1.0.5-2/kotlin-android-extensions-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.0.5-2/kotlin-gradle-plugin-api-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.0.5-2/kotlin-compiler-embeddable-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-annotation-processing/1.0.5-2/kotlin-annotation-processing-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-runtime/1.0.5-2/kotlin-runtime-1.0.5-2.pom
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-gradle-plugin/1.0.5-2/kotlin-gradle-plugin-1.0.5-2.jar
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-stdlib/1.0.5-2/kotlin-stdlib-1.0.5-2.jar
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-android-extensions/1.0.5-2/kotlin-android-extensions-1.0.5-2.jar
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.0.5-2/kotlin-gradle-plugin-api-1.0.5-2.jar
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.0.5-2/kotlin-compiler-embeddable-1.0.5-2.jar
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-annotation-processing/1.0.5-2/kotlin-annotation-processing-1.0.5-2.jar
+Download https://repo.spring.io/plugins-release/org/jetbrains/kotlin/kotlin-runtime/1.0.5-2/kotlin-runtime-1.0.5-2.jar
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:objenesisRepackJar
+:spring-core:compileJava
+Download https://repo.spring.io/libs-release/org/jetbrains/kotlin/kotlin-reflect/1.0.5-2/kotlin-reflect-1.0.5-2.pom
+Download https://repo.spring.io/libs-release/io/projectreactor/reactor-core/3.0.3.RELEASE/reactor-core-3.0.3.RELEASE.pom
+Download https://repo.spring.io/libs-release/io/reactivex/rxjava/1.2.3/rxjava-1.2.3.pom
+Download https://repo.spring.io/libs-release/io/reactivex/rxjava2/rxjava/2.0.2/rxjava-2.0.2.pom
+Download https://repo.spring.io/libs-release/org/jetbrains/kotlin/kotlin-reflect/1.0.5-2/kotlin-reflect-1.0.5-2.jar
+Download https://repo.spring.io/libs-release/io/projectreactor/reactor-core/3.0.3.RELEASE/reactor-core-3.0.3.RELEASE.jar
+Download https://repo.spring.io/libs-release/io/reactivex/rxjava/1.2.3/rxjava-1.2.3.jar
+Download https://repo.spring.io/libs-release/io/reactivex/rxjava2/rxjava/2.0.2/rxjava-2.0.2.jar
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJava
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans-groovy:compileJava SKIPPED
+:spring-beans-groovy:compileGroovy
+Download https://repo.spring.io/libs-release/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.pom
+Download https://repo.spring.io/libs-release/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar
+OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000db100000, 67108864, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 67108864 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/ubuntu/bugs/spring-framework/hs_err_pid5760.log
+:spring-beans-groovy:compileGroovy FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-beans-groovy:compileGroovy'.
+> Failed to run Gradle Compiler Daemon
+   > Process 'Gradle Compiler Daemon 1' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 1 mins 20.718 secs
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Process 'Gradle Compiler Daemon 1' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.

@@ -1,0 +1,60 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for commons-lang:commons-lang:jar:3.0-SNAPSHOT
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:11, /home/michel/.m2/repository/org/apache/commons/commons-parent/11/commons-parent-11.pom, line 255, column 15
+[[1;33mWARNING[m] The expression ${pom.version} is deprecated. Please use ${project.version} instead.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Commons Lang 3.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.1:run[m [1m(javadoc.resources)[m @ [36mcommons-lang[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+     [copy] Copying 2 files to /home/michel/Investigacion/bugs/Lang/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcommons-lang[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.0.2:compile[m [1m(default-compile)[m @ [36mcommons-lang[0;1m ---[m
+[[1;34mINFO[m] Compiling 75 source files to /home/michel/Investigacion/bugs/Lang/target/classes
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 2.186 s
+[[1;34mINFO[m] Finished at: 2019-01-12T02:37:19+01:00
+[[1;34mINFO[m] Final Memory: 12M/303M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:2.0.2:compile[m [1m(default-compile)[m on project [36mcommons-lang[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/java/org/apache/commons/lang/text/translate/CharSequenceTranslator.java:[24,30] error: cannot find symbol
+[[1;31mERROR[m] 
+[[1;31mERROR[m] could not parse error message:   symbol:   class UnhandledException
+[[1;31mERROR[m]   location: package org.apache.commons.lang
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/java/org/apache/commons/lang/text/translate/UnicodeUnescaper.java:22: error: cannot find symbol
+[[1;31mERROR[m] import org.apache.commons.lang.UnhandledException;
+[[1;31mERROR[m]                               ^
+[[1;31mERROR[m] 
+[[1;31mERROR[m] could not parse error message:   symbol:   class UnhandledException
+[[1;31mERROR[m]   location: package org.apache.commons.lang
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/java/org/apache/commons/lang/text/translate/CharSequenceTranslator.java:63: error: cannot find symbol
+[[1;31mERROR[m]             throw new UnhandledException(ioe);
+[[1;31mERROR[m]                       ^
+[[1;31mERROR[m] 
+[[1;31mERROR[m] could not parse error message:   symbol:   class UnhandledException
+[[1;31mERROR[m]   location: class CharSequenceTranslator
+[[1;31mERROR[m] /home/michel/Investigacion/bugs/Lang/src/java/org/apache/commons/lang/text/translate/UnicodeUnescaper.java:52: error: cannot find symbol
+[[1;31mERROR[m]                         throw new UnhandledException("Unable to parse unicode value: " + unicode, nfe);
+[[1;31mERROR[m]                                   ^
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

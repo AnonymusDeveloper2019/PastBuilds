@@ -1,0 +1,41 @@
+Buildfile: /home/ubuntu/bugs/projects/Closure/build.xml
+
+compile:
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Closure/build/classes
+    [javac] /home/ubuntu/bugs/projects/Closure/build.xml:51: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to /home/ubuntu/bugs/projects/Closure/build/classes
+    [javac] /home/ubuntu/bugs/projects/Closure/build.xml:56: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 341 source files to /home/ubuntu/bugs/projects/Closure/build/classes
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:46: error: unmappable character for encoding ASCII
+    [javac]  * Banning, John. ???An efficient way to find the side effects of procedure
+    [javac]                   ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:46: error: unmappable character for encoding ASCII
+    [javac]  * Banning, John. ???An efficient way to find the side effects of procedure
+    [javac]                    ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:46: error: unmappable character for encoding ASCII
+    [javac]  * Banning, John. ???An efficient way to find the side effects of procedure
+    [javac]                     ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                            ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                             ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                              ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                                     ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                                      ^
+    [javac] /home/ubuntu/bugs/projects/Closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java:47: error: unmappable character for encoding ASCII
+    [javac]  *      calls and the aliases of variables.??? POPL ???79.
+    [javac]                                                       ^
+    [javac] 9 errors
+
+BUILD FAILED
+/home/ubuntu/bugs/projects/Closure/build.xml:56: Compile failed; see the compiler error output for details.
+
+Total time: 2 seconds

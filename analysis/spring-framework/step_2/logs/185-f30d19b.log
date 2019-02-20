@@ -1,0 +1,116 @@
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy
+> Task :buildSrc:processResources
+> Task :buildSrc:classes
+> Task :buildSrc:jar
+> Task :buildSrc:assemble
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build
+> Task :assemble
+> Task :build
+> Task :spring-core:cglibRepackJar
+> Task :spring-core:objenesisRepackJar
+> Task :spring-jcl:compileKotlin
+> Task :spring-jcl:compileJava
+> Task :spring-jcl:processResources
+> Task :spring-jcl:classes
+> Task :spring-jcl:inspectClassesForKotlinIC
+> Task :spring-jcl:jar
+> Task :spring-core:compileKotlin
+> Task :spring-core:compileJava
+> Task :spring-core:processResources NO-SOURCE
+> Task :spring-core:classes
+> Task :spring-core:inspectClassesForKotlinIC
+> Task :spring-core:jar
+> Task :spring-beans:compileGroovy
+> Task :spring-beans:compileKotlin
+> Task :spring-beans:compileJava NO-SOURCE
+> Task :spring-beans:processResources
+> Task :spring-beans:classes
+> Task :spring-beans:inspectClassesForKotlinIC
+> Task :spring-beans:jar
+> Task :spring-aop:compileKotlin
+> Task :spring-aop:compileJava
+> Task :spring-aop:processResources
+> Task :spring-aop:classes
+> Task :spring-aop:inspectClassesForKotlinIC
+> Task :spring-aop:jar
+> Task :spring-aop:sourcesJar
+> Task :spring-aop:assemble
+> Task :spring-aop:build
+> Task :spring-expression:compileKotlin
+> Task :spring-expression:compileJava
+> Task :spring-expression:processResources
+> Task :spring-expression:classes
+> Task :spring-expression:inspectClassesForKotlinIC
+> Task :spring-expression:jar
+> Task :spring-instrument:compileKotlin
+> Task :spring-instrument:compileJava
+> Task :spring-instrument:processResources NO-SOURCE
+> Task :spring-instrument:classes
+> Task :spring-instrument:inspectClassesForKotlinIC
+> Task :spring-instrument:jar
+> Task :spring-context:compileKotlin
+> Task :spring-context:compileJava
+> Task :spring-context:compileGroovy NO-SOURCE
+> Task :spring-context:processResources
+> Task :spring-context:classes
+> Task :spring-context:inspectClassesForKotlinIC
+> Task :spring-context:jar
+> Task :spring-tx:compileKotlin
+> Task :spring-tx:compileJava
+> Task :spring-tx:processResources
+> Task :spring-tx:classes
+> Task :spring-tx:inspectClassesForKotlinIC
+> Task :spring-tx:jar
+> Task :spring-jdbc:compileKotlin
+> Task :spring-jdbc:compileJava
+> Task :spring-jdbc:processResources
+> Task :spring-jdbc:classes
+> Task :spring-jdbc:inspectClassesForKotlinIC
+> Task :spring-jdbc:jar
+> Task :spring-context-support:compileKotlin
+> Task :spring-context-support:compileJava
+> Task :spring-context-support:processResources
+> Task :spring-context-support:classes
+> Task :spring-context-support:inspectClassesForKotlinIC
+> Task :spring-context-support:jar
+> Task :spring-oxm:compileKotlin
+> Task :spring-oxm:compileJava
+> Task :spring-oxm:processResources
+> Task :spring-oxm:classes
+> Task :spring-oxm:inspectClassesForKotlinIC
+> Task :spring-oxm:jar
+> Task :spring-web:compileKotlin
+
+> Task :spring-web:compileJava FAILED
+/home/michel/Investigacion/bugs/projects/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:44: error: incompatible types: invalid method reference
+	private final static Function<HttpClient, HttpClient> defaultInitializer = HttpClient::compress;
+	                                                                           ^
+    incompatible types: HttpClient cannot be converted to boolean
+/home/michel/Investigacion/bugs/projects/spring-framework/spring-web/src/main/java/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:85: error: method compress in class HttpClient cannot be applied to given types;
+		return HttpClient.create(provider).tcpConfiguration(tcpClient -> tcpClient.runOn(resources)).compress();
+		                                                                                            ^
+  required: boolean
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-web:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 15s
+58 actionable tasks: 58 executed

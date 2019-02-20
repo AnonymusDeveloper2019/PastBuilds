@@ -1,0 +1,8 @@
+{
+    "project": "spring-framework",
+    "init_commit": "d303c8a20f70f623ebdf6861868041f8664de403", 
+    "last_commit": "f79c514920",
+    "number_of_builds": 50,
+    "step": 2,
+    "absolute_path_to_base_report": "/home/michel/Investigacion/bugs/analysis/spring-framework/report_step_1.csv"
+}

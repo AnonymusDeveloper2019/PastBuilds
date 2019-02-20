@@ -1,0 +1,83 @@
+Parallel execution is an incubating feature.
+:buildSrc:clean UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovyNote: /home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/main/groovy/org/mockito/release/comparison/ZipCompare.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovystartup failed:
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementsPrinterIntegrationTest.groovy: 18: unable to resolve class ImprovementSetSegregator 
+ @ line 18, column 30.
+               def segregator = new ImprovementSetSegregator(DEFAULT_MAPPINGS.keySet(), ["ignored"])
+                                ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementsPrinterIntegrationTest.groovy: 19: unable to resolve class ImprovementsPrinter 
+ @ line 19, column 23.
+               def sut = new ImprovementsPrinter(segregator, DEFAULT_MAPPINGS, "Other")
+                         ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementsPrinterIntegrationTest.groovy: 37: unable to resolve class ImprovementSetSegregator 
+ @ line 37, column 30.
+               def segregator = new ImprovementSetSegregator(DEFAULT_MAPPINGS.keySet(), ["ignored"])
+                                ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementsPrinterIntegrationTest.groovy: 38: unable to resolve class ImprovementsPrinter 
+ @ line 38, column 23.
+               def sut = new ImprovementsPrinter(segregator, DEFAULT_MAPPINGS, "Other")
+                         ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementSetSegregatorTest.groovy: 5: unable to resolve class ImprovementSetSegregator
+ @ line 5, column 1.
+   import static ImprovementSetSegregator.NON_EXISTING_LABEL
+   ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementSetSegregatorTest.groovy: 10: unable to resolve class ImprovementSetSegregator 
+ @ line 10, column 5.
+       private ImprovementSetSegregator sut = new ImprovementSetSegregator(["bug", "improvement"], ["ignored"])
+       ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementSetSegregatorTest.groovy: 10: unable to resolve class ImprovementSetSegregator 
+ @ line 10, column 44.
+   mprovementSetSegregator sut = new Improv
+                                 ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementSetSegregatorTest.groovy: 51: unable to resolve class ImprovementSetSegregator 
+ @ line 51, column 38.
+               ImprovementSetSegregator sut = new ImprovementSetSegregator(["bug", "improvement"], ["ignored"])
+                                        ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/ImprovementSetSegregatorTest.groovy: 51: unable to resolve class ImprovementSetSegregator 
+ @ line 51, column 44.
+   mprovementSetSegregator sut = new Improv
+                                 ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/OneCategoryImprovementSetTest.groovy: 13: unable to resolve class OneCategoryImprovementSet 
+ @ line 13, column 17.
+           def i = new OneCategoryImprovementSet(improvements: improvements)
+                   ^
+
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/test/groovy/org/mockito/release/notes/internal/OneCategoryImprovementSetTest.groovy: 26: unable to resolve class OneCategoryImprovementSet 
+ @ line 26, column 17.
+           def i = new OneCategoryImprovementSet(improvements: improvements, ignorePattern: "^[Rr]efactoring.*")
+                   ^
+
+11 errors
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestGroovy'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 2.537 secs

@@ -1,0 +1,30 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test
+:buildSrc:check
+:buildSrc:build
+The ConfigurationContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+The TaskContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':spring-orm-hibernate4'.
+> Failed to notify project evaluation listener.
+   > org.gradle.api.internal.MissingMethodException: Could not find method create() for arguments [spring-orm-hibernate4-compile] on project ':spring-orm'.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 12.825 secs

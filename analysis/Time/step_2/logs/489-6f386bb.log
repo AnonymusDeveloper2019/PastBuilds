@@ -1,0 +1,24 @@
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-ssh-external/1.0-alpha-5/wagon-ssh-external-1.0-alpha-5.pom
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-source-plugin @ line 244, column 15
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-javadoc-plugin @ line 256, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 256, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 188, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 235, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 244, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 199, column 15
+[ERROR] Unresolveable build extension: Plugin org.apache.maven.wagon:wagon-ssh-external:1.0-alpha-5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.wagon:wagon-ssh-external:jar:1.0-alpha-5 @ 
+[WARNING] 'dependencies.dependency.scope' for org.apache.maven.doxia:doxia-core:jar must be one of [provided, compile, runtime, test, system] but is 'site'. @ line 296, column 14
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project joda-time:joda-time:1.5 (/home/ubuntu/bugs/projects/Time/pom.xml) has 1 error
+[ERROR]     Unresolveable build extension: Plugin org.apache.maven.wagon:wagon-ssh-external:1.0-alpha-5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.wagon:wagon-ssh-external:jar:1.0-alpha-5: Could not transfer artifact org.apache.maven.wagon:wagon-ssh-external:pom:1.0-alpha-5 from/to central (https://repo.maven.apache.org/maven2): Received fatal alert: protocol_version -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/PluginManagerException

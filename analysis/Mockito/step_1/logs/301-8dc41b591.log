@@ -1,0 +1,33 @@
+Parallel execution is an incubating feature.
+:buildSrc:clean UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/main/groovy/org/mockito/release/notes/ReleaseNotesBuilder.java:22: error: cannot find symbol
+    ContributionSet getContributionsBetween(String fromRevision, String toRevision);
+    ^
+  symbol:   class ContributionSet
+  location: interface ReleaseNotesBuilder
+/home/michel/Investigacion/bugs/projects/Mockito/buildSrc/build/tmp/groovy-java-stubs/org/mockito/release/notes/internal/DefaultReleaseNotesBuilder.java:11: error: DefaultReleaseNotesBuilder is not abstract and does not override abstract method getContributionsBetween(String,String) in ReleaseNotesBuilder
+public class DefaultReleaseNotesBuilder
+       ^
+Note: /home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/main/groovy/org/mockito/release/comparison/ZipCompare.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+startup failed:
+Compilation failed; see the compiler error output for details.
+
+1 error
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileGroovy'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 2.15 secs

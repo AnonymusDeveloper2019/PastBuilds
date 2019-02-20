@@ -1,0 +1,263 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+:assemble
+:build
+:spring-core:asmRepackJar
+:spring-core:cglibRepackJar
+:spring-core:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-core:processResources UP-TO-DATE
+:spring-core:classes
+:spring-core:jar
+:spring-beans:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-beans:processResources
+:spring-beans:classes
+:spring-beans:jar
+:spring-aop:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-aop:processResources
+:spring-aop:classes
+:spring-aop:jar
+:spring-aop:sourcesJar
+:spring-aop:assemble
+:spring-aop:build
+:spring-aspects:processResources
+:spring-expression:compileJava
+:spring-expression:processResources UP-TO-DATE
+:spring-expression:classes
+:spring-expression:jar
+:spring-instrument:compileJava
+:spring-instrument:processResources UP-TO-DATE
+:spring-instrument:classes
+:spring-instrument:jar
+:spring-context:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-context:processResources
+:spring-context:classes
+:spring-context:jar
+:spring-tx:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-tx:processResources
+:spring-tx:classes
+:spring-tx:jar
+:spring-jdbc:compileJava/home/ubuntu/bugs/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlRowSetResultSetExtractor.java:25: warning: CachedRowSetImpl is internal proprietary API and may be removed in a future release
+import com.sun.rowset.CachedRowSetImpl;
+                     ^
+/home/ubuntu/bugs/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/SqlRowSetResultSetExtractor.java:138: warning: CachedRowSetImpl is internal proprietary API and may be removed in a future release
+			return new CachedRowSetImpl();
+			           ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 warnings
+
+:spring-jdbc:processResources
+:spring-jdbc:classes
+:spring-jdbc:jar
+:spring-context-support:compileJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-context-support:processResources
+:spring-context-support:classes
+:spring-context-support:jar
+:spring-oxm:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:spring-oxm:processResources
+:spring-oxm:classes
+:spring-oxm:jar
+:spring-web:compileJava
+Download http://repo.springsource.org/libs-release/javax/activation/activation/1.0.2/activation-1.0.2.pom
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:spring-web:processResources
+:spring-web:classes
+:spring-web:jar
+:spring-orm:compileJava
+Download http://repo.springsource.org/libs-release/javax/persistence/persistence-api/1.0b/persistence-api-1.0b.pom
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:spring-orm:processResources UP-TO-DATE
+:spring-orm:classes
+:spring-orm-hibernate4:compileJava
+:spring-orm-hibernate4:processResources UP-TO-DATE
+:spring-orm-hibernate4:classes
+:spring-orm:jar
+:spring-aspects:compileJava
+[ant:iajc] [warning] couldn't find aspectjrt.jar on classpath, checked: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/ubuntu/bugs/spring-framework/spring-core/build/libs/spring-asm-repack-4.0.jar:/home/ubuntu/bugs/spring-framework/spring-core/build/libs/spring-cglib-repack-3.0.jar:/home/ubuntu/bugs/spring-framework/spring-orm/build/libs/spring-orm-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/antlr/antlr/2.7.6/jar/cf4f67dae5df4f9932ae7810f4548ef3e14dd35e/antlr-2.7.6.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/xml-apis/xml-apis/1.0.b2/jar/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/dom4j/dom4j/1.6.1/jar/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.transaction/jta/1.1/jar/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.slf4j/slf4j-api/1.6.1/jar/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-collections/commons-collections/3.2/jar/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-core/3.3.2.GA/jar/856f809ec062ace0fcdb69797bef1664810884ef/hibernate-core-3.3.2.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/ejb3-persistence/1.0.2.GA/jar/be6483b6ed60a15588f54f91c25a09c745df0760/ejb3-persistence-1.0.2.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-commons-annotations/3.1.0.GA/jar/d4cada41969292a73f98eaa676e0695cef2f8ca9/hibernate-commons-annotations-3.1.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-annotations/3.4.0.GA/jar/c4975772be5d9ec713bf475cf3315aad83b9046/hibernate-annotations-3.4.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javassist/javassist/3.4.GA/jar/4dff02ca7696982700b8db25433289364cc028ff/javassist-3.4.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-entitymanager/3.4.0.GA/jar/99bed0ac69346305e30652f57e30c62a5874c41b/hibernate-entitymanager-3.4.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/junit/junit/3.8.1/jar/99129f16442844f6a4a11ae22fbbee40b14d774f/junit-3.8.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/net.sourceforge.serp/serp/1.13.1/jar/737a7b53f80fa2a4265d647a9417bd9ea671a592/serp-1.13.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1/jar/fe8d9046737540d728e4b82cf26dcdd8bf4b0eb1/geronimo-jta_1.1_spec-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.geronimo.specs/geronimo-jpa_3.0_spec/1.0/jar/cb4ca0167563f9718404c99e76f07eba2cb95382/geronimo-jpa_3.0_spec-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-pool/commons-pool/1.5.3/jar/7ad440d63c6eea5e79f1737e264810c76258d042/commons-pool-1.5.3.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1/jar/bbd68f90d445de37050b1e9fb9d7114e83757e73/geronimo-jms_1.1_spec-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-lang/commons-lang/2.5/jar/b0236b252e86419eef20c31a44579d2aee2f0a69/commons-lang-2.5.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.openjpa/openjpa/1.1.0/jar/e736581ce62cd0e26fe2a2baf3bcd5627ff8eb99/openjpa-1.1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.persistence/org.eclipse.persistence.core/1.0.1/jar/d081805d380332f01e972b0da686d2d65fdb1d49/org.eclipse.persistence.core-1.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.persistence/org.eclipse.persistence.jpa/1.0.1/jar/9fdc1770a9d185a7c1d07ff780cf65f2c0384bc7/org.eclipse.persistence.jpa-1.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.persistence/persistence-api/1.0/jar/5725f57873e05e068803e2bf9d5a8ea3740ffec5/persistence-api-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/toplink.essentials/toplink-essentials/2.0-41b/jar/88a3c7dc9b2ea11c8164c6a0218773ab54291623/toplink-essentials-2.0-41b.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.transaction/transaction-api/1.1/jar/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/transaction-api-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.jdo/jdo-api/3.0/jar/6e7266116ae0e870b22301f951f1b09e2a4fbed/jdo-api-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.ibatis/ibatis-sqlmap/2.3.4.726/jar/d5dcd02aaa7ba1a226e687bd4c366fe084d6e2cc/ibatis-sqlmap-2.3.4.726.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.aspectj/aspectjweaver/1.6.12/jar/e885e7ba80175986cfd6a84b0ce118407621f11b/aspectjweaver-1.6.12.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/net.sf.jopt-simple/jopt-simple/3.0/jar/ca61ad9dac22a30dbf94376131edc2d1b3a01463/jopt-simple-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/log4j/log4j/1.2.17/bundle/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/home/ubuntu/bugs/spring-framework/spring-core/build/libs/spring-core-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.el/el-api/1.0/jar/df8c6ce0406676e70c5d018e5fb988be1bcf1024/el-api-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.inject/javax.inject/1/jar/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/home/ubuntu/bugs/spring-framework/spring-beans/build/libs/spring-beans-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.jamonapi/jamon/2.4/jar/e2ad6f45c2ba72d8fa798b68a5f9b73c9f047756/jamon-2.4.jar:/home/ubuntu/bugs/spring-framework/spring-aop/build/libs/spring-aop-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-instrument/build/libs/spring-instrument-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-expression/build/libs/spring-expression-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/backport-util-concurrent/backport-util-concurrent/3.0/jar/a193f67b87fe7782a13f1031dce4fa822c0e3599/backport-util-concurrent-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.ejb/ejb-api/3.0/jar/d4855ba9a1ecd993b751880567ec06ffcbd6fe06/ejb-api-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.validation/validation-api/1.0.0.GA/jar/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.beanshell/bsh/2.0b4/jar/a05f0a0feefa8d8467ac80e16e7de071489f0d9c/bsh-2.0b4.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.groovy/groovy-all/1.8.8/jar/98a489343d3c30da817d36cbea5de11ed07bef31/groovy-all-1.8.8.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.jruby/jruby/1.6.5.1/jar/ed6654376812d9284ea30b2e443f025ac13fae2c/jruby-1.6.5.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/joda-time/joda-time/2.1/jar/8f79e353ef77da6710e1f10d34fc3698eaaacbca/joda-time-2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.jboss.logging/jboss-logging/3.1.0.CR2/jar/28725380c07f917ace4e511db21cc45e9ae5a72b/jboss-logging-3.1.0.CR2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-validator/4.3.0.Final/jar/f2d0447bcdb27a48398215a33eb351b8a594e3a4/hibernate-validator-4.3.0.Final.jar:/home/ubuntu/bugs/spring-framework/spring-context/build/libs/spring-context-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.ibm.websphere/uow/6.0.2.17/jar/df754f8fe0c9c6f837d00ddcc12632fef16ec239/uow-6.0.2.17.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.resource/connector-api/1.5/jar/a5cee35dc703a9d9ea305cc3f4a2baa7c4919145/connector-api-1.5.jar:/home/ubuntu/bugs/spring-framework/spring-tx/build/libs/spring-tx-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/c3p0/c3p0/0.9.1.2/jar/4ea71601f844c4b90d22195bbdb58979281bb8b6/c3p0-0.9.1.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/hsqldb/hsqldb/1.8.0.10/jar/7e9978fdb754bce5fcd5161133e7734ecb683036/hsqldb-1.8.0.10.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.h2database/h2/1.0.71/jar/cce21010ea88a619f1b9b2fe87613358191bb931/h2-1.0.71.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.derby/derby/10.5.3.0_1/jar/b0146dd76c2601a5a0632dd2e0b3b85e5b1b713/derby-10.5.3.0_1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.derby/derbyclient/10.5.3.0_1/jar/976ed4b6ae738c9cc3e81637b138d7d1fc6df0e8/derbyclient-10.5.3.0_1.jar:/home/ubuntu/bugs/spring-framework/spring-jdbc/build/libs/spring-jdbc-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/xpp3/xpp3_min/1.1.4c/jar/19d4e90b43059058f6e056f794f0ea4030d60b86/xpp3_min-1.1.4c.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.thoughtworks.xstream/xstream/1.3.1/jar/c23741bfc42efa760c6acdb90a131814c70aeb8d/xstream-1.3.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml.stream/stax-api/1.0-2/jar/d6337b0de8b25e53e81b922352fbea9f9f57ba0b/stax-api-1.0-2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.activation/activation/1.1/jar/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml.bind/jaxb-api/2.1/jar/b2dfeed54ac106bcd714ba59c1f52ef9167d56e/jaxb-api-2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.sun.xml.bind/jaxb-impl/2.1.7/jar/923680ab18e09563a3d733f314b4d446541b2aba/jaxb-impl-2.1.7.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/xpp3/xpp3/1.1.3.4.O/jar/1c165262edac1c1e4f0a67c1643c4b7476187034/xpp3-1.1.3.4.O.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.jibx/jibx-run/1.2.3/bundle/4f988e90274eed36e18f6064cfa2e517ffa04be2/jibx-run-1.2.3.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/stax/stax-api/1.0.1/jar/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.xmlbeans/xmlbeans/2.4.0/jar/9c8f767c02f9d8b98a2854aa0cf83e155747d299/xmlbeans-2.4.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.castor/castor-core/1.3.2/jar/cda04f5de6986f7dc6f6ed3180da5c3849721162/castor-core-1.3.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/stax/stax/1.2.0/jar/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.castor/castor-xml/1.3.2/jar/82cfb3c02aae008b56695a1db473ed242a5d453e/castor-xml-1.3.2.jar:/home/ubuntu/bugs/spring-framework/spring-oxm/build/libs/spring-oxm-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.caucho/hessian/3.2.1/jar/4815566b11283a1f00178ac6ae6f4c084ba40cc2/hessian-3.2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/jdom/jdom/1.0/jar/a2ac1cd690ab4c80defe7f9bce14d35934c35cec/jdom-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/rome/rome/1.0/jar/22b33347f315833e9348cec2751af1a5d5656e4/rome-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.faces/jsf-api/1.2_08/jar/454ff39ce64ef3d0c2f4d38a08119a623504657d/jsf-api-1.2_08.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.portlet/portlet-api/2.0/jar/1cd72f2a37fcf8ab9893a9468d7ba71c85fe2653/portlet-api-2.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.servlet/javax.servlet-api/3.0.1/jar/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.servlet.jsp/jsp-api/2.1/jar/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml/jaxrpc-api/1.1/jar/64e6fa9461f714ab2c1a66d552e3200e66d2510b/jaxrpc-api-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml.soap/saaj-api/1.3/jar/4e0c860c1bf18b54ccb10a3c7ab2e4d61452faff/saaj-api-1.3.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-fileupload/commons-fileupload/1.2/jar/a10c06183fe21f3bb3dda3b5946b93db6e2ad5cc/commons-fileupload-1.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-codec/commons-codec/1.6/jar/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-httpclient/commons-httpclient/3.1/jar/964cd74171f427720480efdec40a7c7f6e58426a/commons-httpclient-3.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.httpcomponents/httpcore/4.2/jar/9e431c80f58ec65460fcbdaaad802af668bb3fda/httpcore-4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.httpcomponents/httpclient/4.2/jar/894b77b74ac06206075bccc22868ef83d69e383b/httpclient-4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.jackson/jackson-core-asl/1.4.2/jar/bd7a893c5c575d20a36b98dc65f5a80c5609cc97/jackson-core-asl-1.4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.jackson/jackson-mapper-asl/1.4.2/jar/5f3ba53c3998b6dece15d4b83d189de23a8d8ad8/jackson-mapper-asl-1.4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.fasterxml.jackson.core/jackson-annotations/2.0.1/jar/36e5996abe8655a6471b82af5ac1cd6786aecf85/jackson-annotations-2.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.fasterxml.jackson.core/jackson-core/2.0.1/bundle/481d14ec21e034ed45217c4854dbbf15940ce108/jackson-core-2.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.fasterxml.jackson.core/jackson-databind/2.0.1/bundle/1d160beb3f8924d5b98d03d94a149021146f71cc/jackson-databind-2.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/taglibs/standard/1.1.2/jar/a17e8a4d9a1f7fcc5eed606721c9ed6b7f18acf7/standard-1.1.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-continuation/8.1.5.v20120716/jar/c7c6eb817b42cc28ac42969f9a14bed3984ef4db/jetty-continuation-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-util/8.1.5.v20120716/jar/dffcdc7315c0f68a4a5132f5bd07471f28e3087f/jetty-util-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-io/8.1.5.v20120716/jar/3ccbcf823903985d703a4f0cf9a7c90940c72c7a/jetty-io-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-http/8.1.5.v20120716/jar/2a4317f053d7b5652fb8409e98eee4f63f260712/jetty-http-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-server/8.1.5.v20120716/jar/c1f276b485ed70ef2a55bd7d8320729fc1e38e8f/jetty-server-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-security/8.1.5.v20120716/jar/854da04b13bfc4374473924ee37301d4c997b7ee/jetty-security-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-servlet/8.1.5.v20120716/jar/ee348ecc65c82e51f8d66d798ad6f1bfcf7a7a7e/jetty-servlet-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-io/commons-io/1.3/jar/9f508a8938650476228b2bbd0dfa9dcd35d8e99a/commons-io-1.3.jar:/home/ubuntu/bugs/spring-framework/spring-web/build/libs/spring-web-3.2.0.BUILD-SNAPSHOT.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/home/ubuntu/bugs/spring-framework/spring-core/build/libs/spring-asm-repack-4.0.jar:/home/ubuntu/bugs/spring-framework/spring-core/build/libs/spring-cglib-repack-3.0.jar:/home/ubuntu/bugs/spring-framework/spring-beans/build/libs/spring-beans-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-aop/build/libs/spring-aop-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-context/build/libs/spring-context-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-context-support/build/libs/spring-context-support-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-tx/build/libs/spring-tx-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-orm/build/libs/spring-orm-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.aspectj/aspectjweaver/1.6.12/jar/e885e7ba80175986cfd6a84b0ce118407621f11b/aspectjweaver-1.6.12.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/net.sf.jopt-simple/jopt-simple/3.0/jar/ca61ad9dac22a30dbf94376131edc2d1b3a01463/jopt-simple-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/log4j/log4j/1.2.17/bundle/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/home/ubuntu/bugs/spring-framework/spring-core/build/libs/spring-core-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.el/el-api/1.0/jar/df8c6ce0406676e70c5d018e5fb988be1bcf1024/el-api-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.inject/javax.inject/1/jar/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.jamonapi/jamon/2.4/jar/e2ad6f45c2ba72d8fa798b68a5f9b73c9f047756/jamon-2.4.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-pool/commons-pool/1.5.3/jar/7ad440d63c6eea5e79f1737e264810c76258d042/commons-pool-1.5.3.jar:/home/ubuntu/bugs/spring-framework/spring-instrument/build/libs/spring-instrument-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/bugs/spring-framework/spring-expression/build/libs/spring-expression-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/backport-util-concurrent/backport-util-concurrent/3.0/jar/a193f67b87fe7782a13f1031dce4fa822c0e3599/backport-util-concurrent-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.ejb/ejb-api/3.0/jar/d4855ba9a1ecd993b751880567ec06ffcbd6fe06/ejb-api-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1/jar/bbd68f90d445de37050b1e9fb9d7114e83757e73/geronimo-jms_1.1_spec-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.persistence/persistence-api/1.0/jar/5725f57873e05e068803e2bf9d5a8ea3740ffec5/persistence-api-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.validation/validation-api/1.0.0.GA/jar/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.beanshell/bsh/2.0b4/jar/a05f0a0feefa8d8467ac80e16e7de071489f0d9c/bsh-2.0b4.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.groovy/groovy-all/1.8.8/jar/98a489343d3c30da817d36cbea5de11ed07bef31/groovy-all-1.8.8.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.jruby/jruby/1.6.5.1/jar/ed6654376812d9284ea30b2e443f025ac13fae2c/jruby-1.6.5.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/joda-time/joda-time/2.1/jar/8f79e353ef77da6710e1f10d34fc3698eaaacbca/joda-time-2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.slf4j/slf4j-api/1.6.1/jar/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.jboss.logging/jboss-logging/3.1.0.CR2/jar/28725380c07f917ace4e511db21cc45e9ae5a72b/jboss-logging-3.1.0.CR2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-validator/4.3.0.Final/jar/f2d0447bcdb27a48398215a33eb351b8a594e3a4/hibernate-validator-4.3.0.Final.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.ibm.websphere/uow/6.0.2.17/jar/df754f8fe0c9c6f837d00ddcc12632fef16ec239/uow-6.0.2.17.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.resource/connector-api/1.5/jar/a5cee35dc703a9d9ea305cc3f4a2baa7c4919145/connector-api-1.5.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1/jar/fe8d9046737540d728e4b82cf26dcdd8bf4b0eb1/geronimo-jta_1.1_spec-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/c3p0/c3p0/0.9.1.2/jar/4ea71601f844c4b90d22195bbdb58979281bb8b6/c3p0-0.9.1.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/hsqldb/hsqldb/1.8.0.10/jar/7e9978fdb754bce5fcd5161133e7734ecb683036/hsqldb-1.8.0.10.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.h2database/h2/1.0.71/jar/cce21010ea88a619f1b9b2fe87613358191bb931/h2-1.0.71.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.derby/derby/10.5.3.0_1/jar/b0146dd76c2601a5a0632dd2e0b3b85e5b1b713/derby-10.5.3.0_1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.derby/derbyclient/10.5.3.0_1/jar/976ed4b6ae738c9cc3e81637b138d7d1fc6df0e8/derbyclient-10.5.3.0_1.jar:/home/ubuntu/bugs/spring-framework/spring-jdbc/build/libs/spring-jdbc-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.activation/activation/1.1/jar/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.mail/mail/1.4/jar/1aa1579ae5ecd41920c4f355b0a9ef40b68315dd/mail-1.4.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.cache/cache-api/0.5/jar/3c2462271b5a7dde562d23baab1b3708e06a7de4/cache-api-0.5.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/net.sf.ehcache/ehcache-core/2.0.0/jar/cc72e55013df1fb7ea39dc1e9989aa6c2a0b9084/ehcache-core-2.0.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/opensymphony/quartz/1.6.2/jar/1e9a9374823afbf98151c4fb3682fc6d3fb6cdb2/quartz-1.6.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.fabric3.api/commonj/1.1.0/jar/11e7a4fbf6c257e221df0aadf9851d8992fe60ff/commonj-1.1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/oro/oro/2.0.8/jar/5592374f834645c4ae250f4c9fbb314c9369d698/oro-2.0.8.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-collections/commons-collections/3.2/jar/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-lang/commons-lang/2.5/jar/b0236b252e86419eef20c31a44579d2aee2f0a69/commons-lang-2.5.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/velocity/velocity/1.5/jar/9f306baf7523ffc0e81a6353d08a584d254133b/velocity-1.5.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.freemarker/freemarker/2.3.15/jar/c8cfe522476fcec8da5c980d58bf62d6ab0cf27c/freemarker-2.3.15.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/bouncycastle/bcmail-jdk14/138/jar/14ff2dfec8578f5f6838c4d6a77a86789afe5382/bcmail-jdk14-138.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/bouncycastle/bcprov-jdk14/138/jar/de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff/bcprov-jdk14-138.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.bouncycastle/bcprov-jdk14/1.38/jar/de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff/bcprov-jdk14-1.38.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.bouncycastle/bcmail-jdk14/1.38/jar/14ff2dfec8578f5f6838c4d6a77a86789afe5382/bcmail-jdk14-1.38.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.bouncycastle/bctsp-jdk14/1.38/jar/4821122f8390d15f4b5ee652621e2a2bb1f1bf16/bctsp-jdk14-1.38.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.lowagie/itext/2.1.7/jar/892bfb3e97074a61123b3b2d7caa2db112750864/itext-2.1.7.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/jasperreports/jasperreports/2.0.5/jar/ac3168079260da10d643d0dd1bfca128935aa1b7/jasperreports-2.0.5.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/antlr/antlr/2.7.6/jar/cf4f67dae5df4f9932ae7810f4548ef3e14dd35e/antlr-2.7.6.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/xml-apis/xml-apis/1.0.b2/jar/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/dom4j/dom4j/1.6.1/jar/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.transaction/jta/1.1/jar/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-core/3.3.2.GA/jar/856f809ec062ace0fcdb69797bef1664810884ef/hibernate-core-3.3.2.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/ejb3-persistence/1.0.2.GA/jar/be6483b6ed60a15588f54f91c25a09c745df0760/ejb3-persistence-1.0.2.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-commons-annotations/3.1.0.GA/jar/d4cada41969292a73f98eaa676e0695cef2f8ca9/hibernate-commons-annotations-3.1.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-annotations/3.4.0.GA/jar/c4975772be5d9ec713bf475cf3315aad83b9046/hibernate-annotations-3.4.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javassist/javassist/3.4.GA/jar/4dff02ca7696982700b8db25433289364cc028ff/javassist-3.4.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.hibernate/hibernate-entitymanager/3.4.0.GA/jar/99bed0ac69346305e30652f57e30c62a5874c41b/hibernate-entitymanager-3.4.0.GA.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/junit/junit/3.8.1/jar/99129f16442844f6a4a11ae22fbbee40b14d774f/junit-3.8.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/net.sourceforge.serp/serp/1.13.1/jar/737a7b53f80fa2a4265d647a9417bd9ea671a592/serp-1.13.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.geronimo.specs/geronimo-jpa_3.0_spec/1.0/jar/cb4ca0167563f9718404c99e76f07eba2cb95382/geronimo-jpa_3.0_spec-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.openjpa/openjpa/1.1.0/jar/e736581ce62cd0e26fe2a2baf3bcd5627ff8eb99/openjpa-1.1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.persistence/org.eclipse.persistence.core/1.0.1/jar/d081805d380332f01e972b0da686d2d65fdb1d49/org.eclipse.persistence.core-1.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.persistence/org.eclipse.persistence.jpa/1.0.1/jar/9fdc1770a9d185a7c1d07ff780cf65f2c0384bc7/org.eclipse.persistence.jpa-1.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/toplink.essentials/toplink-essentials/2.0-41b/jar/88a3c7dc9b2ea11c8164c6a0218773ab54291623/toplink-essentials-2.0-41b.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.transaction/transaction-api/1.1/jar/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/transaction-api-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.jdo/jdo-api/3.0/jar/6e7266116ae0e870b22301f951f1b09e2a4fbed/jdo-api-3.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.ibatis/ibatis-sqlmap/2.3.4.726/jar/d5dcd02aaa7ba1a226e687bd4c366fe084d6e2cc/ibatis-sqlmap-2.3.4.726.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/xpp3/xpp3_min/1.1.4c/jar/19d4e90b43059058f6e056f794f0ea4030d60b86/xpp3_min-1.1.4c.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.thoughtworks.xstream/xstream/1.3.1/jar/c23741bfc42efa760c6acdb90a131814c70aeb8d/xstream-1.3.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml.stream/stax-api/1.0-2/jar/d6337b0de8b25e53e81b922352fbea9f9f57ba0b/stax-api-1.0-2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml.bind/jaxb-api/2.1/jar/b2dfeed54ac106bcd714ba59c1f52ef9167d56e/jaxb-api-2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.sun.xml.bind/jaxb-impl/2.1.7/jar/923680ab18e09563a3d733f314b4d446541b2aba/jaxb-impl-2.1.7.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/xpp3/xpp3/1.1.3.4.O/jar/1c165262edac1c1e4f0a67c1643c4b7476187034/xpp3-1.1.3.4.O.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.jibx/jibx-run/1.2.3/bundle/4f988e90274eed36e18f6064cfa2e517ffa04be2/jibx-run-1.2.3.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/stax/stax-api/1.0.1/jar/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.xmlbeans/xmlbeans/2.4.0/jar/9c8f767c02f9d8b98a2854aa0cf83e155747d299/xmlbeans-2.4.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.castor/castor-core/1.3.2/jar/cda04f5de6986f7dc6f6ed3180da5c3849721162/castor-core-1.3.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/stax/stax/1.2.0/jar/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.castor/castor-xml/1.3.2/jar/82cfb3c02aae008b56695a1db473ed242a5d453e/castor-xml-1.3.2.jar:/home/ubuntu/bugs/spring-framework/spring-oxm/build/libs/spring-oxm-3.2.0.BUILD-SNAPSHOT.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.caucho/hessian/3.2.1/jar/4815566b11283a1f00178ac6ae6f4c084ba40cc2/hessian-3.2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/jdom/jdom/1.0/jar/a2ac1cd690ab4c80defe7f9bce14d35934c35cec/jdom-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/rome/rome/1.0/jar/22b33347f315833e9348cec2751af1a5d5656e4/rome-1.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.faces/jsf-api/1.2_08/jar/454ff39ce64ef3d0c2f4d38a08119a623504657d/jsf-api-1.2_08.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.portlet/portlet-api/2.0/jar/1cd72f2a37fcf8ab9893a9468d7ba71c85fe2653/portlet-api-2.0.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.servlet/javax.servlet-api/3.0.1/jar/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.servlet.jsp/jsp-api/2.1/jar/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml/jaxrpc-api/1.1/jar/64e6fa9461f714ab2c1a66d552e3200e66d2510b/jaxrpc-api-1.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/javax.xml.soap/saaj-api/1.3/jar/4e0c860c1bf18b54ccb10a3c7ab2e4d61452faff/saaj-api-1.3.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-fileupload/commons-fileupload/1.2/jar/a10c06183fe21f3bb3dda3b5946b93db6e2ad5cc/commons-fileupload-1.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-codec/commons-codec/1.6/jar/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-httpclient/commons-httpclient/3.1/jar/964cd74171f427720480efdec40a7c7f6e58426a/commons-httpclient-3.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.httpcomponents/httpcore/4.2/jar/9e431c80f58ec65460fcbdaaad802af668bb3fda/httpcore-4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.apache.httpcomponents/httpclient/4.2/jar/894b77b74ac06206075bccc22868ef83d69e383b/httpclient-4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.jackson/jackson-core-asl/1.4.2/jar/bd7a893c5c575d20a36b98dc65f5a80c5609cc97/jackson-core-asl-1.4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.codehaus.jackson/jackson-mapper-asl/1.4.2/jar/5f3ba53c3998b6dece15d4b83d189de23a8d8ad8/jackson-mapper-asl-1.4.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.fasterxml.jackson.core/jackson-annotations/2.0.1/jar/36e5996abe8655a6471b82af5ac1cd6786aecf85/jackson-annotations-2.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.fasterxml.jackson.core/jackson-core/2.0.1/bundle/481d14ec21e034ed45217c4854dbbf15940ce108/jackson-core-2.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/com.fasterxml.jackson.core/jackson-databind/2.0.1/bundle/1d160beb3f8924d5b98d03d94a149021146f71cc/jackson-databind-2.0.1.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/taglibs/standard/1.1.2/jar/a17e8a4d9a1f7fcc5eed606721c9ed6b7f18acf7/standard-1.1.2.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-continuation/8.1.5.v20120716/jar/c7c6eb817b42cc28ac42969f9a14bed3984ef4db/jetty-continuation-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-util/8.1.5.v20120716/jar/dffcdc7315c0f68a4a5132f5bd07471f28e3087f/jetty-util-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-io/8.1.5.v20120716/jar/3ccbcf823903985d703a4f0cf9a7c90940c72c7a/jetty-io-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-http/8.1.5.v20120716/jar/2a4317f053d7b5652fb8409e98eee4f63f260712/jetty-http-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-server/8.1.5.v20120716/jar/c1f276b485ed70ef2a55bd7d8320729fc1e38e8f/jetty-server-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-security/8.1.5.v20120716/jar/854da04b13bfc4374473924ee37301d4c997b7ee/jetty-security-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/org.eclipse.jetty/jetty-servlet/8.1.5.v20120716/jar/ee348ecc65c82e51f8d66d798ad6f1bfcf7a7a7e/jetty-servlet-8.1.5.v20120716.jar:/home/ubuntu/.gradle/caches/artifacts-15/filestore/commons-io/commons-io/1.3/jar/9f508a8938650476228b2bbd0dfa9dcd35d8e99a/commons-io-1.3.jar:/home/ubuntu/bugs/spring-framework/spring-web/build/libs/spring-web-3.2.0.BUILD-SNAPSHOT.jar
+[ant:iajc] 	
+[ant:iajc] <Unknown> [warning] Found @DeclareAnnotation while current release does not support it (see 'org.aspectj.weaver.bcel.AtAjAttributes')
+[ant:iajc] 	
+[ant:iajc] org.aspectj.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 18
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.Constant.readConstant(Constant.java:133)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ConstantPool.<init>(ConstantPool.java:45)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:186)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+[ant:iajc] 	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:326)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:236)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+[ant:iajc] 	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+[ant:iajc] 	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+[ant:iajc] 	at org.aspectj.weaver.patterns.AndTypePattern.matchesStatically(AndTypePattern.java:62)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.match(DeclareParents.java:63)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.findMatchingNewParents(DeclareParents.java:358)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doDeclareParents(AjLookupEnvironment.java:880)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:730)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:652)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:427)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1027)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:271)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:184)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.main(Main.java:84)
+[ant:iajc] /home/ubuntu/bugs/spring-framework/spring-aspects/src/main/java/org/springframework/transaction/aspectj/AnnotationTransactionAspect.aj [error] Internal compiler error
+[ant:iajc] org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+[ant:iajc] 	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:326)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:236)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+[ant:iajc] 	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+[ant:iajc] 	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+[ant:iajc] 	at org.aspectj.weaver.patterns.AndTypePattern.matchesStatically(AndTypePattern.java:62)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.match(DeclareParents.java:63)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.findMatchingNewParents(DeclareParents.java:358)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doDeclareParents(AjLookupEnvironment.java:880)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:730)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:652)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:427)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1027)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:271)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:184)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.main(Main.java:84)
+[ant:iajc] 
+[ant:iajc] (no source information available)
+[ant:iajc] ABORT
+[ant:iajc] 	
+[ant:iajc] Exception thrown from AspectJ 1.6.12
+[ant:iajc] 
+[ant:iajc] This might be logged as a bug already -- find current bugs at
+[ant:iajc]   http://bugs.eclipse.org/bugs/buglist.cgi?product=AspectJ&component=Compiler
+[ant:iajc] 
+[ant:iajc] Bugs for exceptions thrown have titles File:line from the top stack, 
+[ant:iajc] e.g., "SomeFile.java:243"
+[ant:iajc] 
+[ant:iajc] If you don't find the exception below in a bug, please add a new bug
+[ant:iajc] at http://bugs.eclipse.org/bugs/enter_bug.cgi?product=AspectJ
+[ant:iajc] To make the bug a priority, please include a test program
+[ant:iajc] that can reproduce this exception.
+[ant:iajc] File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] 
+[ant:iajc] when processing declare parents String
+[ant:iajc] when weaving intertype declarations String
+[ant:iajc] when weaving intertype declarations String
+[ant:iajc] when completing type bindings 
+[ant:iajc] when batch building BuildConfig[null] #Files=21 AopXmls=#0
+[ant:iajc] File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+[ant:iajc] 	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+[ant:iajc] 	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:326)
+[ant:iajc] 	at org.aspectj.weaver.World.resolve(World.java:236)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+[ant:iajc] 	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+[ant:iajc] 	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+[ant:iajc] 	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+[ant:iajc] 	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+[ant:iajc] 	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+[ant:iajc] 	at org.aspectj.weaver.patterns.AndTypePattern.matchesStatically(AndTypePattern.java:62)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.match(DeclareParents.java:63)
+[ant:iajc] 	at org.aspectj.weaver.patterns.DeclareParents.findMatchingNewParents(DeclareParents.java:358)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doDeclareParents(AjLookupEnvironment.java:880)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:730)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:652)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:427)
+[ant:iajc] 	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+[ant:iajc] 	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1027)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:271)
+[ant:iajc] 	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:184)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+[ant:iajc] 	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+[ant:iajc] 	at org.aspectj.tools.ajc.Main.main(Main.java:84)
+[ant:iajc] 
+[ant:iajc] Jan 13, 2019 2:45:39 PM org.aspectj.weaver.tools.Jdk14Trace info
+[ant:iajc] INFO: Dumping to /home/ubuntu/bugs/spring-framework/spring-aspects/./ajcore.20190113.144539.171.txt
+[ant:iajc] 
+[ant:iajc] 1 fail|abort, 1 error, 2 warnings
+:spring-aspects:compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/home/ubuntu/bugs/spring-framework/spring-aspects/aspects.gradle' line: 23
+
+* What went wrong:
+Execution failed for task ':spring-aspects:compileJava'.
+> compile errors: 255
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 51.772 secs

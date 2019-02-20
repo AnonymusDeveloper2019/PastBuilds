@@ -1,0 +1,491 @@
+Previous HEAD position was 89e2caa4f3 Merge pull request #1934 from kylec32:websocket-documentation-remove-deprecated
+HEAD is now at d303c8a20f Store PathPattern instead of String in attributes
+[ BUILD CHECKER ] CHECK BUILD FOR STEP 2
+[ BUILD CHECKER ] d303c8a commit already checked: SUCCESS
+[ BUILD CHECKER ] ab8310b commit already checked: SUCCESS
+[ BUILD CHECKER ] fdaceeb commit already checked: SUCCESS
+[ BUILD CHECKER ] 2c5a1af commit already checked: SUCCESS
+[ BUILD CHECKER ] f885910 commit already checked: SUCCESS
+[ BUILD CHECKER ] e14cf69 commit already checked: SUCCESS
+[ BUILD CHECKER ] 93bb78e commit already checked: SUCCESS
+[ BUILD CHECKER ] b2bf5fe commit already checked: SUCCESS
+[ BUILD CHECKER ] 423aa28 commit already checked: SUCCESS
+[ BUILD CHECKER ] 5094941 commit already checked: SUCCESS
+[ BUILD CHECKER ] 608fd76 commit already checked: SUCCESS
+[ BUILD CHECKER ] 58b3af9 commit already checked: SUCCESS
+[ BUILD CHECKER ] 5f2d47a commit already checked: SUCCESS
+[ BUILD CHECKER ] 2255d22 commit already checked: SUCCESS
+[ BUILD CHECKER ] ecd0d7f commit already checked: SUCCESS
+[ BUILD CHECKER ] 309e70a commit already checked: SUCCESS
+[ BUILD CHECKER ] 658c7f9 commit already checked: SUCCESS
+[ BUILD CHECKER ] c5ca56b commit already checked: SUCCESS
+[ BUILD CHECKER ] 0583091 commit already checked: SUCCESS
+[ BUILD CHECKER ] 864d7ea commit already checked: SUCCESS
+[ BUILD CHECKER ] bfc5ad8 commit already checked: SUCCESS
+[ BUILD CHECKER ] b7e4a56 commit already checked: SUCCESS
+[ BUILD CHECKER ] 0b2c482 commit already checked: SUCCESS
+[ BUILD CHECKER ] dcf2861 commit already checked: SUCCESS
+[ BUILD CHECKER ] 5474995 commit already checked: SUCCESS
+[ BUILD CHECKER ] a2ae5f6 commit already checked: SUCCESS
+[ BUILD CHECKER ] 4ee704c commit already checked: SUCCESS
+[ BUILD CHECKER ] 8df0bc8 commit already checked: SUCCESS
+[ BUILD CHECKER ] c567e65 commit already checked: SUCCESS
+[ BUILD CHECKER ] 050f44d commit already checked: SUCCESS
+[ BUILD CHECKER ] 60b5161 commit already checked: SUCCESS
+[ BUILD CHECKER ] 10d5de7 commit already checked: SUCCESS
+[ BUILD CHECKER ] 8de5c05 commit already checked: SUCCESS
+[ BUILD CHECKER ] f12c28e commit already checked: SUCCESS
+[ BUILD CHECKER ] ce7278a commit already checked: SUCCESS
+[ BUILD CHECKER ] 61403e3 commit already checked: SUCCESS
+[ BUILD CHECKER ] cc172bc commit already checked: SUCCESS
+[ BUILD CHECKER ] e181498 commit already checked: SUCCESS
+[ BUILD CHECKER ] c89e3e6 commit already checked: SUCCESS
+[ BUILD CHECKER ] d059241 commit already checked: SUCCESS
+[ BUILD CHECKER ] 82a211f commit already checked: SUCCESS
+[ BUILD CHECKER ] 062805f commit already checked: SUCCESS
+[ BUILD CHECKER ] 053820c commit already checked: SUCCESS
+[ BUILD CHECKER ] f662e3b commit already checked: SUCCESS
+[ BUILD CHECKER ] 44afed4 commit already checked: SUCCESS
+[ BUILD CHECKER ] 83909e6 commit already checked: SUCCESS
+[ BUILD CHECKER ] fdf3403 commit already checked: SUCCESS
+[ BUILD CHECKER ] d9e7253 commit already checked: SUCCESS
+[ BUILD CHECKER ] 2b986af commit already checked: SUCCESS
+[ BUILD CHECKER ] c8c0737 commit already checked: SUCCESS
+[ BUILD CHECKER ] 19f3347 commit already checked: SUCCESS
+[ BUILD CHECKER ] efdbddd commit already checked: SUCCESS
+[ BUILD CHECKER ] cf3635b commit already checked: SUCCESS
+[ BUILD CHECKER ] 1e0de07 commit already checked: SUCCESS
+[ BUILD CHECKER ] bb5c8ed commit already checked: SUCCESS
+[ BUILD CHECKER ] c01f350 commit already checked: SUCCESS
+[ BUILD CHECKER ] 928c541 commit already checked: FAIL
+[ BUILD CHECKER ] bef22ec commit already checked: SUCCESS
+[ BUILD CHECKER ] 29ff8a8 commit already checked: SUCCESS
+[ BUILD CHECKER ] af6a556 commit already checked: SUCCESS
+[ BUILD CHECKER ] 635d214 commit already checked: SUCCESS
+[ BUILD CHECKER ] ccce61e commit already checked: SUCCESS
+[ BUILD CHECKER ] 9630445 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1c90d48 commit already checked: SUCCESS
+[ BUILD CHECKER ] d16a710 commit already checked: SUCCESS
+[ BUILD CHECKER ] 4d24503 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1489457 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9064ef5 commit already checked: SUCCESS
+[ BUILD CHECKER ] 983bce1 commit already checked: SUCCESS
+[ BUILD CHECKER ] 80e7819 commit already checked: SUCCESS
+[ BUILD CHECKER ] cb4fa37 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9d5aced commit already checked: SUCCESS
+[ BUILD CHECKER ] ff7ccf0 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9975646 commit already checked: SUCCESS
+[ BUILD CHECKER ] 38e5c01 commit already checked: SUCCESS
+[ BUILD CHECKER ] 3ff5731 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1320fed commit already checked: SUCCESS
+[ BUILD CHECKER ] e63bffc commit already checked: SUCCESS
+[ BUILD CHECKER ] 77205ca commit already checked: SUCCESS
+[ BUILD CHECKER ] 31095f1 commit already checked: SUCCESS
+[ BUILD CHECKER ] 49bc746 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1b8421c commit already checked: SUCCESS
+[ BUILD CHECKER ] 00353a0 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9fed4d0 commit already checked: SUCCESS
+[ BUILD CHECKER ] fc03707 commit already checked: SUCCESS
+[ BUILD CHECKER ] 7aa9334 commit already checked: SUCCESS
+[ BUILD CHECKER ] a8f4c59 commit already checked: SUCCESS
+[ BUILD CHECKER ] 058f027 commit already checked: SUCCESS
+[ BUILD CHECKER ] 2ec41c8 commit already checked: SUCCESS
+[ BUILD CHECKER ] ad29f97 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9063e66 commit already checked: SUCCESS
+[ BUILD CHECKER ] d6dfde3 commit already checked: SUCCESS
+[ BUILD CHECKER ] 333e327 commit already checked: SUCCESS
+[ BUILD CHECKER ] 255015f commit already checked: SUCCESS
+[ BUILD CHECKER ] 6ff8cd8 commit already checked: SUCCESS
+[ BUILD CHECKER ] 18c9e3e commit already checked: SUCCESS
+[ BUILD CHECKER ] a76b8de commit already checked: SUCCESS
+[ BUILD CHECKER ] 7ca6b9f commit already checked: SUCCESS
+[ BUILD CHECKER ] 51ba322 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9e2912e commit already checked: SUCCESS
+[ BUILD CHECKER ] 6d22632 commit already checked: SUCCESS
+[ BUILD CHECKER ] 45ecfc6 commit already checked: SUCCESS
+[ BUILD CHECKER ] 59e87f9 commit already checked: SUCCESS
+[ BUILD CHECKER ] 917bb53 commit already checked: SUCCESS
+[ BUILD CHECKER ] f7263ab commit already checked: SUCCESS
+[ BUILD CHECKER ] 2a6da6a commit already checked: SUCCESS
+[ BUILD CHECKER ] 92b3f2a commit already checked: SUCCESS
+[ BUILD CHECKER ] 80e52de commit already checked: SUCCESS
+[ BUILD CHECKER ] 7562761 commit already checked: SUCCESS
+[ BUILD CHECKER ] 3f5a7bb commit already checked: SUCCESS
+[ BUILD CHECKER ] 093a863 commit already checked: SUCCESS
+[ BUILD CHECKER ] 90c29b3 commit already checked: SUCCESS
+[ BUILD CHECKER ] f783967 commit already checked: SUCCESS
+[ BUILD CHECKER ] 47d6e91 commit already checked: SUCCESS
+[ BUILD CHECKER ] b6b880c commit already checked: SUCCESS
+[ BUILD CHECKER ] 7481d73 commit already checked: SUCCESS
+[ BUILD CHECKER ] 288a9ec commit already checked: SUCCESS
+[ BUILD CHECKER ] a278e87 commit already checked: SUCCESS
+[ BUILD CHECKER ] 082c524 commit already checked: SUCCESS
+[ BUILD CHECKER ] d3c0855 commit already checked: SUCCESS
+[ BUILD CHECKER ] 50c9542 commit already checked: SUCCESS
+[ BUILD CHECKER ] a6f9c4c commit already checked: SUCCESS
+[ BUILD CHECKER ] af58263 commit already checked: SUCCESS
+[ BUILD CHECKER ] 8a48353 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1756f83 commit already checked: SUCCESS
+[ BUILD CHECKER ] d94e922 commit already checked: SUCCESS
+[ BUILD CHECKER ] 65ca7f4 commit already checked: SUCCESS
+[ BUILD CHECKER ] 0204b08 commit already checked: SUCCESS
+[ BUILD CHECKER ] 5b25aaa commit already checked: SUCCESS
+[ BUILD CHECKER ] 6431b25 commit already checked: SUCCESS
+[ BUILD CHECKER ] 745aeda commit already checked: SUCCESS
+[ BUILD CHECKER ] c634b2f commit already checked: SUCCESS
+[ BUILD CHECKER ] 00a3afc commit already checked: SUCCESS
+[ BUILD CHECKER ] b29a278 commit already checked: SUCCESS
+[ BUILD CHECKER ] 95ff22c commit already checked: SUCCESS
+[ BUILD CHECKER ] 395e3d0 commit already checked: SUCCESS
+[ BUILD CHECKER ] d0ada56 commit already checked: SUCCESS
+[ BUILD CHECKER ] 0948edb commit already checked: SUCCESS
+[ BUILD CHECKER ] c8869d9 commit already checked: SUCCESS
+[ BUILD CHECKER ] 69e8bcd commit already checked: SUCCESS
+[ BUILD CHECKER ] c385a1d commit already checked: SUCCESS
+[ BUILD CHECKER ] 88ab911 commit already checked: SUCCESS
+[ BUILD CHECKER ] 51f7a3e commit already checked: SUCCESS
+[ BUILD CHECKER ] 3466330 commit already checked: SUCCESS
+[ BUILD CHECKER ] cc87fbc commit already checked: SUCCESS
+[ BUILD CHECKER ] c4aea62 commit already checked: SUCCESS
+[ BUILD CHECKER ] a680880 commit already checked: SUCCESS
+[ BUILD CHECKER ] 8e83f14 commit already checked: SUCCESS
+[ BUILD CHECKER ] db8e9ea commit already checked: SUCCESS
+[ BUILD CHECKER ] 41d4cb5 commit already checked: SUCCESS
+[ BUILD CHECKER ] 12240c7 commit already checked: SUCCESS
+[ BUILD CHECKER ] e62298e commit already checked: SUCCESS
+[ BUILD CHECKER ] 66c66ba commit already checked: SUCCESS
+[ BUILD CHECKER ] cf96416 commit already checked: SUCCESS
+[ BUILD CHECKER ] 97cea7f commit already checked: SUCCESS
+[ BUILD CHECKER ] 77887ef commit already checked: SUCCESS
+[ BUILD CHECKER ] cbc0fad commit already checked: SUCCESS
+[ BUILD CHECKER ] 65c8fa4 commit already checked: SUCCESS
+[ BUILD CHECKER ] 0685651 commit already checked: SUCCESS
+[ BUILD CHECKER ] cde677a commit already checked: SUCCESS
+[ BUILD CHECKER ] 184340f commit already checked: SUCCESS
+[ BUILD CHECKER ] 9cb8b4b commit already checked: SUCCESS
+[ BUILD CHECKER ] b6d32ef commit already checked: SUCCESS
+[ BUILD CHECKER ] b83bc39 commit already checked: SUCCESS
+[ BUILD CHECKER ] 45936f0 commit already checked: SUCCESS
+[ BUILD CHECKER ] 43a814b commit already checked: SUCCESS
+[ BUILD CHECKER ] bffa4b8 commit already checked: SUCCESS
+[ BUILD CHECKER ] dcac30c commit already checked: SUCCESS
+[ BUILD CHECKER ] f35f7db commit already checked: SUCCESS
+[ BUILD CHECKER ] 09af706 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1a0522b commit already checked: SUCCESS
+[ BUILD CHECKER ] 1da4d50 commit already checked: SUCCESS
+[ BUILD CHECKER ] e473550 commit already checked: SUCCESS
+[ BUILD CHECKER ] 2820831 commit already checked: SUCCESS
+[ BUILD CHECKER ] c06b952 commit already checked: SUCCESS
+[ BUILD CHECKER ] e49896d commit already checked: SUCCESS
+[ BUILD CHECKER ] 6c487f7 commit already checked: SUCCESS
+[ BUILD CHECKER ] aa848d5 commit already checked: SUCCESS
+[ BUILD CHECKER ] 3abebb3 commit already checked: SUCCESS
+[ BUILD CHECKER ] 87fac79 commit already checked: SUCCESS
+[ BUILD CHECKER ] 90a4740 commit already checked: SUCCESS
+[ BUILD CHECKER ] c803ad7 commit already checked: SUCCESS
+[ BUILD CHECKER ] 84ec382 commit already checked: SUCCESS
+[ BUILD CHECKER ] 8d45e3e commit already checked: SUCCESS
+[ BUILD CHECKER ] c8627c0 commit already checked: SUCCESS
+[ BUILD CHECKER ] f30d19b commit already checked: FAIL
+[ BUILD CHECKER ] 2163fa9 commit already checked: FAIL
+[ BUILD CHECKER ] f55a605 commit already checked: FAIL
+[ BUILD CHECKER ] c450f8d commit already checked: FAIL
+[ BUILD CHECKER ] fd352b8 commit already checked: FAIL
+[ BUILD CHECKER ] 8658a35 commit already checked: FAIL
+[ BUILD CHECKER ] d537a1c commit already checked: SUCCESS
+[ BUILD CHECKER ] 3302798 commit already checked: SUCCESS
+[ BUILD CHECKER ] d570f82 commit already checked: SUCCESS
+[ BUILD CHECKER ] f87a37f commit already checked: SUCCESS
+[ BUILD CHECKER ] 48c660f commit already checked: SUCCESS
+[ BUILD CHECKER ] f8a0e3d commit already checked: SUCCESS
+[ BUILD CHECKER ] 259b2ca commit already checked: SUCCESS
+[ BUILD CHECKER ] 196c0ad commit already checked: SUCCESS
+[ BUILD CHECKER ] 3067682 commit already checked: SUCCESS
+[ BUILD CHECKER ] 7041e5e commit already checked: SUCCESS
+[ BUILD CHECKER ] 1bdbc7b commit already checked: SUCCESS
+[ BUILD CHECKER ] bff2d2c commit already checked: SUCCESS
+[ BUILD CHECKER ] ab086f4 commit already checked: SUCCESS
+[ BUILD CHECKER ] 3268952 commit already checked: SUCCESS
+[ BUILD CHECKER ] 2c1dca5 commit already checked: SUCCESS
+[ BUILD CHECKER ] 454cd93 commit already checked: SUCCESS
+[ BUILD CHECKER ] dcdf9c0 commit already checked: SUCCESS
+[ BUILD CHECKER ] c258507 commit already checked: SUCCESS
+[ BUILD CHECKER ] 95a56cd commit already checked: SUCCESS
+[ BUILD CHECKER ] 51cee65 commit already checked: SUCCESS
+[ BUILD CHECKER ] 8c6f350 commit already checked: SUCCESS
+[ BUILD CHECKER ] 78cad0f commit already checked: SUCCESS
+[ BUILD CHECKER ] a689daa commit already checked: SUCCESS
+[ BUILD CHECKER ] fb3c188 commit already checked: SUCCESS
+[ BUILD CHECKER ] 280da61 commit already checked: SUCCESS
+[ BUILD CHECKER ] 1dac0df commit already checked: SUCCESS
+[ BUILD CHECKER ] 7dba79c commit already checked: SUCCESS
+[ BUILD CHECKER ] 4883b8a commit already checked: SUCCESS
+[ BUILD CHECKER ] 08ba53d commit already checked: SUCCESS
+[ BUILD CHECKER ] 52c9191 commit already checked: SUCCESS
+[ BUILD CHECKER ] 4b86d42 commit already checked: SUCCESS
+[ BUILD CHECKER ] 03f1920 commit already checked: SUCCESS
+[ BUILD CHECKER ] 7056808 commit already checked: SUCCESS
+[ BUILD CHECKER ] 9614817 commit already checked: SUCCESS
+[ BUILD CHECKER ] f6ee250 commit already checked: SUCCESS
+[ BUILD CHECKER ] 2bb15f7 commit already checked: SUCCESS
+[ BUILD CHECKER ] 482115f commit already checked: SUCCESS
+[ BUILD CHECKER ] 35c847a commit already checked: SUCCESS
+[ BUILD CHECKER ] 253ffd7 commit already checked: SUCCESS
+[ BUILD CHECKER ] 62cb8ba commit already checked: SUCCESS
+[ BUILD CHECKER ] 7fdd137 commit already checked: SUCCESS
+[ BUILD CHECKER ] 4db5d28 commit already checked: SUCCESS
+[ BUILD CHECKER ] f13f041 commit already checked: SUCCESS
+[ BUILD CHECKER ] 6ef0938 commit already checked: SUCCESS
+[ BUILD CHECKER ] c55a907 commit already checked: SUCCESS
+[ BUILD CHECKER ] 709b185 commit already checked: SUCCESS
+[ BUILD CHECKER ] 89e2caa commit already checked: SUCCESS
+[ BUILD CHECKER ] 8848e6a commit gona be re-checked
+Previous HEAD position was d303c8a20f Store PathPattern instead of String in attributes
+HEAD is now at 8848e6ab9f Fix usage of deprecated functionality in docs
+[ BUILD CHECKER ] 8848e6a commit build success
+[ BUILD CHECKER ] 8848e6a commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] a8fbac8 commit gona be re-checked
+Previous HEAD position was 8848e6ab9f Fix usage of deprecated functionality in docs
+HEAD is now at a8fbac8472 Polish JavaDoc
+[ BUILD CHECKER ] a8fbac8 commit build success
+[ BUILD CHECKER ] a8fbac8 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 1d59e52 commit gona be re-checked
+Previous HEAD position was a8fbac8472 Polish JavaDoc
+HEAD is now at 1d59e52f11 EventListenerMethodProcessor accepts internal configuration classes
+[ BUILD CHECKER ] 1d59e52 commit build success
+[ BUILD CHECKER ] 1d59e52 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] a6a6cf7 commit gona be re-checked
+Previous HEAD position was 1d59e52f11 EventListenerMethodProcessor accepts internal configuration classes
+HEAD is now at a6a6cf7d97 Upgrade to Java Activation Framework 1.2 as API dependency
+[ BUILD CHECKER ] a6a6cf7 commit build success
+[ BUILD CHECKER ] a6a6cf7 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 2ac23ba commit gona be re-checked
+Previous HEAD position was a6a6cf7d97 Upgrade to Java Activation Framework 1.2 as API dependency
+HEAD is now at 2ac23badee SimpleAliasRegistry.hasAlias properly resolves multiple chained aliases
+[ BUILD CHECKER ] 2ac23ba commit build success
+[ BUILD CHECKER ] 2ac23ba commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] ad88c02 commit gona be re-checked
+Previous HEAD position was 2ac23badee SimpleAliasRegistry.hasAlias properly resolves multiple chained aliases
+HEAD is now at ad88c02bc3 Restore formatting change following revert
+[ BUILD CHECKER ] ad88c02 commit build success
+[ BUILD CHECKER ] ad88c02 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 4989843 commit gona be re-checked
+Previous HEAD position was ad88c02bc3 Restore formatting change following revert
+HEAD is now at 498984324d Revert "Add handleFailure property to FrameworkServlet"
+[ BUILD CHECKER ] 4989843 commit build success
+[ BUILD CHECKER ] 4989843 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 0dd9e8c commit gona be re-checked
+Previous HEAD position was 498984324d Revert "Add handleFailure property to FrameworkServlet"
+HEAD is now at 0dd9e8ce02 Polish JettyResourceFactory
+[ BUILD CHECKER ] 0dd9e8c commit build success
+[ BUILD CHECKER ] 0dd9e8c commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 6bcb454 commit gona be re-checked
+Previous HEAD position was 0dd9e8ce02 Polish JettyResourceFactory
+HEAD is now at 6bcb454a0d Polishing
+[ BUILD CHECKER ] 6bcb454 commit build success
+[ BUILD CHECKER ] 6bcb454 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 84300b7 commit gona be re-checked
+Previous HEAD position was 6bcb454a0d Polishing
+HEAD is now at 84300b796c Fix recent javadoc errors
+[ BUILD CHECKER ] 84300b7 commit build success
+[ BUILD CHECKER ] 84300b7 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 1eb06fc commit gona be re-checked
+Previous HEAD position was 84300b796c Fix recent javadoc errors
+HEAD is now at 1eb06fcd90 Introduce JettyResourceFactory
+[ BUILD CHECKER ] 1eb06fc commit build success
+[ BUILD CHECKER ] 1eb06fc commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 50b6f9d commit gona be re-checked
+Previous HEAD position was 1eb06fcd90 Introduce JettyResourceFactory
+HEAD is now at 50b6f9da1d Reference documentation covers async Hibernate/JPA bootstrap options
+[ BUILD CHECKER ] 50b6f9d commit build success
+[ BUILD CHECKER ] 50b6f9d commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 31c7807 commit gona be re-checked
+Previous HEAD position was 50b6f9da1d Reference documentation covers async Hibernate/JPA bootstrap options
+HEAD is now at 31c7807ac9 Fix doc issue with Reactor HttpClient config
+[ BUILD CHECKER ] 31c7807 commit build success
+[ BUILD CHECKER ] 31c7807 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 04d2d1d commit gona be re-checked
+Previous HEAD position was 31c7807ac9 Fix doc issue with Reactor HttpClient config
+HEAD is now at 04d2d1da0d Consistently use double quotes (even if no interpolation needed)
+[ BUILD CHECKER ] 04d2d1d commit build success
+[ BUILD CHECKER ] 04d2d1d commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] dc55da0 commit gona be re-checked
+Previous HEAD position was 04d2d1da0d Consistently use double quotes (even if no interpolation needed)
+HEAD is now at dc55da0988 Polishing
+[ BUILD CHECKER ] dc55da0 commit build success
+[ BUILD CHECKER ] dc55da0 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 5d7fb1a commit gona be re-checked
+Previous HEAD position was dc55da0988 Polishing
+HEAD is now at 5d7fb1a1c2 Polishing
+[ BUILD CHECKER ] 5d7fb1a commit build success
+[ BUILD CHECKER ] 5d7fb1a commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 2ec8fa9 commit gona be re-checked
+Previous HEAD position was 5d7fb1a1c2 Polishing
+HEAD is now at 2ec8fa9cac SmartLifecycle default methods for auto-startup in default phase
+[ BUILD CHECKER ] 2ec8fa9 commit build success
+[ BUILD CHECKER ] 2ec8fa9 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 446a604 commit gona be re-checked
+Previous HEAD position was 2ec8fa9cac SmartLifecycle default methods for auto-startup in default phase
+HEAD is now at 446a604ad0 Upgrade to Reactor Californium-M2
+[ BUILD CHECKER ] 446a604 commit build success
+[ BUILD CHECKER ] 446a604 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] cd403f4 commit gona be re-checked
+Previous HEAD position was 446a604ad0 Upgrade to Reactor Californium-M2
+HEAD is now at cd403f4180 Polish
+[ BUILD CHECKER ] cd403f4 commit build success
+[ BUILD CHECKER ] cd403f4 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 23fc6f6 commit gona be re-checked
+Previous HEAD position was cd403f4180 Polish
+HEAD is now at 23fc6f6b1d Drain JDK HTTP client response body in all cases
+[ BUILD CHECKER ] 23fc6f6 commit build success
+[ BUILD CHECKER ] 23fc6f6 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 432cdd7 commit gona be re-checked
+Previous HEAD position was 23fc6f6b1d Drain JDK HTTP client response body in all cases
+HEAD is now at 432cdd7802 Add ResponseEntity.of(Optional) variant
+[ BUILD CHECKER ] 432cdd7 commit build success
+[ BUILD CHECKER ] 432cdd7 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] d3be1cc commit gona be re-checked
+Previous HEAD position was 432cdd7802 Add ResponseEntity.of(Optional) variant
+HEAD is now at d3be1cc6cb Use single quotes in Gradle build where appropriate
+[ BUILD CHECKER ] d3be1cc commit build success
+[ BUILD CHECKER ] d3be1cc commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 69e4f21 commit gona be re-checked
+Previous HEAD position was d3be1cc6cb Use single quotes in Gradle build where appropriate
+HEAD is now at 69e4f21f90 Use JUnit 5 Maven BOM in Gradle build
+[ BUILD CHECKER ] 69e4f21 commit build success
+[ BUILD CHECKER ] 69e4f21 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 109a2b4 commit gona be re-checked
+Previous HEAD position was 69e4f21f90 Use JUnit 5 Maven BOM in Gradle build
+HEAD is now at 109a2b49e5 Consistently skip unnecessary search on superclasses and empty elements
+[ BUILD CHECKER ] 109a2b4 commit build success
+[ BUILD CHECKER ] 109a2b4 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 50dc8c2 commit gona be re-checked
+Previous HEAD position was 109a2b49e5 Consistently skip unnecessary search on superclasses and empty elements
+HEAD is now at 50dc8c2358 Update JavaDoc for @BootstrapWith regarding local override
+[ BUILD CHECKER ] 50dc8c2 commit build success
+[ BUILD CHECKER ] 50dc8c2 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] d20d95b commit gona be re-checked
+Previous HEAD position was 50dc8c2358 Update JavaDoc for @BootstrapWith regarding local override
+HEAD is now at d20d95b7ac Allow directly present @BootstrapWith to override meta annotations
+[ BUILD CHECKER ] d20d95b commit build success
+[ BUILD CHECKER ] d20d95b commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 4d7b265 commit gona be re-checked
+Previous HEAD position was d20d95b7ac Allow directly present @BootstrapWith to override meta annotations
+HEAD is now at 4d7b265258 Fix merge conflict in reference manual
+[ BUILD CHECKER ] 4d7b265 commit build success
+[ BUILD CHECKER ] 4d7b265 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] f2506ca commit gona be re-checked
+Previous HEAD position was 4d7b265258 Fix merge conflict in reference manual
+HEAD is now at f2506ca7a1 Revert "Infer HTTP 404 from empty Optional/Publisher types"
+[ BUILD CHECKER ] f2506ca commit build success
+[ BUILD CHECKER ] f2506ca commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 1b54d21 commit gona be re-checked
+Previous HEAD position was f2506ca7a1 Revert "Infer HTTP 404 from empty Optional/Publisher types"
+HEAD is now at 1b54d2119d Polishing
+[ BUILD CHECKER ] 1b54d21 commit build success
+[ BUILD CHECKER ] 1b54d21 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] a87b319 commit gona be re-checked
+Previous HEAD position was 1b54d2119d Polishing
+HEAD is now at a87b319a6f Polishing
+[ BUILD CHECKER ] a87b319 commit build success
+[ BUILD CHECKER ] a87b319 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 7e91733 commit gona be re-checked
+Previous HEAD position was a87b319a6f Polishing
+HEAD is now at 7e91733502 Infer HTTP 404 from empty Optional/Publisher types
+[ BUILD CHECKER ] 7e91733 commit build success
+[ BUILD CHECKER ] 7e91733 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 04141de commit gona be re-checked
+Previous HEAD position was 7e91733502 Infer HTTP 404 from empty Optional/Publisher types
+HEAD is now at 04141dee65 Consistent logging of resolved exceptions
+[ BUILD CHECKER ] 04141de commit build success
+[ BUILD CHECKER ] 04141de commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 6027cf2 commit gona be re-checked
+Previous HEAD position was 04141dee65 Consistent logging of resolved exceptions
+HEAD is now at 6027cf2255 Polishing
+[ BUILD CHECKER ] 6027cf2 commit build success
+[ BUILD CHECKER ] 6027cf2 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] c0c9e08 commit gona be re-checked
+Previous HEAD position was 6027cf2255 Polishing
+HEAD is now at c0c9e08bf9 Revised documentation for PDF, Excel and JSON views
+[ BUILD CHECKER ] c0c9e08 commit build success
+[ BUILD CHECKER ] c0c9e08 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] de38af6 commit gona be re-checked
+Previous HEAD position was c0c9e08bf9 Revised documentation for PDF, Excel and JSON views
+HEAD is now at de38af6843 Upgrade to JUnit Jupiter 5.3 RC1 (and Jetty 9.4.12 RC1)
+[ BUILD CHECKER ] de38af6 commit build success
+[ BUILD CHECKER ] de38af6 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 3e4d305 commit gona be re-checked
+Previous HEAD position was de38af6843 Upgrade to JUnit Jupiter 5.3 RC1 (and Jetty 9.4.12 RC1)
+HEAD is now at 3e4d305291 Polish ReactorResourceFactory
+[ BUILD CHECKER ] 3e4d305 commit build success
+[ BUILD CHECKER ] 3e4d305 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 7a0c03e commit gona be re-checked
+Previous HEAD position was 3e4d305291 Polish ReactorResourceFactory
+HEAD is now at 7a0c03e05e Update section in reference on WebClient
+[ BUILD CHECKER ] 7a0c03e commit build success
+[ BUILD CHECKER ] 7a0c03e commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 2f732a8 commit gona be re-checked
+Previous HEAD position was 7a0c03e05e Update section in reference on WebClient
+HEAD is now at 2f732a8dea Fix checkstyle errors
+[ BUILD CHECKER ] 2f732a8 commit build success
+[ BUILD CHECKER ] 2f732a8 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 1bc08c6 commit gona be re-checked
+Previous HEAD position was 2f732a8dea Fix checkstyle errors
+HEAD is now at 1bc08c61e1 Add ReactorResourceFactory
+[ BUILD CHECKER ] 1bc08c6 commit build success
+[ BUILD CHECKER ] 1bc08c6 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] bdac391 commit gona be re-checked
+Previous HEAD position was 1bc08c61e1 Add ReactorResourceFactory
+HEAD is now at bdac39150f Polish contribution
+[ BUILD CHECKER ] bdac391 commit build success
+[ BUILD CHECKER ] bdac391 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 24ed6de commit gona be re-checked
+Previous HEAD position was bdac39150f Polish contribution
+HEAD is now at 24ed6de6aa Add backslash escape support to containsSqlScriptDelimiters
+[ BUILD CHECKER ] 24ed6de commit build success
+[ BUILD CHECKER ] 24ed6de commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] ac54492 commit gona be re-checked
+Previous HEAD position was 24ed6de6aa Add backslash escape support to containsSqlScriptDelimiters
+HEAD is now at ac544924c8 Polishing
+[ BUILD CHECKER ] ac54492 commit build success
+[ BUILD CHECKER ] ac54492 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 04a7f08 commit gona be re-checked
+Previous HEAD position was ac544924c8 Polishing
+HEAD is now at 04a7f0884b SpringCacheAnnotationParser.parseCacheAnnotations cannot be protected
+[ BUILD CHECKER ] 04a7f08 commit build success
+[ BUILD CHECKER ] 04a7f08 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 999c780 commit gona be re-checked
+Previous HEAD position was 04a7f0884b SpringCacheAnnotationParser.parseCacheAnnotations cannot be protected
+HEAD is now at 999c7809a7 Refined warn/info logging in AutowiredAnnotationBeanPostProcessor
+[ BUILD CHECKER ] 999c780 commit build success
+[ BUILD CHECKER ] 999c780 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 347852e commit gona be re-checked
+Previous HEAD position was 999c7809a7 Refined warn/info logging in AutowiredAnnotationBeanPostProcessor
+HEAD is now at 347852e86a Avoid argument resolution overhead for no-arg factory methods
+[ BUILD CHECKER ] 347852e commit build success
+[ BUILD CHECKER ] 347852e commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 777bd0d commit gona be re-checked
+Previous HEAD position was 347852e86a Avoid argument resolution overhead for no-arg factory methods
+HEAD is now at 777bd0d022 Fix Checkstyle violation in JCacheCache
+[ BUILD CHECKER ] 777bd0d commit build success
+[ BUILD CHECKER ] 777bd0d commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] aebbd94 commit gona be re-checked
+Previous HEAD position was 777bd0d022 Fix Checkstyle violation in JCacheCache
+HEAD is now at aebbd949a8 Suppress deprecation warnings in AnnotationProcessorPerformanceTests
+[ BUILD CHECKER ] aebbd94 commit build success
+[ BUILD CHECKER ] aebbd94 commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 8126ffb commit gona be re-checked
+Previous HEAD position was aebbd949a8 Suppress deprecation warnings in AnnotationProcessorPerformanceTests
+HEAD is now at 8126ffbc8c Fix broken links in JavaDoc
+[ BUILD CHECKER ] 8126ffb commit build success
+[ BUILD CHECKER ] 8126ffb commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 13c090b commit gona be re-checked
+Previous HEAD position was 8126ffbc8c Fix broken links in JavaDoc
+HEAD is now at 13c090b41d Generate “Use” links in aggregated Spring API JavaDoc
+[ BUILD CHECKER ] 13c090b commit build success
+[ BUILD CHECKER ] 13c090b commit was fixed by OnlyRebuild
+[ BUILD CHECKER ] 1dcb623 commit gona be re-checked
+Previous HEAD position was 13c090b41d Generate “Use” links in aggregated Spring API JavaDoc
+HEAD is now at 1dcb6236a6 Fix broken links in JavaDoc
+[ BUILD CHECKER ] 1dcb623 commit build success
+[ BUILD CHECKER ] 1dcb623 commit was fixed by OnlyRebuild

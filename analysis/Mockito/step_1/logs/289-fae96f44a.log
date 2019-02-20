@@ -1,0 +1,46 @@
+Parallel execution is an incubating feature.
+:buildSrc:clean UP-TO-DATE
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovyNote: /home/michel/Investigacion/bugs/projects/Mockito/buildSrc/src/main/groovy/org/mockito/release/comparison/ZipCompare.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:buildSrc:processResources UP-TO-DATE
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses
+:buildSrc:test
+:buildSrc:check
+:buildSrc:build
+Version: 1.10.13
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/home/michel/Investigacion/bugs/projects/Mockito/gradle/release-notes.gradle' line: 17
+
+* What went wrong:
+Could not compile script '/home/michel/Investigacion/bugs/projects/Mockito/gradle/release-notes.gradle'.
+> startup failed:
+  script '/home/michel/Investigacion/bugs/projects/Mockito/gradle/release-notes.gradle': 17: unable to resolve class ReleaseNotesServices 
+   @ line 17, column 12.
+         return new ReleaseNotesServices(project).getPreviousVersionProvider(notesFile).getPreviousVersion()
+                ^
+  
+  script '/home/michel/Investigacion/bugs/projects/Mockito/gradle/release-notes.gradle': 4: unable to resolve class ReleaseNotesServices 
+   @ line 4, column 5.
+         new ReleaseNotesServices(project)
+         ^
+  
+  2 errors
+
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 4.466 secs

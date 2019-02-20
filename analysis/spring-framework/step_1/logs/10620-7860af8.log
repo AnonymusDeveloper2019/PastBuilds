@@ -1,0 +1,38 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test
+:buildSrc:check
+:buildSrc:build
+The ConfigurationContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+The TaskContainer.add() method has been deprecated and is scheduled to be removed in Gradle 2.0. Please use the create() method instead.
+:assemble
+:build
+:spring-core:cglibRepackJar
+:spring-core:compileJava/home/ubuntu/bugs/spring-framework/spring-core/src/main/java/org/springframework/core/env/JOptCommandLinePropertySource.java:83: error: diamond operator is not supported in -source 1.6
+		List<String> names = new ArrayList<>();
+		                                   ^
+  (use -source 7 or higher to enable diamond operator)
+1 error
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-core:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 14.459 secs

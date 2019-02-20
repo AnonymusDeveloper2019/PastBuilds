@@ -1,0 +1,33 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test
+:buildSrc:check
+:buildSrc:build
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ubuntu/bugs/spring-framework/build.gradle' line: 742
+
+* What went wrong:
+A problem occurred evaluating root project 'spring'.
+> Could not resolve all dependencies for configuration ':spring-webmvc:optional'.
+   > Could not find group:com.itextpdf, module:itextpdf, version:4.2.2.
+     Required by:
+         org.springframework:spring-webmvc:3.2.1.BUILD-SNAPSHOT > com.lowagie:itext:4.2.2
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 11.909 secs

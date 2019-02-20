@@ -1,0 +1,18 @@
+Note: checking out '49e9565febba904484396e2aef7dbe86f55e9cc5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 49e9565f Shut off i18n warnings if the user didn't ask for i18n. Fixes issue 1135 R=blickly
+[ BUILD CHECKER ] 49e9565f commit gona be checked
+HEAD is now at 49e9565f Shut off i18n warnings if the user didn't ask for i18n. Fixes issue 1135 R=blickly
+[ BUILD CHECKER ] 49e9565f commit build success
+[ BUILD CHECKER ] aae547f4 commit gona be checked
+Previous HEAD position was 49e9565f Shut off i18n warnings if the user didn't ask for i18n. Fixes issue 1135 R=blickly
+HEAD is now at aae547f4 Don't try to process jsdoc nodes twice. Fixes issue 1144 R=blickly

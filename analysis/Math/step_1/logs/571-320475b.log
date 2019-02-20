@@ -1,0 +1,119 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math3 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ commons-math3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (default) @ commons-math3 ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/bugs/projects/Math && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/bugs/projects/Math
+[INFO] Storing buildNumber: ?????? at timestamp: 1547483338467
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/bugs/projects/Math && svn --non-interactive info
+[INFO] Working directory: /home/ubuntu/bugs/projects/Math
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ commons-math3 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ commons-math3 ---
+[INFO] Compiling 668 source files to /home/ubuntu/bugs/projects/Math/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[33,44] error: cannot find symbol
+[ERROR]  package org.apache.commons.math3.optimization
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[34,44] error: cannot find symbol
+[ERROR]  package org.apache.commons.math3.optimization
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[28,44] error: cannot find symbol
+[ERROR]  package org.apache.commons.math3.optimization
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[29,44] error: cannot find symbol
+[ERROR]  package org.apache.commons.math3.optimization
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[198,36] error: cannot find symbol
+[ERROR] 
+    FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[199,36] error: cannot find symbol
+[ERROR] 
+    FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[372,32] error: cannot find symbol
+[ERROR] 
+    FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[373,27] error: cannot find symbol
+[ERROR] 
+    FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[376,32] error: cannot find symbol
+[ERROR] 
+    FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[377,33] error: cannot find symbol
+[ERROR] 
+    FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[328,36] error: cannot find symbol
+[ERROR]  class AbstractLeastSquaresOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[329,36] error: cannot find symbol
+[ERROR]  class AbstractLeastSquaresOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[363,36] error: cannot find symbol
+[ERROR]  class AbstractLeastSquaresOptimizer
+/home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[364,36] error: cannot find symbol
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.218 s
+[INFO] Finished at: 2019-01-14T16:29:03+00:00
+[INFO] Final Memory: 21M/352M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile) on project commons-math3: Compilation failure: Compilation failure:
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[33,44] error: cannot find symbol
+[ERROR] package org.apache.commons.math3.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[34,44] error: cannot find symbol
+[ERROR] package org.apache.commons.math3.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[28,44] error: cannot find symbol
+[ERROR] package org.apache.commons.math3.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[29,44] error: cannot find symbol
+[ERROR] package org.apache.commons.math3.optimization
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[198,36] error: cannot find symbol
+[ERROR] 
+[ERROR] FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[199,36] error: cannot find symbol
+[ERROR] 
+[ERROR] FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[372,32] error: cannot find symbol
+[ERROR] 
+[ERROR] FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[373,27] error: cannot find symbol
+[ERROR] 
+[ERROR] FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[376,32] error: cannot find symbol
+[ERROR] 
+[ERROR] FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:[377,33] error: cannot find symbol
+[ERROR] 
+[ERROR] FUNC extends MultivariateVectorFunction declared in class BaseAbstractMultivariateVectorOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[328,36] error: cannot find symbol
+[ERROR] class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[329,36] error: cannot find symbol
+[ERROR] class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[363,36] error: cannot find symbol
+[ERROR] class AbstractLeastSquaresOptimizer
+[ERROR] /home/ubuntu/bugs/projects/Math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:[364,36] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

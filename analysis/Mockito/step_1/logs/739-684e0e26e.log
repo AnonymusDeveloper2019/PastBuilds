@@ -1,0 +1,17 @@
+sed: can't read buildSrc/build.gradle: No such file or directory
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/michel/Investigacion/bugs/projects/Mockito/build.gradle' line: 78
+
+* What went wrong:
+A problem occurred evaluating root project 'mockito'.
+> Could not find method create() for arguments [{name=instrument, type=class net.saliman.gradle.plugin.cobertura.InstrumentTask}, net.saliman.gradle.plugin.cobertura.CoberturaPlugin$_apply_closure3@ee4acfe] on task set.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 0.81 secs

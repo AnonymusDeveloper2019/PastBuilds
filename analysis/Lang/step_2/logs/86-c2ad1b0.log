@@ -1,0 +1,19 @@
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /home/ubuntu/bugs/projects/Lang/build.xml
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target
+
+compile:
+    [mkdir] Created dir: /home/ubuntu/bugs/projects/Lang/target/classes
+    [javac] Compiling 108 source files to /home/ubuntu/bugs/projects/Lang/target/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.5
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.

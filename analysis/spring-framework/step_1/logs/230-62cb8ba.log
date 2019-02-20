@@ -1,0 +1,78 @@
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:57)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:40)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at org.gradle.util.DisconnectableInputStream$1.run(DisconnectableInputStream.java:96)
+	... 1 more
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy
+> Task :buildSrc:processResources
+> Task :buildSrc:classes
+> Task :buildSrc:jar
+> Task :buildSrc:assemble
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build
+> Task :assemble
+> Task :build
+> Task :spring-core:cglibRepackJar
+> Task :spring-core:objenesisRepackJar
+> Task :spring-jcl:compileKotlin
+> Task :spring-jcl:compileJava
+> Task :spring-jcl:processResources
+> Task :spring-jcl:classes
+> Task :spring-jcl:inspectClassesForKotlinIC
+> Task :spring-jcl:jar
+> Task :spring-core:compileKotlin
+> Task :spring-core:compileJava
+> Task :spring-core:processResources NO-SOURCE
+> Task :spring-core:classes
+> Task :spring-core:inspectClassesForKotlinIC
+> Task :spring-core:jar
+
+> Task :spring-beans:compileGroovy FAILED
+OpenJDK 64-Bit Server VM warning: #
+INFO: os::commit_memory(0x00000000d9100000, 33554432, 0) failed; error='Cannot allocate memory' (errno=12)
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 33554432 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/ubuntu/bugs/spring-framework/spring-beans/hs_err_pid720.log
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':spring-beans:compileGroovy'.
+> Failed to run Gradle Worker Daemon
+   > Process 'Gradle Worker Daemon 2' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 31m 4s
+12 actionable tasks: 12 executed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Process 'Gradle Worker Daemon 2' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 31m 4s

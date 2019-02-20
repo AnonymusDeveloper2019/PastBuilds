@@ -1,0 +1,49 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
+:buildSrc:compileJava UP-TO-DATE
+:buildSrc:compileGroovy
+:buildSrc:processResources
+:buildSrc:classes
+:buildSrc:jar
+:buildSrc:assemble
+:buildSrc:compileTestJava UP-TO-DATE
+:buildSrc:compileTestGroovy UP-TO-DATE
+:buildSrc:processTestResources UP-TO-DATE
+:buildSrc:testClasses UP-TO-DATE
+:buildSrc:test
+:buildSrc:check
+:buildSrc:build
+Download http://repo.springsource.org/plugins-release/org/springframework/build/gradle/propdeps-plugin/0.0.1/propdeps-plugin-0.0.1.pom
+Download http://repo.springsource.org/plugins-release/org/springframework/build/gradle/propdeps-plugin/0.0.1/propdeps-plugin-0.0.1.jar
+Download http://repo.springsource.org/libs-release/javax/servlet/jstl/1.2/jstl-1.2.pom
+Download http://repo.springsource.org/libs-release/javax/servlet/jstl/1.2/jstl-1.2.jar
+Download http://repo.springsource.org/libs-release/org/apache/tiles/tiles-api/2.1.2/tiles-api-2.1.2.pom
+Download http://repo.springsource.org/libs-release/org/apache/tiles/tiles-parent/2.1.2/tiles-parent-2.1.2.pom
+Download http://repo.springsource.org/libs-release/org/apache/tiles/tiles-master/1/tiles-master-1.pom
+Download http://repo.springsource.org/libs-release/org/apache/tiles/tiles-core/2.1.2/tiles-core-2.1.2.pom
+Download http://repo.springsource.org/libs-release/org/apache/tiles/tiles-jsp/2.1.2/tiles-jsp-2.1.2.pom
+Download http://repo.springsource.org/libs-release/org/apache/tiles/tiles-servlet/2.1.2/tiles-servlet-2.1.2.pom
+Download http://repo.springsource.org/libs-release/velocity-tools/velocity-tools-view/1.4/velocity-tools-view-1.4.pom
+Download http://repo.springsource.org/libs-release/net/sourceforge/jexcelapi/jxl/2.6.3/jxl-2.6.3.pom
+Download http://repo.springsource.org/libs-release/org/apache/poi/poi/3.0.2-FINAL/poi-3.0.2-FINAL.pom
+Download http://repo.springsource.org/libs-release/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.pom
+Download http://repo.springsource.org/libs-release/log4j/log4j/1.2.14/log4j-1.2.14.pom
+Download http://repo.springsource.org/libs-release/commons-logging/commons-logging/1.1/commons-logging-1.1.pom
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ubuntu/bugs/spring-framework/build.gradle' line: 810
+
+* What went wrong:
+A problem occurred evaluating root project 'spring'.
+> Could not resolve all dependencies for configuration ':spring-webmvc:optional'.
+   > Could not find group:com.itextpdf, module:itextpdf, version:4.2.2.
+     Required by:
+         org.springframework:spring-webmvc:3.2.1.BUILD-SNAPSHOT > com.lowagie:itext:4.2.2
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 24.635 secs
