@@ -4,7 +4,7 @@ Research on reproducing software builds in past commits
 
 ## Introduction
 
-We will build the projects in all the versions that repository provides to check the status of the project and analyze the cases in which it is not possible to carry out the construction. The proyects selected for this experiment are the following:
+We will build the projects in all the versions that repository provides to check the status of the project and analyze the cases in which it is not possible to carry out the build. The proyects selected for this experiment are the following:
 
 | Identifier       	| Project             	| # of commits 	|
 |------------------	|---------------------	|--------------	|
@@ -26,7 +26,7 @@ We will build the projects in all the versions that repository provides to check
 Clone the project repo:
 
 ```
-  git clone https://gitlab.com/urjc-softdev/bugs.git
+  git clone https://github.com/AnonymusDeveloper2019/PastBuilds.git
 ```
 
 Download repos from git and Defects4J:
@@ -90,9 +90,9 @@ id,commit,build,exec_time,comment,fix
 - `comment` git comment of the commit
 - `fix` a JSON object to store any info from any future fix
 
-# Analyce results
+# Analyzing results
 
-Once all commits was checked, we could analyce the results using a JupyterNotebook:
+Once all commits was checked, we could analyze the results using a JupyterNotebook:
 
 ```
 jupyter-notebook
