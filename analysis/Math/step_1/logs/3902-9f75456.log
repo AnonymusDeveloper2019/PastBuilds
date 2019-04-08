@@ -1,450 +1,0 @@
-[INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for commons-math:commons-math:jar:1.2-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.apache.commons:commons-parent:2, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/2/commons-parent-2.pom, line 115, column 15
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 206, column 17
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:2, /home/ubuntu/.m2/repository/org/apache/commons/commons-parent/2/commons-parent-2.pom, line 140, column 15
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Math 1.2-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math ---
-[WARNING] Parameter tasks is deprecated, use target instead
-[INFO] Executing tasks
-
-main:
-     [copy] Copying 2 files to /home/ubuntu/bugs/projects/Math/target/classes/META-INF
-[INFO] Executed tasks
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
-[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] Copying 2 resources to META-INF
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-math ---
-[INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding ANSI_X3.4-1968, i.e. build is platform dependent!
-[INFO] Compiling 215 source files to /home/ubuntu/bugs/projects/Math/target/classes
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math ---
-[INFO] Not copying test resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-math ---
-[INFO] Not compiling test sources
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ commons-math ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-jar-plugin:2.1:jar (default-jar) @ commons-math ---
-[INFO] Building jar: /home/ubuntu/bugs/projects/Math/target/commons-math-1.2-SNAPSHOT.jar
-[INFO] 
-[INFO] >>> cobertura-maven-plugin:2.0:check (default) > [cobertura]test @ commons-math >>>
-[INFO] 
-[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math ---
-[WARNING] Parameter tasks is deprecated, use target instead
-[INFO] Executing tasks
-
-main:
-[INFO] Executed tasks
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math ---
-[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] Copying 2 resources to META-INF
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-math ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- cobertura-maven-plugin:2.0:instrument (default) @ commons-math ---
-Downloading: https://repo.maven.apache.org/maven2/cobertura/cobertura/1.7/cobertura-1.7.pom
-854/854 B               Downloaded: https://repo.maven.apache.org/maven2/cobertura/cobertura/1.7/cobertura-1.7.pom (854 B at 1.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/asm/asm/2.1/asm-2.1.pom
-807/807 B               Downloaded: https://repo.maven.apache.org/maven2/asm/asm/2.1/asm-2.1.pom (807 B at 14.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.pom
-144/144 B               Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.pom (144 B at 2.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/javancss/ccl/21.41/ccl-21.41.pom
-145/145 B               Downloaded: https://repo.maven.apache.org/maven2/javancss/ccl/21.41/ccl-21.41.pom (145 B at 2.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/javancss/javancss/21.41/javancss-21.41.pom
-150/150 B               Downloaded: https://repo.maven.apache.org/maven2/javancss/javancss/21.41/javancss-21.41.pom (150 B at 2.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/cobertura/cobertura-runtime/1.7/cobertura-runtime-1.7.pom
-2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/cobertura/cobertura-runtime/1.7/cobertura-runtime-1.7.pom (2 KB at 24.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.pom
-157/157 B               Downloaded: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.pom (157 B at 3.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.pom
-3/3 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.pom (3 KB at 38.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.pom
-168/168 B               Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.pom (168 B at 3.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.pom
-3/5 KB      5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.pom (5 KB at 82.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/cobertura/cobertura/1.7/cobertura-1.7.jar
-Downloading: https://repo.maven.apache.org/maven2/asm/asm/2.1/asm-2.1.jar
-Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar
-Downloading: https://repo.maven.apache.org/maven2/javancss/ccl/21.41/ccl-21.41.jar
-Downloading: https://repo.maven.apache.org/maven2/javancss/javancss/21.41/javancss-21.41.jar
-3/92 KB   5/92 KB   8/92 KB   11/92 KB   13/92 KB   16/92 KB   19/92 KB   21/92 KB   24/92 KB   27/92 KB   29/92 KB   32/92 KB   36/92 KB   40/92 KB   44/92 KB   48/92 KB   52/92 KB   56/92 KB   60/92 KB   64/92 KB   68/92 KB   72/92 KB   76/92 KB   80/92 KB   84/92 KB   88/92 KB   92/92 KB   92/92 KB   3/101 KB   92/92 KB   6/101 KB   92/92 KB   9/101 KB   92/92 KB   3/33 KB   9/101 KB   92/92 KB   5/33 KB   9/101 KB   92/92 KB   8/33 KB   9/101 KB   3/345 KB   92/92 KB   8/33 KB   9/101 KB   5/345 KB   92/92 KB   8/33 KB   9/101 KB   8/345 KB   92/92 KB   8/33 KB   9/101 KB   3/326 KB   8/345 KB   92/92 KB   8/33 KB   9/101 KB   5/326 KB   8/345 KB   92/92 KB   8/33 KB   9/101 KB   8/326 KB   8/345 KB   92/92 KB   8/33 KB   9/101 KB   8/326 KB   8/345 KB   92/92 KB   8/33 KB   11/101 KB   8/326 KB   8/345 KB   92/92 KB   8/33 KB   14/101 KB   8/326 KB   8/345 KB   92/92 KB   11/33 KB   14/101 KB   8/326 KB   8/345 KB   92/92 KB   11/33 KB   16/101 KB   8/326 KB   8/345 KB   92/92 KB   13/33 KB   16/101 KB   8/326 KB   8/345 KB   92/92 KB   13/33 KB   19/101 KB   8/326 KB   8/345 KB   92/92 KB   16/33 KB   19/101 KB   8/326 KB   8/345 KB   92/92 KB   19/33 KB   19/101 KB   8/326 KB   8/345 KB   92/92 KB   19/33 KB   22/101 KB   8/326 KB   8/345 KB   92/92 KB   21/33 KB   22/101 KB   8/326 KB   11/345 KB   92/92 KB   21/33 KB   25/101 KB   8/326 KB   13/345 KB   92/92 KB   21/33 KB   25/101 KB   8/326 KB   16/345 KB   92/92 KB   21/33 KB   25/101 KB                                                            Downloaded: https://repo.maven.apache.org/maven2/cobertura/cobertura/1.7/cobertura-1.7.jar (92 KB at 600.3 KB/sec)
-8/326 KB   19/345 KB   21/33 KB   25/101 KB              Downloading: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.jar
-8/326 KB   21/345 KB   21/33 KB   25/101 KB   8/326 KB   21/345 KB   24/33 KB   25/101 KB   8/326 KB   24/345 KB   24/33 KB   25/101 KB   8/326 KB   24/345 KB   27/33 KB   25/101 KB   8/326 KB   27/345 KB   27/33 KB   25/101 KB   8/326 KB   27/345 KB   29/33 KB   25/101 KB   8/326 KB   29/345 KB   29/33 KB   25/101 KB   8/326 KB   29/345 KB   32/33 KB   25/101 KB   8/326 KB   32/345 KB   32/33 KB   25/101 KB   8/326 KB   32/345 KB   33/33 KB   25/101 KB   8/326 KB   8/345 KB   92/92 KB   21/33 KB   25/101 KB   11/326 KB   32/345 KB   33/33 KB   25/101 KB            13/326 KB   32/345 KB   33/33 KB   25/101 KB   13/326 KB   32/345 KB   33/33 KB   27/101 KB   16/326 KB   32/345 KB   33/33 KB   27/101 KB   19/326 KB   32/345 KB   33/33 KB   27/101 KB   19/326 KB   32/345 KB   33/33 KB   30/101 KB   21/326 KB   32/345 KB   33/33 KB   30/101 KB   21/326 KB   32/345 KB   33/33 KB   32/101 KB   24/326 KB   32/345 KB   33/33 KB   32/101 KB   27/326 KB   32/345 KB   33/33 KB   32/101 KB   29/326 KB   32/345 KB   33/33 KB   32/101 KB   32/326 KB   32/345 KB   33/33 KB   32/101 KB   32/326 KB   32/345 KB   33/33 KB   36/101 KB   32/326 KB   32/345 KB   33/33 KB   40/101 KB   32/326 KB   32/345 KB   33/33 KB   44/101 KB   32/326 KB   32/345 KB   33/33 KB   48/101 KB   32/326 KB   32/345 KB   33/33 KB   52/101 KB   32/326 KB   32/345 KB   33/33 KB   56/101 KB   32/326 KB   32/345 KB   33/33 KB   60/101 KB   32/326 KB   36/345 KB   33/33 KB   60/101 KB   32/326 KB   36/345 KB   33/33 KB   63/101 KB   32/326 KB   40/345 KB   33/33 KB   63/101 KB   32/326 KB   44/345 KB   33/33 KB   63/101 KB   32/326 KB   48/345 KB   33/33 KB   63/101 KB   32/326 KB   48/345 KB   33/33 KB   64/101 KB   32/326 KB   52/345 KB   33/33 KB   64/101 KB   32/326 KB   56/345 KB   33/33 KB   64/101 KB   32/326 KB   60/345 KB   33/33 KB   64/101 KB   32/326 KB   64/345 KB   33/33 KB   64/101 KB   32/326 KB   64/345 KB   33/33 KB   68/101 KB   32/326 KB   64/345 KB   33/33 KB   72/101 KB   32/326 KB   64/345 KB   33/33 KB   76/101 KB   32/326 KB   68/345 KB   33/33 KB   76/101 KB   32/326 KB   68/345 KB   33/33 KB   80/101 KB   32/326 KB   72/345 KB   33/33 KB   80/101 KB   32/326 KB   76/345 KB   33/33 KB   80/101 KB   32/326 KB   80/345 KB   33/33 KB   80/101 KB   36/326 KB   80/345 KB   33/33 KB   80/101 KB   40/326 KB   80/345 KB   33/33 KB   80/101 KB   44/326 KB   80/345 KB   33/33 KB   80/101 KB   48/326 KB   80/345 KB   33/33 KB   80/101 KB   52/326 KB   80/345 KB   33/33 KB   80/101 KB   56/326 KB   80/345 KB   33/33 KB   80/101 KB   60/326 KB   80/345 KB   33/33 KB   80/101 KB   64/326 KB   80/345 KB   33/33 KB   80/101 KB   68/326 KB   80/345 KB   33/33 KB   80/101 KB   72/326 KB   80/345 KB   33/33 KB   80/101 KB   76/326 KB   80/345 KB   33/33 KB   80/101 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   3/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   5/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   8/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   11/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   13/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   16/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB   19/53 KB   80/326 KB   80/345 KB   33/33 KB   80/101 KB                                                             Downloaded: https://repo.maven.apache.org/maven2/asm/asm/2.1/asm-2.1.jar (33 KB at 174.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.jar
-21/53 KB   80/326 KB   80/345 KB   80/101 KB              24/53 KB   80/326 KB   80/345 KB   80/101 KB   27/53 KB   80/326 KB   80/345 KB   80/101 KB   29/53 KB   80/326 KB   80/345 KB   80/101 KB   32/53 KB   80/326 KB   80/345 KB   80/101 KB   32/53 KB   80/326 KB   80/345 KB   84/101 KB   32/53 KB   80/326 KB   80/345 KB   88/101 KB   32/53 KB   80/326 KB   80/345 KB   92/101 KB   32/53 KB   80/326 KB   80/345 KB   96/101 KB   32/53 KB   80/326 KB   80/345 KB   100/101 KB   32/53 KB   80/326 KB   80/345 KB   101/101 KB   32/53 KB   80/326 KB   84/345 KB   101/101 KB   32/53 KB   80/326 KB   88/345 KB   101/101 KB   32/53 KB   80/326 KB   92/345 KB   101/101 KB   32/53 KB   80/326 KB   96/345 KB   101/101 KB   32/53 KB   80/326 KB   100/345 KB   101/101 KB   32/53 KB   80/326 KB   104/345 KB   101/101 KB   32/53 KB   80/326 KB   108/345 KB   101/101 KB   32/53 KB   80/326 KB   112/345 KB   101/101 KB   32/53 KB   80/326 KB   116/345 KB   101/101 KB   32/53 KB   80/326 KB   120/345 KB   101/101 KB   32/53 KB   80/326 KB   124/345 KB   101/101 KB   32/53 KB   80/326 KB   128/345 KB   101/101 KB   32/53 KB   84/326 KB   128/345 KB   101/101 KB   32/53 KB   88/326 KB   128/345 KB   101/101 KB   32/53 KB   88/326 KB   132/345 KB   101/101 KB   32/53 KB   92/326 KB   132/345 KB   101/101 KB   32/53 KB   92/326 KB   136/345 KB   101/101 KB   32/53 KB   96/326 KB   136/345 KB   101/101 KB   32/53 KB   96/326 KB   140/345 KB   101/101 KB   32/53 KB   96/326 KB   144/345 KB   101/101 KB   32/53 KB   100/326 KB   144/345 KB   101/101 KB   32/53 KB   104/326 KB   144/345 KB   101/101 KB   32/53 KB   108/326 KB   144/345 KB   101/101 KB   32/53 KB   108/326 KB   148/345 KB   101/101 KB   32/53 KB   112/326 KB   148/345 KB   101/101 KB   32/53 KB   112/326 KB   152/345 KB   101/101 KB   32/53 KB   112/326 KB   156/345 KB   101/101 KB   32/53 KB   112/326 KB   160/345 KB   101/101 KB   32/53 KB   116/326 KB   160/345 KB   101/101 KB   32/53 KB   120/326 KB   160/345 KB   101/101 KB   32/53 KB   124/326 KB   160/345 KB   101/101 KB   32/53 KB   124/326 KB   164/345 KB   101/101 KB   32/53 KB   128/326 KB   164/345 KB   101/101 KB   32/53 KB   128/326 KB   168/345 KB   101/101 KB   32/53 KB   128/326 KB   172/345 KB   101/101 KB   32/53 KB   128/326 KB   176/345 KB   101/101 KB   32/53 KB   132/326 KB   176/345 KB   101/101 KB   32/53 KB   136/326 KB   176/345 KB   101/101 KB   32/53 KB   140/326 KB   176/345 KB   101/101 KB   32/53 KB   144/326 KB   176/345 KB   101/101 KB   32/53 KB   148/326 KB   176/345 KB   101/101 KB   32/53 KB   152/326 KB   176/345 KB   101/101 KB   32/53 KB   156/326 KB   176/345 KB   101/101 KB   32/53 KB   160/326 KB   176/345 KB   101/101 KB   32/53 KB   164/326 KB   176/345 KB   101/101 KB   32/53 KB   168/326 KB   176/345 KB   101/101 KB   32/53 KB   172/326 KB   176/345 KB   101/101 KB   32/53 KB   176/326 KB   176/345 KB   101/101 KB   36/53 KB   176/326 KB   176/345 KB   101/101 KB   40/53 KB   176/326 KB   176/345 KB   101/101 KB   44/53 KB   176/326 KB   176/345 KB   101/101 KB   48/53 KB   176/326 KB   176/345 KB   101/101 KB   52/53 KB   176/326 KB   176/345 KB   101/101 KB   53/53 KB   176/326 KB   176/345 KB   101/101 KB   53/53 KB   176/326 KB   176/345 KB   4/16 KB   101/101 KB   53/53 KB   176/326 KB   176/345 KB   8/16 KB   101/101 KB   53/53 KB   176/326 KB   176/345 KB   12/16 KB   101/101 KB   53/53 KB   176/326 KB   176/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   176/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   180/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   184/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   188/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   192/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   196/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   200/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   204/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   208/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   212/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   216/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   220/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   224/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   228/345 KB   16/16 KB   101/101 KB   53/53 KB   176/326 KB   232/345 KB   16/16 KB   101/101 KB   53/53 KB   180/326 KB   232/345 KB   16/16 KB   101/101 KB   53/53 KB   180/326 KB   236/345 KB   16/16 KB   101/101 KB   53/53 KB   184/326 KB   236/345 KB   16/16 KB   101/101 KB   53/53 KB   184/326 KB   240/345 KB   16/16 KB   101/101 KB   53/53 KB   188/326 KB   240/345 KB   16/16 KB   101/101 KB   53/53 KB   192/326 KB   240/345 KB   16/16 KB   101/101 KB   53/53 KB   192/326 KB   244/345 KB   16/16 KB   101/101 KB   53/53 KB   192/326 KB   248/345 KB   16/16 KB   101/101 KB   53/53 KB   196/326 KB   252/345 KB   16/16 KB   101/101 KB   53/53 KB   196/326 KB   252/345 KB   16/16 KB   101/101 KB   53/53 KB   196/326 KB   256/345 KB   16/16 KB   101/101 KB   53/53 KB   200/326 KB   256/345 KB   16/16 KB   101/101 KB   53/53 KB   204/326 KB   256/345 KB   16/16 KB   101/101 KB   53/53 KB   208/326 KB   256/345 KB   16/16 KB   101/101 KB   53/53 KB   208/326 KB   260/345 KB   16/16 KB   101/101 KB   53/53 KB   208/326 KB   264/345 KB   16/16 KB   101/101 KB   53/53 KB   212/326 KB   264/345 KB   16/16 KB   101/101 KB   53/53 KB   212/326 KB   268/345 KB   16/16 KB   101/101 KB   53/53 KB   216/326 KB   268/345 KB   16/16 KB   101/101 KB   53/53 KB   216/326 KB   272/345 KB   16/16 KB   101/101 KB   53/53 KB   220/326 KB   272/345 KB   16/16 KB   101/101 KB                                                                53/53 KB   224/326 KB   272/345 KB   16/16 KB                Downloaded: https://repo.maven.apache.org/maven2/javancss/javancss/21.41/javancss-21.41.jar (101 KB at 461.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.jar
-53/53 KB   224/326 KB   276/345 KB   16/16 KB   53/53 KB   224/326 KB   280/345 KB   16/16 KB   53/53 KB   228/326 KB   280/345 KB   16/16 KB   53/53 KB   228/326 KB   284/345 KB   16/16 KB   53/53 KB   232/326 KB   284/345 KB   16/16 KB   53/53 KB   232/326 KB   288/345 KB   16/16 KB   53/53 KB   236/326 KB   288/345 KB   16/16 KB   53/53 KB   240/326 KB   288/345 KB   16/16 KB   53/53 KB   240/326 KB   292/345 KB   16/16 KB   53/53 KB   240/326 KB   296/345 KB   16/16 KB   53/53 KB   244/326 KB   296/345 KB   16/16 KB   53/53 KB   244/326 KB   300/345 KB   16/16 KB   53/53 KB   248/326 KB   300/345 KB   16/16 KB   53/53 KB   248/326 KB   304/345 KB   16/16 KB   53/53 KB   252/326 KB   304/345 KB   16/16 KB   53/53 KB   256/326 KB   304/345 KB   16/16 KB   53/53 KB   256/326 KB   308/345 KB   16/16 KB   53/53 KB   256/326 KB   312/345 KB   16/16 KB   53/53 KB   260/326 KB   312/345 KB   16/16 KB   53/53 KB   264/326 KB   316/345 KB   16/16 KB   53/53 KB   268/326 KB   316/345 KB   16/16 KB   53/53 KB   272/326 KB   316/345 KB   16/16 KB   53/53 KB   276/326 KB   316/345 KB   16/16 KB   53/53 KB   280/326 KB   316/345 KB   16/16 KB   53/53 KB   284/326 KB   316/345 KB   16/16 KB   53/53 KB   288/326 KB   316/345 KB   16/16 KB                                                   Downloaded: https://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.jar (53 KB at 233.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.jar
-53/53 KB   260/326 KB   316/345 KB   16/16 KB   288/326 KB   320/345 KB   16/16 KB              288/326 KB   324/345 KB   16/16 KB   288/326 KB   328/345 KB   16/16 KB   288/326 KB   332/345 KB   16/16 KB   288/326 KB   336/345 KB   16/16 KB   288/326 KB   340/345 KB   16/16 KB   288/326 KB   344/345 KB   16/16 KB   288/326 KB   345/345 KB   16/16 KB                                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0/maven-reporting-impl-2.0.jar (16 KB at 67.9 KB/sec)
-292/326 KB   345/345 KB              296/326 KB   345/345 KB   300/326 KB   345/345 KB   304/326 KB   345/345 KB   308/326 KB   345/345 KB   312/326 KB   345/345 KB   316/326 KB   345/345 KB   320/326 KB   345/345 KB   324/326 KB   345/345 KB   326/326 KB   345/345 KB   326/326 KB   345/345 KB   4/83 KB   326/326 KB   345/345 KB   8/83 KB   326/326 KB   345/345 KB   12/83 KB   326/326 KB   345/345 KB   16/83 KB   326/326 KB   345/345 KB   20/83 KB   326/326 KB   345/345 KB   24/83 KB   326/326 KB   345/345 KB   28/83 KB   326/326 KB   345/345 KB   32/83 KB   326/326 KB   345/345 KB   36/83 KB   326/326 KB   345/345 KB   40/83 KB   326/326 KB   345/345 KB   44/83 KB   326/326 KB   345/345 KB   48/83 KB   326/326 KB   345/345 KB   52/83 KB   326/326 KB   345/345 KB   56/83 KB   326/326 KB   345/345 KB   60/83 KB   326/326 KB   345/345 KB   64/83 KB   326/326 KB   345/345 KB   68/83 KB   326/326 KB   345/345 KB   72/83 KB   326/326 KB   345/345 KB   76/83 KB   326/326 KB   345/345 KB   80/83 KB   326/326 KB   345/345 KB   83/83 KB   326/326 KB   4/255 KB   345/345 KB   83/83 KB   326/326 KB   8/255 KB   345/345 KB   83/83 KB   326/326 KB   12/255 KB   345/345 KB   83/83 KB   326/326 KB   16/255 KB   345/345 KB   83/83 KB   326/326 KB   20/255 KB   345/345 KB   83/83 KB   326/326 KB   24/255 KB   345/345 KB   83/83 KB   326/326 KB   28/255 KB   345/345 KB   83/83 KB   326/326 KB   32/255 KB   345/345 KB   83/83 KB   326/326 KB   36/255 KB   345/345 KB   83/83 KB   326/326 KB   40/255 KB   345/345 KB   83/83 KB   326/326 KB   44/255 KB   345/345 KB   83/83 KB   326/326 KB   48/255 KB   345/345 KB   83/83 KB   326/326 KB   52/255 KB   345/345 KB   83/83 KB   326/326 KB   56/255 KB   345/345 KB   83/83 KB   326/326 KB   60/255 KB   345/345 KB   83/83 KB   326/326 KB   64/255 KB   345/345 KB   83/83 KB                                                    Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar (345 KB at 1278.9 KB/sec)
-                                                 Downloaded: https://repo.maven.apache.org/maven2/javancss/ccl/21.41/ccl-21.41.jar (326 KB at 1198.1 KB/sec)
-                                                 Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.jar (83 KB at 301.0 KB/sec)
-68/255 KB                                        72/255 KB   76/255 KB   80/255 KB   84/255 KB   88/255 KB   92/255 KB   96/255 KB   100/255 KB   104/255 KB   108/255 KB   112/255 KB   116/255 KB   120/255 KB   124/255 KB   128/255 KB   132/255 KB   136/255 KB   140/255 KB   144/255 KB   148/255 KB   152/255 KB   156/255 KB   160/255 KB   164/255 KB   168/255 KB   172/255 KB   176/255 KB   180/255 KB   184/255 KB   188/255 KB   192/255 KB   196/255 KB   200/255 KB   204/255 KB   208/255 KB   212/255 KB   216/255 KB   220/255 KB   224/255 KB   228/255 KB   232/255 KB   236/255 KB   240/255 KB   244/255 KB   248/255 KB   252/255 KB   255/255 KB                Downloaded: https://repo.maven.apache.org/maven2/doxia/doxia-core/1.0-alpha-4/doxia-core-1.0-alpha-4.jar (255 KB at 776.4 KB/sec)
-[INFO] Cobertura 1.7 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
-Instrumenting 229 classes to /home/ubuntu/bugs/projects/Math/target/generated-classes/cobertura
-[cobertura] WARN  [main] net.sourceforge.cobertura.instrument.ClassInstrumenter - No line number information found for class org.apache.commons.math.stat.Frequency$1.  Perhaps you need to compile with debug=true?
-[cobertura] WARN  [main] net.sourceforge.cobertura.instrument.ClassInstrumenter - No line number information found for class org.apache.commons.math.random.EmpiricalDistributionImpl$1.  Perhaps you need to compile with debug=true?
-Cobertura: Saved information on 227 classes.
-Instrument time: 618ms
-
-[INFO] Instrumentation was successful.
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math ---
-[INFO] Not copying test resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-math ---
-[INFO] Not compiling test sources
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ commons-math ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] <<< cobertura-maven-plugin:2.0:check (default) < [cobertura]test @ commons-math <<<
-[INFO] 
-[INFO] --- cobertura-maven-plugin:2.0:check (default) @ commons-math ---
-[INFO] Cobertura 1.7 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
-Cobertura: Loaded information on 227 classes.
-
-[ERROR] org.apache.commons.math.complex.ComplexFormat failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.complex.ComplexFormat failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.SwitchingFunctionsHandler failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.SwitchingFunctionsHandler failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.ThirdMoment failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.ThirdMoment failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.MathException failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.MathException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.SummaryStatistics failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.SummaryStatistics failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.GeometricMean failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.GeometricMean failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GillStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GillStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.MathUtils failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.MathUtils failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.ProperFractionFormat failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.ProperFractionFormat failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.DirectSearchOptimizer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.DirectSearchOptimizer failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.QRDecompositionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.QRDecompositionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.FirstOrderIntegratorFactoryImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.Product failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.Product failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Variance failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Variance failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.FirstMoment failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.FirstMoment failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince54StepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince54StepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.AbstractUnivariateStatistic failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.FDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.FDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GillIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.CorrelatedRandomVectorGenerator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.CorrelatedRandomVectorGenerator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.SplineInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.SplineInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ArgumentOutsideDomainException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.AbstractRandomGenerator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.AbstractRandomGenerator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.Rotation failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.Rotation failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.BisectionSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.BisectionSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.StandardDeviation failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.MaxIterationsExceededException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ClassicalRungeKuttaStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ClassicalRungeKuttaStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Skewness failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Skewness failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.StepNormalizer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.StepNormalizer failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Gamma failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Gamma failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.SecantSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.SecantSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.RotationOrder failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Mean failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Mean failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.EulerIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.TestFactory failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.TestFactory failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.complex.ComplexUtils failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.complex.ComplexUtils failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Max failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Max failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialFunctionNewtonForm failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialFunctionNewtonForm failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.ChiSquaredDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.ChiSquaredDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.DividedDifferenceInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.DividedDifferenceInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$StreamDataAdapter failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$StreamDataAdapter failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$ArrayDataAdapter failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$ArrayDataAdapter failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.TestFactoryImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.JDKRandomGenerator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Beta$1 failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Beta$1 failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Beta failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Beta failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.MessagesResources_fr failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.transform.FastSineTransformer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.transform.FastSineTransformer failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.RiddersSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.RiddersSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Gamma$1 failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.ContinuedFraction failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.ContinuedFraction failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.MathConfigurationException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DummyStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialSplineFunction failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialSplineFunction failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.EulerStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.EulerStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.SimpsonIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.SimpsonIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverUtils failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverUtils failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.RungeKuttaStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.RungeKuttaStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$DataAdapterFactory failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$DataAdapterFactory failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.HighamHall54Integrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.HighamHall54Integrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.RombergIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.RombergIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.HighamHall54StepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.HighamHall54StepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractIntegerDistribution failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractIntegerDistribution failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.RealMatrixImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.RealMatrixImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.LevenbergMarquardtEstimator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.LevenbergMarquardtEstimator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.PascalDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.PascalDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ThreeEighthesStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ThreeEighthesStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince853StepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince853StepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.AdaptiveStepsizeIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.AdaptiveStepsizeIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealIntegratorImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealIntegratorImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.StatisticalSummaryValues failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.StatisticalSummaryValues failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.CostException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.MidpointStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.MidpointStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.DistributionFactoryImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.NotPositiveDefiniteMatrixException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Percentile failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Percentile failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.RungeKuttaFehlbergIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.RungeKuttaFehlbergIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.NelderMead failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.NelderMead failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.MultiDirectional failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.MultiDirectional failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.PoissonDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.PoissonDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.GaussNewtonEstimator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.GaussNewtonEstimator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.RandomAdaptor failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.RandomAdaptor failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractDistribution failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractDistribution failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DerivativeException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.EstimatedParameter failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialFunctionLagrangeForm failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialFunctionLagrangeForm failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.MatrixUtils failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.MatrixUtils failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.NewtonSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.NewtonSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.WeibullDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.WeibullDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.RungeKuttaIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.RungeKuttaIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.DistributionFactory failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.AbstractStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.AbstractStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.DescriptiveStatisticsImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.DescriptiveStatisticsImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DummyStepHandler failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DummyStepHandler failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.DuplicateSampleAbscissaException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.complex.Complex failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.complex.Complex failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.PointCostPair failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.NevilleInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.Frequency failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.Frequency failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.UniformRandomGenerator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.FractionConversionException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.NormalDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.NormalDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.TTestImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.TTestImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Erf failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.special.Erf failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Kurtosis failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.Kurtosis failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince54Integrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince54Integrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.SumOfSquares failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.SumOfSquares failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.SecondMoment failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.SecondMoment failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.CardanEulerSingularityException failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.CardanEulerSingularityException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Median failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.NotARotationMatrixException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.AbstractStorelessUnivariateStatistic failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.AbstractStorelessUnivariateStatistic failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.ValueServer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.ValueServer failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.TrapezoidIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.TrapezoidIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.CauchyDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.CauchyDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.LaguerreSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.LaguerreSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.FirstOrderConverter failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.Frequency$NaturalComparator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.MatrixIndexException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.FunctionEvaluationException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.Sum failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.Sum failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Min failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.rank.Min failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.ExponentialDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.ExponentialDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.Vector3D failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.geometry.Vector3D failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.BinomialDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.BinomialDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.FourthMoment failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.FourthMoment failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.TDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.TDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractContinuousDistribution failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractContinuousDistribution failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.GaussianRandomGenerator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince853Integrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.DormandPrince853Integrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.DirectSearchOptimizer$1 failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.optimization.DirectSearchOptimizer$1 failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.InvalidMatrixException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.BigMatrixImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.linear.BigMatrixImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.Fraction failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.Fraction failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.regression.SimpleRegression failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.regression.SimpleRegression failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverFactory failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverFactory failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ThreeEighthesIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.EmpiricalDistributionImpl$DataAdapter failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.DefaultTransformer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.DefaultTransformer failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.SwitchState$1 failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.MullerSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.MullerSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ConvergenceException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.StatUtils failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.StatUtils failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.MidpointIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.ResizableDoubleArray failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.ResizableDoubleArray failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ContinuousOutputModel failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ContinuousOutputModel failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.ClassicalRungeKuttaIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.FractionFormat failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.fraction.FractionFormat failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialFunction failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.PolynomialFunction failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.HypergeometricDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.HypergeometricDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.SumOfLogs failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.summary.SumOfLogs failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.DimensionMismatchException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.FirstOrderIntegratorFactory failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.FirstOrderIntegratorFactory failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GraggBulirschStoerIntegrator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.GraggBulirschStoerIntegrator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.UncorrelatedRandomVectorGenerator failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.UncorrelatedRandomVectorGenerator failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.ChiSquareTestImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.ChiSquareTestImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.GammaDistributionImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.GammaDistributionImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.EstimationException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.SummaryStatisticsImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.SummaryStatisticsImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.RandomDataImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.random.RandomDataImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.TransformerMap failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.util.TransformerMap failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverFactoryImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.VectorialMean failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.VectorialMean failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.SwitchState failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.SwitchState failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.distribution.AbstractContinuousDistribution$1 failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.transform.FastCosineTransformer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.transform.FastCosineTransformer failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.VectorialCovariance failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.moment.VectorialCovariance failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.estimation.WeightedMeasurement failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverImpl failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.UnivariateRealSolverImpl failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.DescriptiveStatistics failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.descriptive.DescriptiveStatistics failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.BrentSolver failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.analysis.BrentSolver failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.ode.IntegratorException failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.stat.inference.TestUtils failed check. Line coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.transform.FastFourierTransformer failed check. Branch coverage rate of 0.0% is below 50.0%
-org.apache.commons.math.transform.FastFourierTransformer failed check. Line coverage rate of 0.0% is below 50.0%
-Project failed check. Total branch coverage rate of 0.0% is below 50.0%
-Project failed check. Total line coverage rate of 0.0% is below 50.0%
-
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.452 s
-[INFO] Finished at: 2019-01-15T02:56:01+00:00
-[INFO] Final Memory: 24M/494M
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.codehaus.mojo:cobertura-maven-plugin:2.0:check (default) on project commons-math: Coverage check failed. See messages above. -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -13,30 +13,32 @@ class BuildChecker():
 
     HEADERS = ["id", "commit", "build", "exec_time", "comment", "fix"]
 
-    def __init__(self, project, init_commit, last_commit, step, base_report=None, fix=None):
+    def __init__(self, project, init_commit, last_commit, experiment, base_report=None, fix="NO"):
 
         self.project = project
-        self.step = int(step)
+        self.experiment = int(experiment)
         self.base_report = base_report
         self.fix = fix
         
         self.init_commit = init_commit
         self.last_commit = last_commit
-        self.path = '%s/analysis/%s/step_%s/'%(os.getcwd(), self.project, self.step)
+        self.path = '%s/analysis/%s/experiment_%s/'%(os.getcwd(), self.project, self.experiment)
         self.logs_path = "%s/logs/"%(self.path)
         self.general_logs_path = "%s/general_logs/"%(self.path)
-        self.build_script_path = self.path+"build-%s"%self.project+".sh"
 
-        self.out_report = "%s/report_step_%d.csv"%(self.path,self.step)
+        self.build_script_path = "%s/configFiles/BuildFiles/build-%s.sh"%(os.getcwd(), self.project)
+
+        self.out_report = "%s/report_experiment_%d.csv"%(self.path,self.experiment)
         if self.base_report is None or os.path.isfile(self.out_report): self.base_report = self.out_report
 
         if not os.path.isdir(self.path):
             os.makedirs(self.path)
-            with open(self.build_script_path, "w+") as _file:
-                _file.write("exit 1")
-            DefaultProcessManager.call("chmod +x %s"%self.build_script_path)
-            print("WRITE A BUILD SCRIPT FOR PROJECT AT %s"%self.build_script_path)  
-            exit()  
+            if not os.path.isfile(self.build_script_path):
+                with open(self.build_script_path, "w+") as _file:
+                    _file.write("exit 1")
+                DefaultProcessManager.call("chmod +x %s"%self.build_script_path)
+                print("WRITE A BUILD SCRIPT FOR PROJECT AT %s"%self.build_script_path)  
+                exit()  
 
         if not os.path.isdir(self.logs_path):
             os.makedirs(self.logs_path)
@@ -63,13 +65,17 @@ class BuildChecker():
 
     def checkBuild(self, n=100):
 
-        self.pm.log("CHECK BUILD FOR STEP %d" % self.step)
+        self.pm.log("CHECK BUILD FOR EXPERIMENT %d" % self.experiment)
 
+        count = 0
+        total = n
         for c_hash, commit in self.csvItems:
+
+            count = count + 1
 
             commit['fix'] = json.loads(commit['fix'].replace("\'", "\""))
 
-            reBuild = self.step > 1 and commit['build'] ==  "FAIL"
+            reBuild = self.fix is not None and commit['build'] ==  "FAIL"
             alreadyCheckedByFix = 'lastFix' in commit['fix'] and commit['fix']['lastFix'] == self.fix
 
             if (commit['build'] == "NO" or reBuild) and not alreadyCheckedByFix:
@@ -89,6 +95,8 @@ class BuildChecker():
                     self.pm.log("%s commit already checked: SUCCESS" % c_hash)
                 if commit['build'] == "FAIL":
                     self.pm.log("%s commit already checked: FAIL" % c_hash)
+            
+            print("Builds checked : "+str(count)+"/"+str(total), end="\r")
             
             if c_hash == self.last_commit: break
 
@@ -171,9 +179,9 @@ if __name__ == "__main__":
         # FIX HASH PRESENT
         absolute_path = config['absolute_path_to_base_report']
         if config['absolute_path_to_base_report'] == "": absolute_path = None
-        bcheck = BuildChecker(config['project'], config['init_commit'], config['last_commit'], config['step'], absolute_path, sys.argv[2])
+        bcheck = BuildChecker(config['project'], config['init_commit'], config['last_commit'], config['experiment'], absolute_path, sys.argv[2])
     else:
-        bcheck = BuildChecker(config['project'], config['init_commit'], config['last_commit'], config['step'])
+        bcheck = BuildChecker(config['project'], config['init_commit'], config['last_commit'], config['experiment'])
     
     bcheck.checkBuild(int(config['number_of_builds']))
     bcheck.updateFile()

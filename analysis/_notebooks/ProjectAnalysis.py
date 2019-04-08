@@ -11,11 +11,12 @@ from matplotlib import rc
 
 class ProjectAnalysis():
 
-    def __init__(self, project, path, report):
-        self.path= path
+    def __init__(self, project, n):
         self.project= project
-        self.data= pd.read_csv(path%report)
-        with open(path%report) as csvfile:
+        self.path= "../%s/experiment_%d/"%(self.project, n)
+        self.report="%s/report_experiment_%d.csv"%(self.path, n)
+        self.data= pd.read_csv(self.report)
+        with open(self.report) as csvfile:
             reader = csv.DictReader(csvfile)
             self.csvDict = dict()
             for row in reader:
@@ -47,30 +48,30 @@ class ProjectAnalysis():
                                     #density=True,
                                     bins=bins, color=['#4b8869', '#a82e2e'], label=['SUCCESS', 'FAIL'])
         
-        xlabels = bins[1:].astype(str)
-        xlabels[-1] += '+'
+        if jump > 100:
+            xlabels = bins[1:].astype(str)
+            xlabels[-1] += '+'
+            plt.xticks(rotation=45)
+            N_labels = len(xlabels)
+            plt.xticks(jump * np.arange(N_labels) + jump/2)
+            ax.set_xticklabels(xlabels)
         
         #ax.set_xlabel("Commits from beginning of project to last commit")
-        plt.xticks(rotation=45)
-
-        N_labels = len(xlabels)
         
-        plt.xticks(jump * np.arange(N_labels) + jump/2)
-        ax.set_xticklabels(xlabels)
 
         plt.yticks([])
         #plt.title(title, fontsize=20)
         plt.setp(patches, linewidth=0)
-        plt.legend(loc='upper left', prop={'size': 18})
+        plt.legend(loc='upper left', prop={'size': 24})
 
         fig.tight_layout()
         plt.xlim([0, limit])
         plt.ylim([0, jump])
         plt.tick_params(axis='both', labelsize=14)
         
-        plt.savefig(self.path%('%sHist.png'%self.project))
+        plt.savefig(self.path+('%sHist.png'%self.project))
         plt.show()
-
+    
     def get_fails_and_grouped_fails(self):
         groups_of_fails = []
         fails = []
@@ -86,7 +87,7 @@ class ProjectAnalysis():
             groups_of_fails.append(current_group)
         
         for fail in fails:
-            with open(self.path%"logs/%s-%s.log"%(fail['id'], fail['commit'])) as f: 
+            with open(self.path+"logs/%s-%s.log"%(fail['id'], fail['commit'])) as f: 
                 r_data = f.read()
                 fail['log'] = r_data
         return (fails, groups_of_fails)
@@ -95,7 +96,7 @@ class ProjectAnalysis():
         return text.replace('\n', ' ').replace('\t', ' ')
 
 
-    def addError(self, errors, error_type, error_text, commit):
+    def addError(self, errors, error_text, commit):
         hash_object = hashlib.md5(error_text.encode())
         hash_key = hash_object.hexdigest()
         if hash_key in errors:
@@ -104,8 +105,7 @@ class ProjectAnalysis():
         else:
             errors[hash_key] = {
                 'key': hash_key,
-                'type': error_type,
-                'message': self.cleanLog(error_text),
+                'trace': self.cleanLog(error_text),
                 'commits': [commit],
                 'count': 1
             }
@@ -118,33 +118,37 @@ class ProjectAnalysis():
             
             detected = False
             
-            for error in common_errors:
-                type_ = error[0]
-                log_template = error[1]
+            for log_template in common_errors:
                 
                 for e in re.finditer(log_template, fail['log']):
-                    self.addError(errors, type_, e.group(0), fail['commit'])
+                    self.addError(errors, e.group(0), fail['commit'])
                     detected = True
                     break
                 if detected: break
             if detected: continue
                 
             if not detected:
-                self.addError(errors, "UNKNOWN_ERROR", fail['log'], fail['commit'])
+                self.addError(errors, fail['log'], fail['commit'])
 
         return errors
 
-    def view_log_by_hash(self, errors, hash_id, n):
-        return self.csvDict[errors[hash_id]["commits"][n]]['log']
+    def view_log_by_hash(self, errors, hash_id, n=0):
+        total = len(errors[hash_id]["commits"])
+        commit = self.csvDict[errors[hash_id]["commits"][n]]['commit']
+        log = self.csvDict[errors[hash_id]["commits"][n]]['log']
+        # self.csvDict[errors[hash_id]["commits"][n]]['log']
+        print("Total commits: %d | Current commit: %s | Log: \n\n%s "%(total, commit, log))
+        
+        
 
     def save_success_commits(self):
         success_commits = []
         for k,v in self.csvDict.items():
             if v['build'] == "SUCCESS":
                 success_commits.append(v['commit'])
-        with open(self.path%'success_commits.txt', 'w') as f:
+        with open(self.path+'success_commits.txt', 'w') as f:
             for commit in success_commits:
                 f.write("%s\n" % commit)
-        print("Saved at '%s'"%(self.path%'success_commits.txt'))
+        print("Saved at '%s'"%(self.path+'success_commits.txt'))
     
 

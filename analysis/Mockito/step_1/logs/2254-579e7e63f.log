@@ -1,2 +1,0 @@
-sed: can't read buildSrc/build.gradle: No such file or directory
-/home/michel/Investigacion/bugs/analysis/Mockito/build-Mockito.sh: line 8: ./gradlew: No such file or directory

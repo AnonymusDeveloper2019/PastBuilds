@@ -4,7 +4,7 @@ Research on reproducing software builds in past commits
 
 ## Introduction
 
-We will build the projects in all the versions that repository provides to check the status of the project and analyze the cases in which it is not possible to carry out the build. The proyects selected for this experiment are the following:
+We will build the projects in all the versions that repository provides to check the status of the project and analyze the cases in which it is not possible to carry out the construction. The proyects selected for this experiment are the following:
 
 | Identifier       	| Project             	| # of commits 	|
 |------------------	|---------------------	|--------------	|
@@ -15,18 +15,50 @@ We will build the projects in all the versions that repository provides to check
 | Mockito          	| Mockito             	| 2639         	|
 | Time             	| Joda-Time           	| 1717         	|
 
-## Prerequisites
+## Check build process
+
+### SetUp
+
+#### :whale: Using Docker
+
+*Pre-requisites*
 
 - Git 2.17.1
-- Conda 4.5.3
-- [Defects4J 1.2.0](https://github.com/rjust/defects4j/tree/v1.2.0) (install as indicate in README.md)
-
-# SetUp
+- Docker 18.06.1-ce
 
 Clone the project repo:
 
 ```
   git clone https://github.com/AnonymusDeveloper2019/PastBuilds.git
+  cd bugs/
+```
+
+Run container:
+
+```
+docker run --rm 
+  -v $PWD/analysis:/bugs/analysis \
+  -w /bugs buildableprojects/extract_process:java-<java_version> \
+  bash 
+```
+
+- Replace <java_version> with '7' for proyects Closure, Lang, Math and Time. 
+- Replace <java_version> with '8' for proyects spring-framework and Mockito.
+
+#### :hammer: Manually 
+
+*Pre-requisites*
+
+- Git 2.17.1
+- Conda 4.5.3
+- [Defects4J 1.2.0](https://github.com/rjust/defects4j/tree/v1.2.0) (install as indicate in README.md)
+- Java 7 & 8
+
+Clone the project repo:
+
+```
+  git clone https://github.com/AnonymusDeveloper2019/PastBuilds.git
+  cd bugs/
 ```
 
 Download repos from git and Defects4J:
@@ -41,42 +73,30 @@ Download repos from git and Defects4J:
   defects4j checkout -p Time -v 1b -w Time/
 ```
 
-# Start the experiment
+## Start the experiment
 
-To check build history from a project:
-
-```
-python py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/<project>-step<n>-config.json
-```
-
-#### :heavy_exclamation_mark: **IMPORTANT**: The experiment for each project can take several hours or days, depending of your machine. All results to realize the analysis are provided in this repo.
-
-For example (assuming analysis/Lang/step_1/ doesn't exist):
+To check build history from a project (using bash terminal on your machine or inside docker container):
 
 ```
-python py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/Lang-step1-config.json
+python3 py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/<project>-experiment<n>-config.json
 ```
 
-Then, you will see the following message:
+##### **IMPORTANT**: The experiment for each project can take several hours or days, depending of your machine. All results to realize the analysis are provided in this repo.
+
+For example (assuming analysis/Lang/experiment_1/ doesn't exist):
 
 ```
-WRITE A BUILD SCRIPT FOR PROJECT AT analysis/Lang/step_1/build-Lang.sh
+python3 py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/Lang-experiment1-config.json
 ```
 
-Write build script or copy it from `configFiles/BuildFiles/build-Lang.sh` and run the command again:
-
-```
-python py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/Lang-step1-config.json
-```
-
-This will create new folder `analysis/Lang/step_1/` with the following files/subfolders:
+This will create new folder `analysis/Lang/experiment_1/` with the following files/subfolders:
 
 - `general_logs/` include the logs from the script `checkBuildHistory.py`
 - `logs/` include the logs from each build/commit
 - `build-Lang.sh` the script to build the project
-- `report_step_1.csv` a table in csv format with the results of experiment for this project
+- `report_experiment_1.csv` a table in csv format with the results of experiment for this project
 
-The `report_step_1.csv` file follows this format:
+The `report_experiment_1.csv` file follows this format:
 
 ```
 id,commit,build,exec_time,comment,fix
@@ -90,12 +110,47 @@ id,commit,build,exec_time,comment,fix
 - `comment` git comment of the commit
 - `fix` a JSON object to store any info from any future fix
 
-# Analyzing results
+## Analyce results
 
-Once all commits was checked, we could analyze the results using a JupyterNotebook:
+Once all commits was checked, we could analyce the results using a JupyterNotebook:
+
+### SetUp
+
+#### :whale: Using Docker 
+
+- Run with exiting results
+```
+  docker run -it -p 8888:8888 buildableprojects/analysis_process:java-<java_version>
+```
+- Run with current results (at `analysis/` folder)
+```
+  docker build --tag buildableprojects/analysis_process:java-<java_version> .
+  docker run -it -p 8888:8888 buildableprojects/analysis_process:java-<java_version>
+```
+
+- Replace <java_version> with '7' for proyects Closure, Lang, Math and Time. 
+- Replace <java_version> with '8' for proyects spring-framework and Mockito.
+
+Inside container, run:
+```
+./runJupyterNotebook.sh
+```
+
+This allow you to see (from console) the full log file and re-run specific snapshot from any project.
+
+#### :hammer: Manually 
+
+*Pre-requisites*
+
+- All requisites from check build process
+- Conda 4.5.3
+
+Run at console (in project directory):
 
 ```
 jupyter-notebook
 ```
 
-Navigate to `/analysis/_notebooks/LangAnalysis.ipynb` and run notebook to see the analysis.
+## Run
+
+Open yout browser at `localhost:8888`, navigate to `/analysis/_notebooks/<project>Analysis.ipynb` and run notebook to see the analysis.
