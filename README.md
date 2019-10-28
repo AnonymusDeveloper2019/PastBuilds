@@ -2,18 +2,20 @@
 
 Research on reproducing software builds in past commits
 
+##### **IMPORTANT**: The experiment for each project can take several hours or days, depending of your machine. All results to realize the analysis are provided in this repo.
+
 ## Introduction
 
 We will build the projects in all the versions that repository provides to check the status of the project and analyze the cases in which it is not possible to carry out the construction. The proyects selected for this experiment are the following:
 
 | Identifier       	| Project             	| # of commits 	|
 |------------------	|---------------------	|--------------	|
-| spring-framework 	| Spring Framework    	| 17382        	|
 | Closure          	| Closure compiler    	| 2858         	|
 | Lang             	| Apache commons-lang 	| 3570         	|
 | Math             	| Apache commons-math 	| 4878         	|
 | Mockito          	| Mockito             	| 2639         	|
 | Time             	| Joda-Time           	| 1717         	|
+
 
 ## Check build process
 
@@ -29,21 +31,27 @@ We will build the projects in all the versions that repository provides to check
 Clone the project repo:
 
 ```
-  git clone https://github.com/AnonymusDeveloper2019/PastBuilds.git
+  git clone https://gitlab.com/urjc-softdev/bugs.git
   cd bugs/
+```
+
+Build local images:
+
+```
+docker build -f dockerfiles/build-analyzer.Dockerfile -t  build-analyzer:0.2-dev .
+docker build -f dockerfiles/java-8.Dockerfile -t java-maven:8 .
 ```
 
 Run container:
 
 ```
-docker run --rm 
-  -v $PWD/analysis:/bugs/analysis \
-  -w /bugs buildableprojects/extract_process:java-<java_version> \
-  bash 
+docker run -it -p 8888:8888 \
+    -v $PWD/analysis:/home/bugs/analysis \
+    -v $PWD/py:/home/bugs/py \
+    -v $PWD/configFiles:/home/bugs/configFiles \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    --privileged=true build-analyzer:0.2-dev
 ```
-
-- Replace <java_version> with '7' for proyects Closure, Lang, Math and Time. 
-- Replace <java_version> with '8' for proyects spring-framework and Mockito.
 
 #### :hammer: Manually 
 
@@ -52,25 +60,19 @@ docker run --rm
 - Git 2.17.1
 - Conda 4.5.3
 - [Defects4J 1.2.0](https://github.com/rjust/defects4j/tree/v1.2.0) (install as indicate in README.md)
-- Java 7 & 8
+- Java 8
 
 Clone the project repo:
 
 ```
-  git clone https://github.com/AnonymusDeveloper2019/PastBuilds.git
+  git clone https://gitlab.com/urjc-softdev/bugs.git
   cd bugs/
 ```
 
 Download repos from git and Defects4J:
 
 ```
-  cd projects
-  git clone https://github.com/spring-projects/spring-framework.git
-  defects4j checkout -p Lang -v 1b -w Lang/
-  defects4j checkout -p Math -v 1b -w Math/
-  defects4j checkout -p Closure -v 1b -w Closure/
-  defects4j checkout -p Mockito -v 1b -w Mockito/
-  defects4j checkout -p Time -v 1b -w Time/
+  ./projects/downloadAllProjects.sh
 ```
 
 ## Start the experiment
@@ -78,29 +80,26 @@ Download repos from git and Defects4J:
 To check build history from a project (using bash terminal on your machine or inside docker container):
 
 ```
-python3 py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/<project>-experiment<n>-config.json
+python py/checkBuildHistory.py configFiles/experiment_<n>/<project>-config.json
 ```
-
-##### **IMPORTANT**: The experiment for each project can take several hours or days, depending of your machine. All results to realize the analysis are provided in this repo.
 
 For example (assuming analysis/Lang/experiment_1/ doesn't exist):
 
 ```
-python3 py/checkBuildHistory.py configFiles/CheckBuildHistoryFiles/Lang-experiment1-config.json
+python py/checkBuildHistory.py configFiles/experiment_1/Lang-config.json
 ```
 
 This will create new folder `analysis/Lang/experiment_1/` with the following files/subfolders:
-
+- `build_files` include build files used in each commit
 - `general_logs/` include the logs from the script `checkBuildHistory.py`
 - `logs/` include the logs from each build/commit
-- `build-Lang.sh` the script to build the project
 - `report_experiment_1.csv` a table in csv format with the results of experiment for this project
 
 The `report_experiment_1.csv` file follows this format:
 
 ```
 id,commit,build,exec_time,comment,fix
-0,687b2e62,SUCCESS,6,LANG-747 NumberUtils does not handle Long Hex numbers,{}
+0,687b2e62,SUCCESS,6,LANG-747 NumberUtils does not handle Long Hex numbers
 ```
 
 - `id` is the identifier, and also shows how much commits are checked from latest commit.
@@ -108,7 +107,6 @@ id,commit,build,exec_time,comment,fix
 - `build` status of the build. Could be 'SUCCESS', 'FAIL' or 'NO' (not already checked)
 - `exec_time` time in seconds that the builds take 
 - `comment` git comment of the commit
-- `fix` a JSON object to store any info from any future fix
 
 ## Analyce results
 
@@ -118,25 +116,10 @@ Once all commits was checked, we could analyce the results using a JupyterNotebo
 
 #### :whale: Using Docker 
 
-- Run with exiting results
-```
-  docker run -it -p 8888:8888 buildableprojects/analysis_process:java-<java_version>
-```
-- Run with current results (at `analysis/` folder)
-```
-  docker build --tag buildableprojects/analysis_process:java-<java_version> .
-  docker run -it -p 8888:8888 buildableprojects/analysis_process:java-<java_version>
-```
-
-- Replace <java_version> with '7' for proyects Closure, Lang, Math and Time. 
-- Replace <java_version> with '8' for proyects spring-framework and Mockito.
-
 Inside container, run:
 ```
-./runJupyterNotebook.sh
+ nohup jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=Saturn > error.log &
 ```
-
-This allow you to see (from console) the full log file and re-run specific snapshot from any project.
 
 #### :hammer: Manually 
 
@@ -153,4 +136,9 @@ jupyter-notebook
 
 ## Run
 
-Open yout browser at `localhost:8888`, navigate to `/analysis/_notebooks/<project>Analysis.ipynb` and run notebook to see the analysis.
+Open yout browser at `localhost:8888`. Use token 'Saturn' if use Docker.
+
+# Use of available notebooks for analysis
+
+- `ProjectAnalysis.ipynb` -> Allow us to perform a deep analysis on each project. Changes values in cell 2 to select differents projects/experiments.
+- `LogUnifier.ipynb`      -> Allow us to unify all errors from all projects (need to previously run last notebook to generate errors) 

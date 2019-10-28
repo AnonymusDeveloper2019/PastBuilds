@@ -1,0 +1,13 @@
+	trace	type	count
+ca6ced4fe2c84f4d49847b6be214a63d	[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/home/bugs/projects/Lang). Please verify you invoked Maven from the correct directory. -> [Help 1]	DEVELOPER_ERROR	1524
+03089bbe8b985dd65821595157075da5	Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.2:compile	DEVELOPER_ERROR	110
+7a7b1e5666d3d5a50d5a94f87f519f64	Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.1:compile	DEVELOPER_ERROR	14
+eda3012a0ad35cb8171a49c1b4cff3fb	error: cannot find symbol  class UnhandledException	DEVELOPER_ERROR	6
+55f75185b4ce632ff325a7ae0d87f097	error: cannot find symbol  class NullArgumentException	DEVELOPER_ERROR	5
+01a73f402dbc2e4e9834307202ecae93	Could not find artifact org.apache.commons:commons-parent:pom:28-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 12, column 11	CONTEXT_ERROR	4
+09fe54e1a80d1e7106ecc2ebcb6aeb94	Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.0.2:compile	DEVELOPER_ERROR	2
+1ce85102744fbcc9e1b9ec80cba20671	error: cannot find symbol  class IDKey	DEVELOPER_ERROR	2
+4278f3f4305666d07809b6364a53560b	[ERROR] [ERROR] Some problems were encountered while processing the POMs:	DEVELOPER_ERROR	2
+722ff9d3d59f5046e9b3f74a2e6d1ddf	error: cannot find symbol  method appendIdentityToString(StringBuffer,Object)	DEVELOPER_ERROR	2
+1a8c2eecee81eb655b47e5bd09016a3c	error: as of release 5, 'enum' is a keyword, and may not be used as an identifier	CONTEXT_ERROR	1
+3870507c0d9b10970a24fc19409489ca	Could not find artifact org.apache.commons:commons-parent:pom:1-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 22, column 11	CONTEXT_ERROR	1

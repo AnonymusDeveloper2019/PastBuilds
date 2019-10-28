@@ -1,120 +1,112 @@
 import subprocess
 import re
 import os
+import sys
 
-# COLORS
-
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    GREY = '\u001b[38;5;245m'
-
-class Message:
-    START = "> STARTING SEARCH REGRESSION IN PROYECT %s. GOING TO FIX COMMIT"
-    REACHED_LIMIT_FORWARD = "> PROJECT COMMITS LIMIT REACHED: GO %d COMMITS FORWARD"
-    REACHED_LIMIT_BACK="> PROJECT COMMITS LIMIT REACHED: GO %d COMMITS BACK"
-    GO_FORWARD = "> GO %d COMMITS FORWARD (%d commits from fix commit)"
-    GO_BACK = "> GO %d COMMITS BACK (%d commits from fix commit)"
-    FIXED_PASS = "\033[95m%s\033[0m commit \033[92mpass\033[0m the test (FIXED COMMIT)"
-    ERROR = "\033[95m%s\033[0m commit \033[91mhad an error\033[0m when test was running, no test report found"
-    BUILD_ERROR = "\033[95m%s\033[0m commit \033[91mhad an error\033[0m: Can't build project"
-    TEST_ERROR = "\033[95m%s\033[0m commit \033[91mhad an error\033[0m: An error occurred when the test was running"
-    FAIL = "\033[95m%s\033[0m commit \033[91mdoesn't pass\033[0m the test"
-    SUCCESS = "\033[95m%s\033[0m commit \033[92mpass\033[0m the test"
-    ERROR_TO_FAIL_END = "\033[95m%s\033[0m commit contains an error, \033[95m%s\033[0m fail at test, no regression detected"
-    SUCCESS_END = "\033[95m%s\033[0m commit \033[92mpass\033[0m the test, \033[95m%s\033[0m commit is a \033[91mregression\033[0m"
-def printc(c,s):
-        print(c+s+bcolors.ENDC)
-
-def escape_ansi(line):
-    ansi_escape = re.compile(r'(\x9B|\x1B\[)[0-?]*[ -/]*[@-~]')
-    return ansi_escape.sub('', line)
+DELIMITER="|=|"
 
 # PROCESS
 
-class ProcessManager:
+class ExecutorManager():
+
+    def execute(self, command, output): raise NotImplementedError
+
+class ProcessManager(ExecutorManager):
 
     def __init__(self, output, log_name="PROCESS MANAGER"):
         self.outfile = output
         self.log_name = log_name
 
-    def call(self, params, output=None):
-        if output is None:
-            output=self.outfile
-        return subprocess.call(params, shell=True, stdout=output, stderr=output)
+    def execute(self, command, output=None, returnOutput=False):
+        
+        if returnOutput:
+            with open('/tmp/run', 'w+') as out:
+                exit_code, _ = self.execute(command, output=out)
+            with open('/tmp/run', 'r+') as out:
+                text = out.read()
+            self.execute("rm /tmp/run")
+            return exit_code, text
+        else:
+            if output is None:
+                output=self.outfile
+            exit_code = subprocess.call(command, shell=True, stdout=output, stderr=output)
+            return exit_code, None
 
     def log(self, message, output=None):
         if output is None:
             output=self.outfile
         subprocess.call("echo [ %s ] %s"%(self.log_name, message), shell=True, stdout=output, stderr=output)
 
-    def runAndGetOutput(self, command):
-        text=""
-        with open('run', 'w') as out:
-            self.call(command, output=out)
-        with open('run', 'r') as out:
-            text = out.read()
-        self.call("rm run")
-        return text
+    def close(self):
+        if self.outfile is not None:
+            self.outfile.close()
 
 DefaultProcessManager = ProcessManager(open(os.devnull, 'w'), "DEFAULT PROCESS MANAGER")
 
 # GIT
 
-class NoValidCommitException(Exception):
-        """Raised when output isn't a hash of commit"""
-        pass
-
 class GitManager:
 
-    def __init__(self, manager, base_commit):
-        self.process_manager = manager
+    def __init__(self, executor_manager, base_commit):
+        self.executor_manager = executor_manager
         self.base_commit = base_commit
-        self.pos=0
-
-    def get_previous_commit(self,n=1):
-        commit = self.process_manager.runAndGetOutput("git show HEAD~%d | head -n 1 |  cut -d' ' -f2" % n)
-        # Commit len is 40 characters + \n
-        if commit is "" or len(commit) is not 41:
-            raise NoValidCommitException
-        return commit.strip()
-
-    def get_forward_commit(self, n=1):
-        new_n = abs(self.pos+n)
-        commit = self.process_manager.runAndGetOutput("git show %s~%d | head -n 1 |  cut -d' ' -f2" % (self.base_commit, new_n) )
-        if commit is "":
-            print("%d : %d"%(self.pos,n))
-            raise NoValidCommitException
-        return commit.strip()
+        self.executor_manager.execute("git checkout -f %s" % base_commit)
 
     def change_commit(self,commit_hash):
-        self.process_manager.call("git checkout -f %s" % commit_hash)
-        self.process_manager.call("git clean -fd")
-
-    def go_back(self, n=1):
-        commit = self.get_previous_commit(n)
-        self.change_commit(commit)
-        self.pos-=n
-        return commit
-
-    def go_forward(self, n=1):
-        commit = self.get_forward_commit(n)
-        self.change_commit(commit)
-        self.pos+=n
-        return commit
-
-    def current_pos(self):
-        return self.pos
+        with open(os.devnull) as out:
+            self.executor_manager.execute("git clean -fdx", out)
+        self.executor_manager.execute("git checkout -f %s" % commit_hash)
 
     def getAllCommits(self):
-        out = self.process_manager.runAndGetOutput("git log --oneline").strip()
-        return out.split('\n')
+        _, out = self.executor_manager.execute('git log %s --pretty=format:"%%h%s%%ad%s%%s" --date=iso8601'%(self.base_commit, DELIMITER, DELIMITER), returnOutput=True)
+        return out.strip().split('\n')
+
+# DOCKER
+
+class DockerManager():
+
+    containers = set()
+
+    @staticmethod
+    def container_exist(container_id):
+        return DefaultProcessManager.execute("docker inspect -f {{.State.Running}} %s"%container_id) == "true"
+
+    @staticmethod
+    def execute(docker_image, project, command, output, pm=DefaultProcessManager):
+        """Executes 'command' in a Docker container created by 'docker_image'.
+            If container does not exist, then create one and executes 'command'
+            
+            Keyword arguments:
+            
+                docker_image -- An existing Docker image. If not is available locally, it will be downladed
+                
+                project      -- Project folder name which container uses as work-directory
+                
+                command      -- Bash command which will be execute in the container
+                
+                output       -- File path to store docker logs
+                
+                pm           -- Process manager which gona executes (and gets the outputs) the Docker command
+        """
+        container_id = "aux-container-%s-%s"% (re.sub('[:/]', '_', docker_image),project)
         
-    
+        if container_id not in DockerManager.containers:
+            # NOT EXISTS -> CREATE
+            workdir = "/home/bugs/projects/%s" % project
+            pm.execute("docker run --rm --name %s --volumes-from $HOSTNAME -d -w %s %s tail -f /dev/null"%(container_id,workdir,docker_image))
+            DockerManager.containers.add(container_id)
+        
+        with open(output, "w+") as out:
+            return pm.execute("docker exec %s %s"%(container_id, command), out)
+
+    @staticmethod
+    def shutdownContainers(pm=DefaultProcessManager):
+        for container_id in DockerManager.containers:
+            pm.execute("docker stop %s"%container_id)
+            pm.execute("docker rm %s"%container_id)
+            
+
+
+if __name__ == "__main__":
+    DockerManager.execute("maes95/java-maven:8", "Lang", "bash", "log")
     

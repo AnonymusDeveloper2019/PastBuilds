@@ -1,0 +1,8 @@
+{
+    "commit": "c2d9dc95",
+    "build_system": "Ant",
+    "docker_image": "maes95/java-maven:8",
+    "build_command": "ant compile -f ./build.xml",
+    "build_file": "./build.xml",
+    "works": true
+}

@@ -1,0 +1,13 @@
+{
+    "project": "Lang",
+    "init_commit": "687b2e62", 
+    "number_of_builds": "All",
+    "experiment": 1,
+    "build_config": {
+        "build_system": "Maven",
+        "docker_image": "maes95/java-maven:8",
+        "build_command": "mvn clean install -Dmaven.test.skip=true",
+        "build_file": "./pom.xml",
+        "fixed": true
+    }
+}

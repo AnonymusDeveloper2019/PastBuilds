@@ -1,0 +1,13 @@
+{
+    "project": "Math",
+    "init_commit": "0da657a6", 
+    "number_of_builds": "All",
+    "experiment": 1,
+    "build_config": {
+        "build_system": "Ant",
+        "docker_image": "maes95/java-maven:8",
+        "build_command": "ant compile -f ./build.xml",
+        "build_file": "./build.xml",
+        "fixed": true
+    }
+}

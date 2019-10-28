@@ -1,0 +1,24 @@
+{
+    "commit": "e119debb",
+    "build_system": "Maven",
+    "docker_image": "java-maven:8",
+    "build_command": "mvn clean install -Dmaven.test.skip=true",
+    "build_file": "./pom.xml",
+    "builds_checked": [
+        {
+            "build_system": "Maven",
+            "docker_image": "java-maven:8",
+            "build_command": "mvn clean install -Dmaven.test.skip=true",
+            "build_file": "./pom.xml",
+            "works": false
+        },
+        {
+            "build_system": "Ant",
+            "docker_image": "java-maven:8",
+            "build_command": "ant compile -f ./build.xml",
+            "build_file": "./build.xml",
+            "works": false
+        }
+    ],
+    "works": true
+}

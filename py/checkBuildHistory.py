@@ -6,83 +6,83 @@ import datetime
 import time
 import csv
 import json
+import pickle
+import json
 from time import gmtime, strftime
-from utils import bcolors, printc, ProcessManager, GitManager, escape_ansi, NoValidCommitException, DefaultProcessManager
+from buildHelper import BuildHelper
+from utils import ProcessManager, GitManager, DefaultProcessManager, DockerManager, DELIMITER
 
 class BuildChecker():
 
-    HEADERS = ["id", "commit", "build", "exec_time", "comment", "fix"]
+    HEADERS = ["id", "commit", "build", "exec_time", "date", "comment"]
 
-    def __init__(self, project, init_commit, last_commit, experiment, base_report=None, fix="NO"):
+    def __init__(self, config_file_path, test=False):
 
-        self.project = project
-        self.experiment = int(experiment)
-        self.base_report = base_report
-        self.fix = fix
+        with open(config_file_path) as config_file:
+            self.config = json.load(config_file)
+        self.config['experiment'] = int(self.config['experiment'])
+        self.firstTime = False
+        self.test = test
+        self.config['init_commit'] = self.config['init_commit'][0:8]
         
-        self.init_commit = init_commit
-        self.last_commit = last_commit
-        self.path = '%s/analysis/%s/experiment_%s/'%(os.getcwd(), self.project, self.experiment)
+        # PATHS
+        self.root = os.getcwd()
+        self.path = '%s/analysis/%s/experiment_%s/'%(self.root, self.config['project'], self.config['experiment'])
+        self.build_files_path = "%s/build_files/"%(self.path)
         self.logs_path = "%s/logs/"%(self.path)
         self.general_logs_path = "%s/general_logs/"%(self.path)
-
-        self.build_script_path = "%s/configFiles/BuildFiles/build-%s.sh"%(os.getcwd(), self.project)
-
-        self.out_report = "%s/report_experiment_%d.csv"%(self.path,self.experiment)
-        if self.base_report is None or os.path.isfile(self.out_report): self.base_report = self.out_report
+        self.out_report = "%s/report_experiment_%d.csv"%(self.path,self.config['experiment'])
 
         if not os.path.isdir(self.path):
-            os.makedirs(self.path)
-            if not os.path.isfile(self.build_script_path):
-                with open(self.build_script_path, "w+") as _file:
-                    _file.write("exit 1")
-                DefaultProcessManager.call("chmod +x %s"%self.build_script_path)
-                print("WRITE A BUILD SCRIPT FOR PROJECT AT %s"%self.build_script_path)  
-                exit()  
-
-        if not os.path.isdir(self.logs_path):
+            # FIRST EXECUTION
+            self.firstTime = True
             os.makedirs(self.logs_path)
-        if not os.path.isdir(self.general_logs_path):
             os.makedirs(self.general_logs_path)
-    
+            os.makedirs(self.build_files_path)
+        
         self.pm = ProcessManager(open(self.general_logs_path+"general-"+strftime("%d%b%Y_%X", gmtime())+".log", 'w+'), "BUILD CHECKER")
-        self.gm = GitManager(self.pm, self.init_commit)
-
-        # MOVE TO PROJECT
-        os.chdir("projects/%s" % self.project)
-        self.gm.change_commit(self.init_commit)
-        if not os.path.isfile(self.out_report):
+        self.gm = GitManager(self.pm, self.config['init_commit'])
+        
+        if self.firstTime:
+            # FIRST EXECUTION
             self.createCSVFile()
 
         # READ LAST REPORT
-        with open(self.base_report) as csvfile:
+        with open(self.out_report) as csvfile:
             reader = csv.DictReader(csvfile)
-            csvDict = dict()
+            self.csvDict = dict()
             for row in reader:
-                csvDict[row['commit']] = row
+                self.csvDict[row['commit']] = row
             # SORT ITEMS BY ID (DON'T NEED IT IN PYTHON 3.6)
-            self.csvItems = sorted(csvDict.items(), key=lambda tup: int(tup[1]['id']) )
+            self.csvItems = sorted(self.csvDict.items(), key=lambda tup: int(tup[1]['id']) )
+            # Set number of builds to total builds 
+            if self.config['number_of_builds'] == "All":
+                self.config['number_of_builds'] = len(self.csvItems)
 
-    def checkBuild(self, n=100):
+        # MOVE TO PROJECT
+        os.chdir("projects/%s" % self.config['project'])
+       
 
-        self.pm.log("CHECK BUILD FOR EXPERIMENT %d" % self.experiment)
+    def checkBuild(self):
 
+        self.pm.log("CHECK BUILD FOR EXPERIMENT %d" % self.config['experiment'])
+        n = self.config['number_of_builds']
         count = 0
         total = n
+        build_config = self.config.get('build_config')
         for c_hash, commit in self.csvItems:
 
             count = count + 1
 
-            commit['fix'] = json.loads(commit['fix'].replace("\'", "\""))
+            if (commit['build'] == "NO"):
 
-            reBuild = self.fix is not None and commit['build'] ==  "FAIL"
-            alreadyCheckedByFix = 'lastFix' in commit['fix'] and commit['fix']['lastFix'] == self.fix
+                # NO BUILD CHECKED
 
-            if (commit['build'] == "NO" or reBuild) and not alreadyCheckedByFix:
+                build_config = self.buildProject(c_hash, commit, build_config)
 
-                # NO BUILD CHECKED OR REBUILD
+                # SAVE BUILD FILE
 
-                self.buildProject(c_hash, commit, reBuild)
+                self.saveBuildFile(commit, c_hash, build_config)
 
                 n-=1
                 if n == 0: break
@@ -96,68 +96,92 @@ class BuildChecker():
                 if commit['build'] == "FAIL":
                     self.pm.log("%s commit already checked: FAIL" % c_hash)
             
-            print("Builds checked : "+str(count)+"/"+str(total), end="\r")
-            
-            if c_hash == self.last_commit: break
+            if not self.test:
+                print("Builds checked : "+str(count)+"/"+str(total), end="\r")
 
+    def finish(self, msg):
+        # RESTORE STATE AND CLOSE FILES
+        self.pm.log(msg)
+        #DockerManager.shutdownContainers()
+        os.chdir(self.root)
+        self.pm.execute("chmod -R ugo+rw %s/analysis/"%self.root)
+        self.pm.close()
 
-    def buildProject(self, c_hash, commit, reBuild):
+    def buildProject(self, c_hash, commit, build_config, i = 1):
 
-        if reBuild:
-            self.pm.log("%s commit gona be re-checked" % c_hash)
-        else:
-            self.pm.log("%s commit gona be checked" % c_hash)
+        self.pm.log("%s commit gona be checked" % c_hash)
 
+        fb = BuildHelper(self.pm)
+
+        # GO TO  COMMIT 
         self.gm.change_commit(c_hash)
-        log_file = self.logs_path+str(commit['id'])+"-"+c_hash+".log"
-        with open(log_file, "w+") as log:
-            start = round(time.time())
-            returncode = self.pm.call("bash %s"%self.build_script_path, log)
-            commit['exec_time'] = round(time.time()) - start
-            
-        if returncode == 0:
-            # SUCCESS BUILD
-            self.pm.log("%s commit build success" % c_hash)
 
-            # CHANGE IN BUILD FIX COMMIT BUILD
-            if reBuild and commit['build'] == "FAIL":
-                self.pm.log("%s commit was fixed by %s" % (c_hash, self.fix))
-                commit['fix']['fixFail'] = self.fix
+        # PATH WHERE LOG WILL BE STORE
+        log_file_template = self.logs_path+str(commit['id'])+"-"+c_hash+"-attempt-%d.log"
 
-            commit['build'] = "SUCCESS"
-            self.pm.call("rm %s"%log_file)
-        else:
-            # BUILD FAIL
-            self.pm.log("%s commit build fail" % c_hash)
+        build_configs = fb.getBuildConfigs(build_config)
 
-            # CHANGE IN BUILD BREAKS COMMIT BUILD
-            if reBuild and commit['build'] == "SUCCESS":
-                self.pm.log("%s commit was broken by %s" % (c_hash, self.fix))
-                commit['fix']['breaksSuccess'] = self.fix
+        for idx, bc in enumerate(build_configs):
 
-            commit['build'] = "FAIL"
+            exit_code = fb.executeBuildSystem(self.config["project"], bc, log_file_template%(idx+1))
+
+            if exit_code == 0:
+                # SUCCESS
+                self.pm.log("%s commit build success" % c_hash)
+                commit['build'] = "SUCCESS"
+                bc = bc.copy()
+                bc["builds_checked"] = build_configs
+                self.updateFile()
+                return bc
         
-        commit['fix']['lastFix'] = self.fix
+        # NO BUILD WORKS 
+        self.pm.log("%s commit build fail" % c_hash)
+        commit['build'] = "FAIL"
+        # RETURN FIRST BUILD CONFIG DETECTED, RETURN ALL BUILDS AS A PARAM
+        bc = build_configs[0].copy()
+        bc["builds_checked"] = build_configs
         self.updateFile()
+        return bc    
+            
+
+    def saveBuildFile(self, commit, c_hash, build_config):
+        filename = str(commit['id'])+"-"+c_hash+"-build.json"
+        with open(self.build_files_path+filename,'w+') as json_file:
+            data = {
+                "commit": c_hash,
+                "build_system": build_config["build_system"],
+                "docker_image": build_config["docker_image"],
+                "build_command": build_config["build_command"],
+                "build_file": build_config["build_file"],
+                "builds_checked": build_config["builds_checked"],
+                "works": commit['build'] == "SUCCESS"
+            }
+            json.dump(data, json_file, indent=4)
+
             
 
     def createCSVFile(self):
+        # GO PROJECT FOLDER
+        os.chdir("projects/%s" % self.config['project'])
         with open(self.out_report, 'w+') as csvfile: 
             writer = csv.DictWriter(csvfile, fieldnames = self.HEADERS) 
             commits = []
             n=0
             for commit in self.gm.getAllCommits():
+                commit_hash, date, comment = commit.split(DELIMITER)
                 commits.append({
                     "id": n,
-                    "commit": commit.split(" ", 1)[0],
+                    "commit": commit_hash[0:8],
                     "build": "NO",
                     "exec_time": 0,
-                    "comment": commit.split(" ", 1)[1],
-                    "fix": {}
+                    "date": date,
+                    "comment": comment
                 })
                 n+=1
             writer.writeheader()
             writer.writerows(commits)
+        # GO BACK
+        os.chdir(self.root)
 
     def updateFile(self):
         with open(self.out_report, 'w+') as csvfile: 
@@ -165,24 +189,24 @@ class BuildChecker():
             writer.writeheader()
             for _, commit in self.csvItems:
                 writer.writerow(commit)
-        
 
 if __name__ == "__main__":
 
     if len(sys.argv) < 2:
-        print("Use: python py/checkBuildHistory.py <config> <?fix>")
+        print("Use: python py/checkBuildHistory.py <config_file_path>")
         exit()
 
-    config = json.load(open(sys.argv[1]))
+    bcheck = BuildChecker(sys.argv[1])
 
-    if len(sys.argv) > 2:
-        # FIX HASH PRESENT
-        absolute_path = config['absolute_path_to_base_report']
-        if config['absolute_path_to_base_report'] == "": absolute_path = None
-        bcheck = BuildChecker(config['project'], config['init_commit'], config['last_commit'], config['experiment'], absolute_path, sys.argv[2])
+    try:
+        bcheck.checkBuild()
+    except KeyboardInterrupt as e:
+        bcheck.finish("FINISHED EXPERIMENT WITH KeyboardInterrupt")
+    except Exception as e:
+        bcheck.pm.log("Exception: %s"%e)
+        bcheck.finish("FINISHED EXPERIMENT WITH AN EXCEPTION")
     else:
-        bcheck = BuildChecker(config['project'], config['init_commit'], config['last_commit'], config['experiment'])
-    
-    bcheck.checkBuild(int(config['number_of_builds']))
-    bcheck.updateFile()
+        bcheck.finish("FINISHED EXPERIMENT SUCCESSFULLY")
+
+
 

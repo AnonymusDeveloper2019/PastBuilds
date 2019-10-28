@@ -1,0 +1,24 @@
+	trace	type	count
+2591c65889a64f17d82a3631a471d2d3	Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/junit/jars/junit-3.8.1.jar	CONTEXT_ERROR	88
+494c0efd54275709ed3ee873a54ff5b7	error: cannot find symbol  method setDurationBeforeEnd(ReadableDuration)	DEVELOPER_ERROR	5
+6e04ab45566304debb83a3b2b2caee29	error: cannot find symbol  class MutableDateTimeFieldProperty	DEVELOPER_ERROR	4
+1effb770a849d947ae795fcb762116e6	error: cannot find symbol  class DurationFieldAffix	DEVELOPER_ERROR	4
+a895d834a1be13e5923f9d07b534b2bb	BuildAnalycer: No build system detected	NOT_DETECTED	3
+a46f2f00d97bb4f296626976f746a572	error: cannot find symbol  method safeMultiplyToInt(int,int)	DEVELOPER_ERROR	3
+cc14b15720be9cc3b3acfb9eedbf5a75	error: cannot find symbol  method clear()	DEVELOPER_ERROR	2
+af029a7f125e7e7ef0c935db67501a96	error: MutableInterval is not abstract and does not override abstract method setDurationBeforeEnd(ReadableDuration) in ReadWritableInterval	DEVELOPER_ERROR	2
+1488646f1acff525c2146260be7d2680	error: Interval is not abstract and does not override abstract method getDuration(DurationType) in ReadableInterval	DEVELOPER_ERROR	1
+f71c1441e860adf55c114c1b28a6e28a	error: iUnitMillis has private access in PreciseDurationDateTimeField	DEVELOPER_ERROR	1
+de4ed06c7beb51db86f7912b08afe140	error: TimeOfDay is not abstract and does not override abstract method resolve(long,DateTimeZone) in PartialInstant	DEVELOPER_ERROR	1
+d99df6a22e71cd3f54b5d09350afa3f1	error: DateOnly is not abstract and does not override abstract method isMatchingType(ReadableInstant) in AbstractPartialInstant	DEVELOPER_ERROR	1
+ca73ad93cbacfa63b4dbbdb8390cd0cd	Buildfile: ./JodaTime/build.xml does not exist! Build failed 	NOT_DETECTED	1
+bb84f5e52611cb28f9494a8185c1464c	"Exception in thread ""main"" java.io.FileNotFoundException: -d (No such file or directory)"	CONTEXT_ERROR	1
+8f624eee093309961ae789e491aef40b	error: cannot find symbol  method getAverageYearMonthType()	DEVELOPER_ERROR	1
+a354d1c956bfd64d5d0cc96907232a02	error: cannot find symbol  method undoChanges(Object)	DEVELOPER_ERROR	1
+79db72feafd6fb4acacae8e762e407e3	error: cannot find symbol  class DateOnlyFieldProperty	DEVELOPER_ERROR	1
+6f155d8c7948b99c006c9ff05e7a5b78	error: method validate in interface Chronology cannot be applied to given types;	DEVELOPER_ERROR	1
+66cc913477394f57cdf45f2f304af695	error: equals(Object) in MutableDateTime cannot override equals(Object) in AbstractInstant	DEVELOPER_ERROR	1
+5a676ed754f985d665d1722914d9fa48	error: cannot find symbol  method isPrecise()	DEVELOPER_ERROR	1
+2a70604d1999d31bce54a5fc6491c224	error: MutableDateTime is not abstract and does not override abstract method setRoundingField(DateTimeField,int) in ReadWritableInstant	DEVELOPER_ERROR	1
+1f02d62ce57eff15a472a61ff1824e10	error: cannot find symbol  method setAlternate(String)	DEVELOPER_ERROR	1
+fa7c86c111360031e5f639bd911308b7	error: DateTime is not abstract and does not override abstract method withDateTimeZone(DateTimeZone) in ReadableInstant	DEVELOPER_ERROR	1

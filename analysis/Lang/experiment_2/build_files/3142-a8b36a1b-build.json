@@ -1,0 +1,17 @@
+{
+    "commit": "a8b36a1b",
+    "build_system": "Ant",
+    "docker_image": "java-maven:8",
+    "build_command": "ant compile -f ./build.xml",
+    "build_file": "./build.xml",
+    "builds_checked": [
+        {
+            "build_system": "Ant",
+            "docker_image": "java-maven:8",
+            "build_command": "ant compile -f ./build.xml",
+            "build_file": "./build.xml",
+            "works": false
+        }
+    ],
+    "works": false
+}

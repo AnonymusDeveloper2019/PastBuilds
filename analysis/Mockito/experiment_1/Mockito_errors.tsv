@@ -1,0 +1,28 @@
+	trace	type	count
+4222c9ddc78416aa21e40220003c3954	"OCI runtime exec failed: exec failed: container_linux.go:348: starting container process caused ""exec: \""./gradlew\"": stat ./gradlew: no such file or directory"": unknown "	NOT_DETECTED	1622
+d6464bd3ea618d61a6b913895043f33a	There were failing tests.	CONTEXT_ERROR	283
+1260208c9076437216a813fc91b8660e	Could not find group:org.mockito, module:mockito-core, version:1.9.1.	CONTEXT_ERROR	70
+13285c7f97e79f627a33140215e271b9	What went wrong: Build aborted because of an unexpected internal error. Please file an issue at: http://forums.gradle.org.	DEVELOPER_ERROR	42
+3491bc3b3ac17169dba0075b16b819c9	"Exception in thread ""main"" java.io.FileNotFoundException: http://repo.gradle.org/gradle/distributions/gradle-1.0-milestone-5-bin.zip"	CONTEXT_ERROR	27
+0cfe312fa938d604bbc41ee9bdc0f82f	Type Improvement not present	DEVELOPER_ERROR	10
+9eab7c56eeacdf88cb7ee7ed7d3057d3	What went wrong: A problem occurred configuring root project 'mockito'.	DEVELOPER_ERROR	9
+3de2028ca0a2edbd5e932e1482449039	What went wrong: A problem occurred evaluating script.	DEVELOPER_ERROR	7
+7086b94b5dc75825fa1eeac1854bbe81	error: cannot find symbol  class CaptorAnnotationProcessor	DEVELOPER_ERROR	5
+8ae4c20493696de7a6d88c43dbc78d1c	What went wrong: Execution failed for task ':compileJava'.	DEVELOPER_ERROR	3
+e224fd84b50d61496146d2a039deaced	"Downloading http://services.gradle.org/distributions/gradle-1.11-all.zip  Exception in thread ""main"" java.lang.RuntimeException: java.net.UnknownHostException: services.gradle.org  at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:78)  at org.gradle.wrapper.Inst ... <LOG TOO LONG> ..."	NOT_DETECTED	2
+5dbe9b76639c1cc8ca1dfd24ac9eab4a	What went wrong: Task 'test' not found in root project 'mockito'.	DEVELOPER_ERROR	2
+8ff83bd0c888201d00b3c7b105ef0f6d	error: Improvement is not public in org.mockito.release.notes.improvements; cannot be accessed from outside package	DEVELOPER_ERROR	2
+c2a5bbf505d0cee46d67ff019fb48e00	Could not find property 'PublicationsComparatorTask' on root project 'mockito'.	CONTEXT_ERROR	1
+e29aac609a68dea4f339f8e83c07b2f5	error: cannot find symbol  class ContributionSet	DEVELOPER_ERROR	1
+e94423054c400f1988cfdbf303a05ec2	error: cannot find symbol  class DefaultProcessRunner	DEVELOPER_ERROR	1
+94e0e624e116114317880f9353ad64a6	error: cannot find symbol  class ITestNGListener	DEVELOPER_ERROR	1
+65a469f870b51eb7635bb865609058ca	error: cannot find symbol  variable Fields	DEVELOPER_ERROR	1
+87158cacda1c6cf60394a2ec4998c71b	error: cannot find symbol  variable delegate	DEVELOPER_ERROR	1
+6e10c332c526e05e3ca1495bb52e2b2b	Could not find method create() for arguments [{name=instrument, type=class net.saliman.gradle.plugin.cobertura.InstrumentTask}, net.saliman.gradle.plugin.cobertura.CoberturaPlugin$_apply_closure3@13f0cee9] on task set.	CONTEXT_ERROR	1
+330e34bd669f7241dfa0dcd504cbaa75	What went wrong: Execution failed for task ':osgifyManifests'.	DEVELOPER_ERROR	1
+307c18b7e9ebf0b25c72247d04f96c77	What went wrong: Execution failed for task ':allJar'.	DEVELOPER_ERROR	1
+24f45c757235837751df72efc6ea3859	error: cannot find symbol  class ITestNGMethod	DEVELOPER_ERROR	1
+22955760a7a6ab07b261346a87964ca2	Could not find method create() for arguments [{name=instrument, type=class net.saliman.gradle.plugin.cobertura.InstrumentTask}, net.saliman.gradle.plugin.cobertura.CoberturaPlugin$_apply_closure3@c644e61] on task set.	CONTEXT_ERROR	1
+16f78d5a549a7ad7883014e8a02465f1	unable to resolve class ImprovementSetSegregator 	DEVELOPER_ERROR	1
+12b321b941da6a68409d0feba92effd0	error: SerializableTypeVariable is not abstract and does not override abstract method getAnnotatedBounds() in TypeVariable	DEVELOPER_ERROR	1
+ed720e7b1503b430e291cae07941a1f4	Could not find property 'Compile' on root project 'mockito'.	CONTEXT_ERROR	1

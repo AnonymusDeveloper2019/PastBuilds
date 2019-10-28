@@ -1,0 +1,20 @@
+trace	type	count
+error: unmappable character for encoding UTF8	CONTEXT_ERROR	474
+error: as of release 5, 'enum' is a keyword, and may not be used as an identifier	CONTEXT_ERROR	162
+error: no suitable method found for append(char[])	CONTEXT_ERROR	106
+error: cannot find symbol	DEVELOPER_ERROR	9
+error: cannot find symbol  class UnhandledException	DEVELOPER_ERROR	6
+error: cannot find symbol  class NullArgumentException	DEVELOPER_ERROR	5
+error: incompatible types: Constructor<?>[] cannot be converted to Constructor<T>[]	DEVELOPER_ERROR	2
+error: variable options might not have been initialized	DEVELOPER_ERROR	2
+error: cannot find symbol  class IDKey	DEVELOPER_ERROR	2
+error: cannot find symbol  method appendIdentityToString(StringBuffer,Object)	DEVELOPER_ERROR	2
+error: no suitable method found for format(long,String,boolean)	DEVELOPER_ERROR	2
+build.xml:1: Content is not allowed in prolog.	DEVELOPER_ERROR	2
+error: ';' expected	DEVELOPER_ERROR	1
+error: reached end of file while parsing	DEVELOPER_ERROR	1
+error: illegal unicode escape	DEVELOPER_ERROR	1
+unmappable character for encoding UTF8	DEVELOPER_ERROR	1
+BuildAnalycer: No build system detected	NOT_DETECTED	1
+error: incomparable types: int and <null>	DEVELOPER_ERROR	1
+error: package org.apache.commons.collections.comparators does not exist	DEVELOPER_ERROR	1

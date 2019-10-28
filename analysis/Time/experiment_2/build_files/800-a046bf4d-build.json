@@ -1,0 +1,8 @@
+{
+    "commit": "a046bf4d",
+    "build_system": "Ant",
+    "docker_image": "maes95/java-maven:8",
+    "build_command": "ant compile -f ./JodaTime/build.xml",
+    "build_file": "./JodaTime/build.xml",
+    "works": true
+}

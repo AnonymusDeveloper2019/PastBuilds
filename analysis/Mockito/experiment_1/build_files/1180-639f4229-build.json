@@ -1,0 +1,8 @@
+{
+    "commit": "639f4229",
+    "build_system": "Gradle",
+    "docker_image": "maes95/java-maven:8",
+    "build_command": "./gradlew build -x test ",
+    "build_file": "./gradlew",
+    "works": false
+}

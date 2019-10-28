@@ -1,0 +1,24 @@
+{
+    "commit": "b2484302",
+    "build_system": "Ant",
+    "docker_image": "java-maven:8",
+    "build_command": "ant compile -f ./build.xml",
+    "build_file": "./build.xml",
+    "builds_checked": [
+        {
+            "build_system": "Gradle",
+            "docker_image": "java-maven:8",
+            "build_command": "./gradlew build -x test",
+            "build_file": "./gradlew",
+            "works": false
+        },
+        {
+            "build_system": "Ant",
+            "docker_image": "java-maven:8",
+            "build_command": "ant compile -f ./build.xml",
+            "build_file": "./build.xml",
+            "works": false
+        }
+    ],
+    "works": true
+}

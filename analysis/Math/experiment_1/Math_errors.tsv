@@ -1,0 +1,21 @@
+key	trace	count
+5f6cdfb4e068f5de3d4912a88c6736ea	error: package org.apache.commons.discovery.tools does not exist	673
+013cd96f4a6beca89ce501e1c3389fe0	error: incompatible types	379
+7e6a1598b1b0e54d8f125eb7a6d93267	"reason: class java.lang.NumberFormatException with message 'For input string: ""${proxy.port}""'"	268
+33f3f7f4fed25c3b1dcaa9353ca090f4	error: package org.apache.commons.beanutils does not exist	112
+66eb9f223332d42c2ae312408c746f11	error: cannot find symbol	30
+9bd99e74fa4138d90d0b744b9a4f2acd	error: package org.apache.commons.collections does not exist	11
+8b06deeaf5780c7fe3b265b539082c13	error: no suitable method found for reinitialize(double,double[],RealMatrix)	5
+631294f16a9cd7beb3a1d078df912054	error: not a statement	3
+35dd4ec29e88ab2af087db7c706fdc9b	"BUILD FAILED /home/bugs/projects/Math/build.xml:151: srcdir ""/home/bugs/projects/Math/src/java"" does not exist!"	2
+629607372b17160bd2391843441fff0f	error: data has private access in ArrayFieldVector	2
+74b92ae84a231f889b01a0d1bb7c0867	Buildfile: ./build.xml does not exist! Build failed  ... <LOG TOO LONG> ...	2
+9c585efb1e505280450c13c3dc7ad400	"BUILD FAILED /home/bugs/projects/Math/build.xml:36: srcdir ""/home/bugs/projects/Math/src/java"" does not exist!"	2
+a46fb05bd052fa130415c60c02a4c7cf	error: name clash: extractField(FieldElement<? extends FieldElement<?>>[][]) in FieldMatrixImpl and <T>extractField(T[][]) in AbstractFieldMatrix have the same erasure, yet neither hides the other	2
+a4ee093ce578b74c1ce7e9ebc114a084	error: cannot assign a value to final variable entries	2
+1c0ae0e3c9ab723b5fb66f0a9e348049	error: constructor MultistepIntegrator in class MultistepIntegrator cannot be applied to given types;	1
+19ae2879e9c881cafab3ba5b359e1134	error: package org.apache.commons.collections.primitives does not exist	1
+0569904c39ebbfb87713d7c5a9a81301	error: type BracketedUnivariateRealSolver does not take parameters	1
+14ad6ac5afb3c2f13c815e7851aa5948	"BUILD FAILED /home/bugs/projects/Math/build.xml:135: srcdir ""/home/bugs/projects/Math/src/java"" does not exist!"	1
+c30262f665b912a0a6639311565fde3f	error: package odk.lang does not exist	1
+c4c5058f9134970430b4121676dde74a	error: Solver is not abstract and does not override abstract method solve(double[]) in DecompositionSolver	1

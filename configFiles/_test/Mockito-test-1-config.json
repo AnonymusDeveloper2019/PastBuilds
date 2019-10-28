@@ -1,0 +1,13 @@
+{
+    "project": "Mockito",
+    "init_commit": "4e9d7607", 
+    "number_of_builds": 3,
+    "experiment": 0,
+    "build_config": {
+        "build_system": "Gradle",
+        "docker_image": "maes95/java-maven:8",
+        "build_command": "./gradlew build -x test ",
+        "build_file": "./gradlew",
+        "fixed": true
+    }
+}

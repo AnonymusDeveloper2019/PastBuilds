@@ -1,0 +1,17 @@
+{
+    "commit": "7cf6470d",
+    "build_system": "NOT_FOUND",
+    "docker_image": "-",
+    "build_command": "echo 'BuildAnalycer: No build system detected' && exit 1",
+    "build_file": "-",
+    "builds_checked": [
+        {
+            "build_system": "NOT_FOUND",
+            "docker_image": "-",
+            "build_command": "echo 'BuildAnalycer: No build system detected' && exit 1",
+            "build_file": "-",
+            "works": false
+        }
+    ],
+    "works": false
+}

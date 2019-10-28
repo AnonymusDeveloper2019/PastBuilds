@@ -1,0 +1,8 @@
+{
+    "commit": "a859606a",
+    "build_system": "NOT_FOUND",
+    "docker_image": "-",
+    "build_command": "echo 'BuildAnalycer: No build system detected' && exit 1",
+    "build_file": "-",
+    "works": false
+}

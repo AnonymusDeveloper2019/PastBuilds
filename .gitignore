@@ -111,20 +111,9 @@ testFile
 
 # PROJECTS
 
-spring-*/
-SpringBootSamples/
-vert.x/
-elasticsearch/
-commons-lang/
-akka/
-reports/**/
+__pycache__
 
-Lang/
-Math/
-Chart/
-Closure/
-Time/
-Mockito/
+projects/*/
 
 *.csv
 analysis_*

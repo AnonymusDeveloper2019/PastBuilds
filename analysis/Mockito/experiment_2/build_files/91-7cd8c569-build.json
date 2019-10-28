@@ -1,0 +1,17 @@
+{
+    "commit": "7cd8c569",
+    "build_system": "Gradle",
+    "docker_image": "java-maven:8",
+    "build_command": "./gradlew build -x test",
+    "build_file": "./gradlew",
+    "builds_checked": [
+        {
+            "build_system": "Gradle",
+            "docker_image": "java-maven:8",
+            "build_command": "./gradlew build -x test",
+            "build_file": "./gradlew",
+            "works": false
+        }
+    ],
+    "works": false
+}

@@ -1,0 +1,8 @@
+{
+    "commit": "0309c35b",
+    "build_system": "Maven",
+    "docker_image": "maes95/java-maven:8",
+    "build_command": "mvn clean install -Dmaven.test.skip=true",
+    "build_file": "./pom.xml",
+    "works": false
+}

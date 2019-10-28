@@ -1,0 +1,9 @@
+{
+    "project": "Lang",
+    "init_commit": "5ac897ad", 
+    "last_commit": "5ac897ad",
+    "number_of_builds": 1,
+    "experiment": 0,
+    "rebuild": false,
+    "comment": "Solo Ant, funciona correctamente incluso los test"
+}

@@ -1,0 +1,40 @@
+trace	type	count
+Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.3.jar	CONTEXT_ERROR	291
+Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-beanutils/jars/commons-beanutils-1.5.jar	CONTEXT_ERROR	208
+Error opening connection java.io.FileNotFoundException: http://www.apache.org/dist/java-repository/commons-beanutils/jars/commons-beanutils-1.5.jar	CONTEXT_ERROR	102
+Error opening connection java.io.FileNotFoundException: http://www.apache.org/dist/java-repository/commons-beanutils/jars/commons-beanutils-1.6.1.jar	CONTEXT_ERROR	78
+Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven//commons-collections/jars/commons-collections-3.0.jar	CONTEXT_ERROR	58
+Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-lang/jars/commons-lang-2.0.jar	CONTEXT_ERROR	50
+[ERROR] Failed to execute goal org.codehaus.mojo:cobertura-maven-plugin:2.7:check (default) on project commons-math: The parameters 'check' for goal org.codehaus.mojo:cobertura-maven-plugin:2.7:check are missing or invalid -> [Help 1]	DEVELOPER_ERROR	43
+Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-logging/jars/commons-logging-1.0.4.jar	CONTEXT_ERROR	15
+error: cannot find symbol	DEVELOPER_ERROR	12
+error: cannot find symbol  variable PropertyUtils	DEVELOPER_ERROR	11
+cannot find symbol	DEVELOPER_ERROR	10
+Error opening connection java.io.FileNotFoundException: http://www.apache.org/dist/java-repository/commons-collections/jars/commons-collections-3.0.jar	CONTEXT_ERROR	6
+error: cannot find symbol  method setResult(double,double,int)	DEVELOPER_ERROR	5
+error: no suitable method found for reinitialize(double,double[],RealMatrix)	DEVELOPER_ERROR	5
+Error opening connection java.io.FileNotFoundException: http://www.ibiblio.org/maven/commons-beanutils/jars/commons-beanutils-SNAPSHOT.jar	CONTEXT_ERROR	3
+error: SparseRealMatrix is not abstract and does not override abstract method multiplyEntry(int,int,double) in AbstractRealMatrix	DEVELOPER_ERROR	2
+error: data has private access in ArrayFieldVector	DEVELOPER_ERROR	2
+error: LUDecompositionImpl is not abstract and does not override abstract method getSolver() in LUDecomposition	DEVELOPER_ERROR	2
+error: cannot find symbol  class ObjectiveException	DEVELOPER_ERROR	2
+error: name clash: extractField(FieldElement<? extends FieldElement<?>>[][]) in FieldMatrixImpl and <T>extractField(T[][]) in AbstractFieldMatrix have the same erasure, yet neither hides the other	DEVELOPER_ERROR	2
+error: cannot assign a value to final variable entries	DEVELOPER_ERROR	2
+BuildAnalycer: No build system detected	NOT_DETECTED	2
+error: package odk.lang does not exist	DEVELOPER_ERROR	1
+error: cannot find symbol  class ScalarObjectiveFunction	DEVELOPER_ERROR	1
+error: cannot find symbol  class SimpleValueChecker	DEVELOPER_ERROR	1
+error: incompatible types: NordsieckStepInterpolator cannot be converted to MultistepStepInterpolator	DEVELOPER_ERROR	1
+error: Solver is not abstract and does not override abstract method solve(double[]) in DecompositionSolver	DEVELOPER_ERROR	1
+error: cannot find symbol  variable prototype	DEVELOPER_ERROR	1
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/home/bugs/projects/Math). Please verify you invoked Maven from the correct directory. -> [Help 1]	DEVELOPER_ERROR	1
+error: cannot find symbol  class MultistepStepInterpolator	DEVELOPER_ERROR	1
+[ERROR] org.apache.commons.math.complex.Complex: Removed field INF	DEVELOPER_ERROR	1
+error: cannot find symbol  method buildArray(Field<T>,int,int)	DEVELOPER_ERROR	1
+error: incompatible types: RealMatrix cannot be converted to Array2DRowRealMatrix	DEVELOPER_ERROR	1
+error: GLSMultipleLinearRegression is not abstract and does not override abstract method calculateBeta() in AbstractMultipleLinearRegression	DEVELOPER_ERROR	1
+error: cannot find symbol  class DenseRealMatrix	DEVELOPER_ERROR	1
+[ERROR] org.apache.commons.math.complex.ComplexFormat failed check. Branch coverage rate of 0.0% is below 50.0%	DEVELOPER_ERROR	1
+error: cannot find symbol  variable NordsieckTransformer	DEVELOPER_ERROR	1
+"BUILD FAILED /home/bugs/projects/Math/build.xml:135: srcdir ""/home/bugs/projects/Math/src/java"" does not exist!"	DEVELOPER_ERROR	1
+error: cannot find symbol  variable previousF	DEVELOPER_ERROR	1

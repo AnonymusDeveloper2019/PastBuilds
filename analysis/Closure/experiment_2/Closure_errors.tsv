@@ -1,0 +1,4 @@
+trace	type	count
+Buildfile: ./build.xml does not exist! Build failed 	NOT_DETECTED	1
+error: LineMapping is not abstract and does not override abstract method newBuilderForType(BuilderParent) in GeneratedMessage	DEVELOPER_ERROR	1
+error: cannot find symbol  variable RegExpTree	DEVELOPER_ERROR	1

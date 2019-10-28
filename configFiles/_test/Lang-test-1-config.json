@@ -1,0 +1,9 @@
+{
+    "project": "Lang",
+    "init_commit": "687b2e62", 
+    "last_commit": "687b2e62",
+    "number_of_builds": 1,
+    "experiment": 0,
+    "rebuild": false,
+    "comment": "El proyecto cuenta con 2 sistemas de construcción en su versión más reciente: Ant y Maven. Utilizando ambos sistemas, se construye el proyecto, pero los test solo funcionan con Maven"
+}

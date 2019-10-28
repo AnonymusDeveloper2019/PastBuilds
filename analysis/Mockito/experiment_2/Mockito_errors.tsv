@@ -1,0 +1,46 @@
+trace	type	count
+Could not find net.bytebuddy:byte-buddy:0.2.0.	CONTEXT_ERROR	14
+error: package org.mockitousage does not exist	DEVELOPER_ERROR	13
+error: cannot find symbol  method nullInvocationListenerAdded()	DEVELOPER_ERROR	11
+BuildAnalycer: No build system detected	NOT_DETECTED	11
+Type Improvement not present	DEVELOPER_ERROR	10
+BUILD FAILED /home/bugs/projects/Mockito/build.xml:45: Directory does not exist: /home/bugs/projects/Mockito/target	DEVELOPER_ERROR	10
+What went wrong: A problem occurred evaluating script.	DEVELOPER_ERROR	9
+BUILD FAILED /home/bugs/projects/Mockito/build.xml:52: Directory does not exist: /home/bugs/projects/Mockito/target	DEVELOPER_ERROR	6
+What went wrong: Execution failed for task ':jar'.	DEVELOPER_ERROR	6
+error: package org.mockito.matchers does not exist	DEVELOPER_ERROR	4
+error: cannot find symbol  method getMockitoGenericMetadata()	DEVELOPER_ERROR	3
+error: interface expected here	DEVELOPER_ERROR	3
+error: Improvement is not public in org.mockito.release.notes.improvements; cannot be accessed from outside package	DEVELOPER_ERROR	2
+error: cannot find symbol  class NullObject	DEVELOPER_ERROR	2
+error: incompatible types: List<Invocation> cannot be converted to Collection<? extends InvocationImpl>	DEVELOPER_ERROR	2
+error: cannot find symbol  variable super	DEVELOPER_ERROR	2
+error: cannot find symbol  class ReturnsVoid	DEVELOPER_ERROR	2
+error: cannot find symbol  variable SearchingClassLoader	DEVELOPER_ERROR	2
+error: cannot find symbol  class InstantationException	DEVELOPER_ERROR	1
+Could not find property 'PublicationsComparatorTask' on root project 'mockito'.	CONTEXT_ERROR	1
+error: cannot find symbol  class LenientCopyTool	DEVELOPER_ERROR	1
+error: NotifiedMethodInvocationReport is not abstract and does not override abstract method getInvocation() in MethodInvocationReport	DEVELOPER_ERROR	1
+error: assertMocksNotEmpty(Object[]) has private access in MockitoCore	DEVELOPER_ERROR	1
+error: cannot find symbol  method join(String,String)	DEVELOPER_ERROR	1
+error: cannot find symbol  variable ListUtil	DEVELOPER_ERROR	1
+error: cannot find symbol  class ContributionSet	DEVELOPER_ERROR	1
+error: cannot find symbol  class DefaultProcessRunner	DEVELOPER_ERROR	1
+error: cannot find symbol  variable Pluralizer	DEVELOPER_ERROR	1
+unable to resolve class ReleaseNotesServices 	DEVELOPER_ERROR	1
+error: constructor InjectMocksScanner in class InjectMocksScanner cannot be applied to given types;	DEVELOPER_ERROR	1
+error: cannot find symbol  class InvocationBuilder	DEVELOPER_ERROR	1
+error: incompatible types: Location cannot be converted to LocationImpl	DEVELOPER_ERROR	1
+error: cannot find symbol  method numberOfInvocationsMode()	DEVELOPER_ERROR	1
+error: cannot find symbol  class StubberFoo	DEVELOPER_ERROR	1
+unable to resolve class ImprovementSetSegregator 	DEVELOPER_ERROR	1
+error: cannot find symbol  class TestMethodsFinder	DEVELOPER_ERROR	1
+error: SerializableTypeVariable is not abstract and does not override abstract method getAnnotatedBounds() in TypeVariable	DEVELOPER_ERROR	1
+error: cannot find symbol  class IMockHandler	DEVELOPER_ERROR	1
+error: cannot find symbol  class MockitoStubber	DEVELOPER_ERROR	1
+error: cannot find symbol  variable delegate	DEVELOPER_ERROR	1
+error: cannot find symbol  class InvocationOnMock	DEVELOPER_ERROR	1
+error: cannot find symbol  variable VerificationModeFactory	DEVELOPER_ERROR	1
+FileNotFoundException: http://repo.gradle.org/gradle/distributions/gradle-1.0-milestone-5-bin.zip	CONTEXT_ERROR	1
+error: cannot find symbol  class WrongOrderOfInvocationsVerifier	DEVELOPER_ERROR	1
+error: method isToString in class Invocation cannot be applied to given types;	DEVELOPER_ERROR	1

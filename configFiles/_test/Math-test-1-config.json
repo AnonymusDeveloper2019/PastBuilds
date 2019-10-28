@@ -1,0 +1,9 @@
+{
+    "project": "Math",
+    "init_commit": "0da657a65c92b086a301a6ffe9e34ec272f8889c", 
+    "last_commit": "0da657a65c92b086a301a6ffe9e34ec272f8889c",
+    "number_of_builds": 1,
+    "experiment": 0,
+    "rebuild": false,
+    "comment": "El proyecto cuenta con 2 sistemas de construcción en su versión más reciente: Ant y Maven. No es posible ignorar los test en maven. Funciona la build y los test con ant"
+}
